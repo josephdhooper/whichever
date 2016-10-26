@@ -1,0 +1,28 @@
+PODS:
+  - HanekeSwift (0.10.1)
+  - MapboxDirections.swift (0.6.0):
+    - Polyline (~> 3.2)
+  - Polyline (3.2.1)
+
+DEPENDENCIES:
+  - HanekeSwift
+  - MapboxDirections.swift (from `https://github.com/mapbox/MapboxDirections.swift.git`, tag `v0.6.0`)
+
+EXTERNAL SOURCES:
+  MapboxDirections.swift:
+    :git: https://github.com/mapbox/MapboxDirections.swift.git
+    :tag: v0.6.0
+
+CHECKOUT OPTIONS:
+  MapboxDirections.swift:
+    :git: https://github.com/mapbox/MapboxDirections.swift.git
+    :tag: v0.6.0
+
+SPEC CHECKSUMS:
+  HanekeSwift: 08e47d3d0f2899ec58e5d257beba0de619aca9e8
+  MapboxDirections.swift: 144cefb4386d419f916ce27928834c28bbaafb4f
+  Polyline: 4579e57a62a5e876944c41884194e24ab7021d89
+
+PODFILE CHECKSUM: 80db8c6ad2e2844fd5efd1c6857b8d4e420fc5d5
+
+COCOAPODS: 1.0.1
