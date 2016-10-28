@@ -16,40 +16,30 @@
 //
 ////////////////////////////////////////////////////////////////////////////
 
-#import <Realm/RLMObjectBase_Dynamic.h>
-
-NS_ASSUME_NONNULL_BEGIN
+#import <Realm/RLMObject.h>
 
 // RLMObject accessor and read/write realm
 @interface RLMObjectBase () {
-@public
+  @public
     RLMRealm *_realm;
+    // objectSchema is a cached pointer to an object stored in the RLMSchema
+    // owned by _realm, so it's guaranteed to stay alive as long as this object
+    // without retaining it (and retaining it makes iteration slower)
     __unsafe_unretained RLMObjectSchema *_objectSchema;
 }
 
-// unmanaged initializer
-- (instancetype)initWithValue:(id)value schema:(RLMSchema *)schema NS_DESIGNATED_INITIALIZER;
+// standalone initializer
+- (instancetype)initWithValue:(id)value schema:(RLMSchema *)schema;
 
 // live accessor initializer
 - (instancetype)initWithRealm:(__unsafe_unretained RLMRealm *const)realm
-                       schema:(RLMObjectSchema *)schema NS_DESIGNATED_INITIALIZER;
+                       schema:(__unsafe_unretained RLMObjectSchema *const)schema;
 
 // shared schema for this class
-+ (nullable RLMObjectSchema *)sharedSchema;
++ (RLMObjectSchema *)sharedSchema;
 
 // provide injection point for alternative Swift object util class
 + (Class)objectUtilClass:(BOOL)isSwift;
-
-@end
-
-@interface RLMObject ()
-
-// unmanaged initializer
-- (instancetype)initWithValue:(id)value schema:(RLMSchema *)schema NS_DESIGNATED_INITIALIZER;
-
-// live accessor initializer
-- (instancetype)initWithRealm:(__unsafe_unretained RLMRealm *const)realm
-                       schema:(RLMObjectSchema *)schema NS_DESIGNATED_INITIALIZER;
 
 @end
 
@@ -57,23 +47,26 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-// A reference to an object's row that doesn't keep the object accessor alive.
-// Used by some Swift property types, such as LinkingObjects, to avoid retain cycles
-// with their containing object.
-@interface RLMWeakObjectHandle : NSObject
+//
+// Getters and setters for RLMObjectBase ivars for realm and objectSchema
+//
+FOUNDATION_EXTERN void RLMObjectBaseSetRealm(RLMObjectBase *object, RLMRealm *realm);
+FOUNDATION_EXTERN RLMRealm *RLMObjectBaseRealm(RLMObjectBase *object);
+FOUNDATION_EXTERN void RLMObjectBaseSetObjectSchema(RLMObjectBase *object, RLMObjectSchema *objectSchema);
+FOUNDATION_EXTERN RLMObjectSchema *RLMObjectBaseObjectSchema(RLMObjectBase *object);
 
-- (instancetype)initWithObject:(RLMObjectBase *)object;
+// Get linking objects for an RLMObjectBase
+FOUNDATION_EXTERN NSArray *RLMObjectBaseLinkingObjectsOfClass(RLMObjectBase *object, NSString *className, NSString *property);
 
-// Consumes the row, so can only usefully be called once.
-@property (nonatomic, readonly) RLMObjectBase *object;
-
-@end
+// Dynamic access to RLMObjectBase properties
+FOUNDATION_EXTERN id RLMObjectBaseObjectForKeyedSubscript(RLMObjectBase *object, NSString *key);
+FOUNDATION_EXTERN void RLMObjectBaseSetObjectForKeyedSubscript(RLMObjectBase *object, NSString *key, id obj);
 
 // Calls valueForKey: and re-raises NSUndefinedKeyExceptions
-FOUNDATION_EXTERN id _Nullable RLMValidatedValueForProperty(id object, NSString *key, NSString *className);
+FOUNDATION_EXTERN id RLMValidatedValueForProperty(id object, NSString *key, NSString *className);
 
 // Compare two RLObjectBases
-FOUNDATION_EXTERN BOOL RLMObjectBaseAreEqual(RLMObjectBase * _Nullable o1, RLMObjectBase * _Nullable o2);
+FOUNDATION_EXTERN BOOL RLMObjectBaseAreEqual(RLMObjectBase *o1, RLMObjectBase *o2);
 
 // Get ObjectUil class for objc or swift
 FOUNDATION_EXTERN Class RLMObjectUtilClass(BOOL isSwift);
@@ -83,16 +76,14 @@ FOUNDATION_EXTERN const NSUInteger RLMDescriptionMaxDepth;
 @class RLMProperty, RLMArray;
 @interface RLMObjectUtil : NSObject
 
-+ (nullable NSArray<NSString *> *)ignoredPropertiesForClass:(Class)cls;
-+ (nullable NSArray<NSString *> *)indexedPropertiesForClass:(Class)cls;
-+ (nullable NSDictionary<NSString *, NSDictionary<NSString *, NSString *> *> *)linkingObjectsPropertiesForClass:(Class)cls;
++ (NSArray RLM_GENERIC(NSString *) *)ignoredPropertiesForClass:(Class)cls;
++ (NSArray RLM_GENERIC(NSString *) *)indexedPropertiesForClass:(Class)cls;
 
-+ (nullable NSArray<NSString *> *)getGenericListPropertyNames:(id)obj;
-+ (nullable NSDictionary<NSString *, NSString *> *)getLinkingObjectsProperties:(id)object;
++ (NSArray RLM_GENERIC(NSString *) *)getGenericListPropertyNames:(id)obj;
++ (void)initializeListProperty:(RLMObjectBase *)object property:(RLMProperty *)property array:(RLMArray *)array;
++ (void)initializeOptionalProperty:(RLMObjectBase *)object property:(RLMProperty *)property;
 
-+ (nullable NSDictionary<NSString *, NSNumber *> *)getOptionalProperties:(id)obj;
-+ (nullable NSArray<NSString *> *)requiredPropertiesForClass:(Class)cls;
++ (NSDictionary RLM_GENERIC(NSString *, NSNumber *) *)getOptionalProperties:(id)obj;
++ (NSArray RLM_GENERIC(NSString *) *)requiredPropertiesForClass:(Class)cls;
 
 @end
-
-NS_ASSUME_NONNULL_END

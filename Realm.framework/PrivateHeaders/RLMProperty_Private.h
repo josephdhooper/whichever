@@ -22,64 +22,49 @@
 
 @class RLMObjectBase;
 
-NS_ASSUME_NONNULL_BEGIN
-
-BOOL RLMPropertyTypeIsNullable(RLMPropertyType propertyType);
-BOOL RLMPropertyTypeIsComputed(RLMPropertyType propertyType);
+FOUNDATION_EXTERN BOOL RLMPropertyTypeIsNullable(RLMPropertyType propertyType);
+FOUNDATION_EXTERN BOOL RLMPropertyTypeIsNumeric(RLMPropertyType propertyType);
 
 // private property interface
-@interface RLMProperty () {
-@public
-    RLMPropertyType _type;
-    Ivar _swiftIvar;
-}
+@interface RLMProperty ()
 
 - (instancetype)initWithName:(NSString *)name
                      indexed:(BOOL)indexed
-      linkPropertyDescriptor:(nullable RLMPropertyDescriptor *)linkPropertyDescriptor
                     property:(objc_property_t)property;
 
 - (instancetype)initSwiftPropertyWithName:(NSString *)name
                                   indexed:(BOOL)indexed
-                   linkPropertyDescriptor:(nullable RLMPropertyDescriptor *)linkPropertyDescriptor
                                  property:(objc_property_t)property
                                  instance:(RLMObjectBase *)objectInstance;
 
 - (instancetype)initSwiftListPropertyWithName:(NSString *)name
                                          ivar:(Ivar)ivar
-                              objectClassName:(nullable NSString *)objectClassName;
+                              objectClassName:(NSString *)objectClassName;
 
 - (instancetype)initSwiftOptionalPropertyWithName:(NSString *)name
                                           indexed:(BOOL)indexed
                                              ivar:(Ivar)ivar
                                      propertyType:(RLMPropertyType)propertyType;
 
-- (instancetype)initSwiftLinkingObjectsPropertyWithName:(NSString *)name
-                                                   ivar:(Ivar)ivar
-                                        objectClassName:(nullable NSString *)objectClassName
-                                 linkOriginPropertyName:(nullable NSString *)linkOriginPropertyName;
-
 // private setters
-@property (nonatomic, readwrite) NSString *name;
+@property (nonatomic, assign) NSUInteger column;
 @property (nonatomic, readwrite, assign) RLMPropertyType type;
 @property (nonatomic, readwrite) BOOL indexed;
 @property (nonatomic, readwrite) BOOL optional;
-@property (nonatomic, copy, nullable) NSString *objectClassName;
+@property (nonatomic, copy) NSString *objectClassName;
 
 // private properties
-@property (nonatomic, assign) NSUInteger index;
 @property (nonatomic, assign) char objcType;
 @property (nonatomic, copy) NSString *objcRawType;
 @property (nonatomic, assign) BOOL isPrimary;
 @property (nonatomic, assign) Ivar swiftIvar;
+@property (nonatomic, assign) NSUInteger declarationIndex;
 
 // getter and setter names
 @property (nonatomic, copy) NSString *getterName;
 @property (nonatomic, copy) NSString *setterName;
 @property (nonatomic) SEL getterSel;
 @property (nonatomic) SEL setterSel;
-
-- (RLMProperty *)copyWithNewName:(NSString *)name;
 
 @end
 
@@ -96,16 +81,13 @@ BOOL RLMPropertyTypeIsComputed(RLMPropertyType propertyType);
  @param name            The property name.
  @param type            The property type.
  @param objectClassName The object type used for Object and Array types.
- @param linkOriginPropertyName The property name of the origin of a link. Used for linking objects properties.
-
+ 
  @return    An initialized instance of RLMProperty.
  */
 - (instancetype)initWithName:(NSString *)name
                         type:(RLMPropertyType)type
-             objectClassName:(nullable NSString *)objectClassName
-      linkOriginPropertyName:(nullable NSString *)linkOriginPropertyName
+             objectClassName:(NSString *)objectClassName
                      indexed:(BOOL)indexed
                     optional:(BOOL)optional;
 @end
 
-NS_ASSUME_NONNULL_END

@@ -55,6 +55,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		151F9B0F1DC3DD5600884D91 /* University.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = University.gpx; sourceTree = "<group>"; };
 		5C3567F4D7A2CB1A98B773AE /* Pods-whichever.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whichever.release.xcconfig"; path = "Pods/Target Support Files/Pods-whichever/Pods-whichever.release.xcconfig"; sourceTree = "<group>"; };
 		9EC37DE29CDEC003A400EAEF /* Pods_whichever.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whichever.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A424CDED1D94797000D8BB27 /* BuildingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingCell.swift; sourceTree = "<group>"; };
@@ -109,6 +110,14 @@
 				9EC37DE29CDEC003A400EAEF /* Pods_whichever.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		151F9B0E1DC3DD3C00884D91 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				151F9B0F1DC3DD5600884D91 /* University.gpx */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		A48954911DA43921009E0E4F /* Model */ = {
@@ -180,6 +189,7 @@
 		A4BCF0531CF3E5C200675644 /* Safe Bathrooms */ = {
 			isa = PBXGroup;
 			children = (
+				151F9B0E1DC3DD3C00884D91 /* Utils */,
 				A48954931DA43B0E009E0E4F /* API */,
 				A48954911DA43921009E0E4F /* Model */,
 				A48954941DA43C58009E0E4F /* View */,
@@ -248,7 +258,6 @@
 				TargetAttributes = {
 					A4BCF0501CF3E5C200675644 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 3HKHV448JP;
 						LastSwiftMigration = 0800;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -524,8 +533,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zaid Pathan (PUDB9J3LNK)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Zaid Pathan (PUDB9J3LNK)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -537,7 +546,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.josephdhooper.whichever;
 				PRODUCT_NAME = "whichever ";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "a65f30e9-8e75-491d-bedb-3ec6b5b5211e";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 2.3;
@@ -553,8 +562,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zaid Pathan (PUDB9J3LNK)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Zaid Pathan (PUDB9J3LNK)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -566,7 +575,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.josephdhooper.whichever;
 				PRODUCT_NAME = "whichever ";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "a65f30e9-8e75-491d-bedb-3ec6b5b5211e";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 2.3;

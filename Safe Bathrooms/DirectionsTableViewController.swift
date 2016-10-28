@@ -15,7 +15,8 @@ import RealmSwift
 
 class DirectionsTableViewController: UITableViewController {
     
-
+    public var steps = [RouteStep]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,15 +29,18 @@ class DirectionsTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return steps.count
     }
     
     override func tableView(_tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = self.tableView.dequeueReusableCellWithIdentifier("DirectionsCell") as! DirectionsCell
+        cell.textLabel?.text = steps[indexPath.row].instructions
         
-        //let object = objects[indexPath.row]
-        //cell.textLabel!.text = object.description
+        let distanceFormatter = NSLengthFormatter()
+        let formattedDistance = distanceFormatter.stringFromMeters(steps[indexPath.row].distance)
+        cell.detailTextLabel?.text = "- \(formattedDistance) -"
+    
     
         return cell
     }

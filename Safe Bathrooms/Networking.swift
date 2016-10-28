@@ -54,7 +54,8 @@ class Networking: NSObject {
                         realm.create(Bathrooms.self, value: space, update: true)
                         realm.create(Buildings.self, value: space, update: true)
                     }
-                    print(Realm.Configuration.defaultConfiguration.fileURL!)
+                    print(Realm.Configuration.defaultConfiguration)
+//                    print(Realm.Configuration.defaultConfiguration.fileURL!)
                 }
                 
             } catch {
