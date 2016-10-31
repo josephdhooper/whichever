@@ -88,9 +88,7 @@ class BathroomViewController: UIViewController, UIScrollViewDelegate {
         imageView.layer.contentsRect = CGRectMake(0.0, contentRectYOffset, 1, 1)
     }
     
-    @IBAction func unwindToBuildingDetails(segue:UIStoryboardSegue) {
-        
-    }
+
     var detailBathroom: Bathrooms? {
         didSet {
             self.configureView()
@@ -166,6 +164,10 @@ class BathroomViewController: UIViewController, UIScrollViewDelegate {
             controller.longitude = detailBathroom?.longitude
             controller.buildingName = detailBathroom?.buildingName
         }
+    }
+
+    @IBAction func unwindToBathroomVC(segue:UIStoryboardSegue) {
+        
     }
     
 }

@@ -23,11 +23,7 @@ class BuildingViewController: UITableViewController {
         }
     }
     
-    @IBAction func unwindToMap(segue:UIStoryboardSegue) {
-        
-    }
-    
-    @IBAction func unwindToBuilding(segue:UIStoryboardSegue) {
+    @IBAction func unwindToSearchAndBuildingVC(segue:UIStoryboardSegue) {
         
     }
     

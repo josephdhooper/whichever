@@ -44,10 +44,9 @@ class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManager
         }
     }
     
-    @IBAction func unwindToMap(segue:UIStoryboardSegue) {
+    @IBAction func unwindToMapVC(segue:UIStoryboardSegue) {
         
     }
-    
     @IBAction func centerToUserLocationTapped(sender: AnyObject) {
         centerToUsersLocation()
     }

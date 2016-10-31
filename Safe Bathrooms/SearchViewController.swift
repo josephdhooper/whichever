@@ -46,7 +46,7 @@ class SearchViewController: UITableViewController {
         
     }
     
-    @IBAction func unwindToSearch(segue:UIStoryboardSegue) {
+    @IBAction func unwindToSearchAndBuildingVC(segue:UIStoryboardSegue) {
         
     }
     

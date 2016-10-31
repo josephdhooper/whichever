@@ -170,7 +170,8 @@ class DistanceViewController: UIViewController, MGLMapViewDelegate, CLLocationMa
         switchRouteStyle()
     }
     
-    @IBAction func unwindToBuildingDetails(segue:UIStoryboardSegue) {
+    @IBAction func unwindToDistanceVC(segue:UIStoryboardSegue) {
         
     }
+
 }
