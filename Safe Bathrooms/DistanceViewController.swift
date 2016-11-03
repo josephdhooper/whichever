@@ -162,6 +162,11 @@ class DistanceViewController: UIViewController, MGLMapViewDelegate, CLLocationMa
         }
     }
     
+  
+    @IBAction func IBActionBack(sender: AnyObject) {
+        navigationController?.popViewControllerAnimated(true)
+    }
+    
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         updateRoute(manager, didUpdateLocations: locations)
     }
