@@ -60,7 +60,7 @@ class DistanceViewController: UIViewController, MGLMapViewDelegate, CLLocationMa
     
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
         if identifier == segueId{
-            if let steps = steps{
+            if steps != nil{
                 return true
             }else{
                 return false
@@ -108,9 +108,10 @@ class DistanceViewController: UIViewController, MGLMapViewDelegate, CLLocationMa
         case RouteType.Walking:
             routeOptions = RouteOptions(waypoints: waypoints, profileIdentifier: MBDirectionsProfileIdentifierWalking)
             print("Walking")
-        default:
-            routeOptions = RouteOptions(waypoints: waypoints, profileIdentifier: MBDirectionsProfileIdentifierAutomobile)
-            print("Driving")
+        //Default will never be executed
+//        default:
+//            routeOptions = RouteOptions(waypoints: waypoints, profileIdentifier: MBDirectionsProfileIdentifierAutomobile)
+//            print("Driving")
         }
         
         if let options = routeOptions{

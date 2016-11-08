@@ -15,7 +15,7 @@ import RealmSwift
 
 class DirectionsTableViewController: UITableViewController {
     
-    public var steps = [RouteStep]()
+    internal var steps = [RouteStep]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
