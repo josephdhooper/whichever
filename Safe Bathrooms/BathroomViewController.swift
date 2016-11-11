@@ -14,14 +14,22 @@ import Haneke
 
 class BathroomViewController: UIViewController, UIScrollViewDelegate {
     
+   
+    @IBOutlet var headerLabels: [UILabel]!
+    
+    
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var roomDetails: UITextField!
-    @IBOutlet weak var floorNumber: UITextField!
-    @IBOutlet weak var room: UITextField!
-    @IBOutlet weak var signageInfo: UITextField!
+    
+    @IBOutlet weak var roomDetails: UILabel!
+    
+    @IBOutlet weak var floorNumber: UILabel!
+    @IBOutlet weak var signageInfo: UILabel!
+  
+    @IBOutlet weak var room: UILabel!
     @IBOutlet weak var availability: UIImageView!
     @IBOutlet weak var activityController: UIActivityIndicatorView!
+    
     @IBOutlet var scrollView: UIScrollView!
     
     var bathrooms = try! Realm().objects(Bathrooms)
@@ -31,56 +39,21 @@ class BathroomViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.delegate = self
-        imageView.clipsToBounds = true
         activityController.startAnimating()
+        imageView.clipsToBounds = true
+        
+        imageView.layer.frame = CGRectInset(imageView!.layer.frame, 0, 0 )
+        imageView.layer.borderColor = UIColor.whiteColor().CGColor
+        imageView.contentMode = UIViewContentMode.ScaleAspectFill
+        imageView.backgroundColor = UIColor.whiteColor()
+        imageView.layer.cornerRadius = 1.0
+        imageView.layer.borderWidth = 0
+        
         populationDirections()
         self.configureView()
         
     }
 
-    func unFillTextFields(){
-        let realm = try! Realm()
-        if (roomDetails.text!.isEmpty) {
-            realm.beginWrite()
-            detailBathroom?.details = roomDetails.text!
-            try! realm.commitWrite()
-            
-        }
-    }
-    
-    func validateFields() -> Bool {
-        if (roomDetails.text!.isEmpty) {
-            let alertController = UIAlertController(title: "Validation Error", message: "Add bathroom details. You can add to existing details, too. ", preferredStyle: .Alert)
-            let alertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Destructive, handler: {(alert : UIAlertAction) in
-                alertController.dismissViewControllerAnimated(true, completion: nil)
-            })
-            alertController.addAction(alertAction)
-            presentViewController(alertController, animated: true, completion: nil)
-            
-            return false
-            
-        } else {
-            
-            return true
-        }
-        
-    }
-    
-    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject!) -> Bool {
-        unFillTextFields()
-        return true
-        
-    }
-    
-    @IBAction func addDetails(sender: AnyObject) {
-        validateFields()
-        let realm = try! Realm()
-        realm.beginWrite()
-        detailBathroom?.details = roomDetails.text!
-        try! realm.commitWrite()
-        
-    }
-    
     func scrollViewDidScroll(scrollView: UIScrollView) {
         let yOffset = self.scrollView.contentOffset.y * 0.05
         let availableOffset = min(yOffset, 300)
