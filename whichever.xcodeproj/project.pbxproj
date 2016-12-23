@@ -13,7 +13,6 @@
 		A419DFF01E0893C1004F8818 /* gender.png in Resources */ = {isa = PBXBuildFile; fileRef = A419DFED1E0893C1004F8818 /* gender.png */; };
 		A419DFF11E0893C1004F8818 /* gender@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A419DFEE1E0893C1004F8818 /* gender@2x.png */; };
 		A419DFF21E0893C1004F8818 /* gender@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A419DFEF1E0893C1004F8818 /* gender@3x.png */; };
-		A41CA9531DE623E400E122A7 /* GrandHotel-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A41CA9521DE623E400E122A7 /* GrandHotel-Regular.ttf */; };
 		A41CA9541DE627D600E122A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46A8A361D4C8B0600C772FF /* LaunchScreen.storyboard */; };
 		A424CDEE1D94797000D8BB27 /* BuildingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424CDED1D94797000D8BB27 /* BuildingCell.swift */; };
 		A424CDF31D99AFCB00D8BB27 /* Buildings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424CDF21D99AFCB00D8BB27 /* Buildings.swift */; };
@@ -67,7 +66,6 @@
 		A419DFED1E0893C1004F8818 /* gender.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gender.png; sourceTree = "<group>"; };
 		A419DFEE1E0893C1004F8818 /* gender@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gender@2x.png"; sourceTree = "<group>"; };
 		A419DFEF1E0893C1004F8818 /* gender@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gender@3x.png"; sourceTree = "<group>"; };
-		A41CA9521DE623E400E122A7 /* GrandHotel-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GrandHotel-Regular.ttf"; sourceTree = "<group>"; };
 		A424CDED1D94797000D8BB27 /* BuildingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingCell.swift; sourceTree = "<group>"; };
 		A424CDF21D99AFCB00D8BB27 /* Buildings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buildings.swift; sourceTree = "<group>"; };
 		A424CE571D9EC5F900D8BB27 /* DistanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceViewController.swift; sourceTree = "<group>"; };
@@ -127,7 +125,6 @@
 				A419DFED1E0893C1004F8818 /* gender.png */,
 				A419DFEE1E0893C1004F8818 /* gender@2x.png */,
 				A419DFEF1E0893C1004F8818 /* gender@3x.png */,
-				A41CA9521DE623E400E122A7 /* GrandHotel-Regular.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -320,7 +317,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A41CA9541DE627D600E122A7 /* LaunchScreen.storyboard in Resources */,
-				A41CA9531DE623E400E122A7 /* GrandHotel-Regular.ttf in Resources */,
 				A419DFF01E0893C1004F8818 /* gender.png in Resources */,
 				A419DFF11E0893C1004F8818 /* gender@2x.png in Resources */,
 				A48999311DFA461100202B6D /* Main.storyboard in Resources */,
