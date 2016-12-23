@@ -25,7 +25,6 @@ class MenuViewController: UITableViewController, MFMailComposeViewControllerDele
     override func viewDidLoad() {
         super.viewDidLoad()
         self.transitioningDelegate = self.menuManager
-        
         dismissButton.addTarget(self, action: #selector(buttonAction), forControlEvents: .TouchUpInside)
         
     }

@@ -22,6 +22,9 @@ class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManager
     var notificationToken: NotificationToken?
     var bathrooms = try! Realm().objects(Bathrooms)
     
+    let appdelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,7 +44,6 @@ class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManager
         zoomButton.setImage(UIImage(named:"location"), forState: .Normal)
         zoomButton.addTarget(self, action: #selector(buttonAction), forControlEvents: .TouchUpInside)
         
-        let appdelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         appdelegate.showActivityIndicator()
         
         self.view.addSubview(zoomButton)
@@ -71,8 +73,6 @@ class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManager
             annotation.subtitle = "Availability: \(bathroom.buildingAvailability)"
             annotations.append(annotation)
             self.mapView.addAnnotation(annotation)
-            
-            let appdelegate = UIApplication.sharedApplication().delegate as! AppDelegate
             appdelegate.hideActivityIndicator()
         }
     }
