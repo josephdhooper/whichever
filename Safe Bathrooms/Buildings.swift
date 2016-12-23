@@ -14,7 +14,8 @@ import RealmSwift
 class Buildings: Object {
     
     dynamic var buildingName = ""
-    dynamic var buildingAvailability = "" 
+    dynamic var buildingAvailability = ""
+    dynamic var numberOfRooms = ""
     dynamic var buildingID = ""
     
     override  static func primaryKey() -> String? {

@@ -10,28 +10,59 @@ import UIKit
 import Mapbox
 import CoreLocation
 import RealmSwift
+import QuartzCore
 
-class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManagerDelegate {
+class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManagerDelegate, UIViewControllerTransitioningDelegate  {
     
-    @IBOutlet var mapView: MGLMapView!
+    @IBOutlet weak var menuButton: UIBarButtonItem!
+    @IBOutlet weak var mapView: MGLMapView!
+    @IBOutlet weak var zoomButton: UIButton!
+    
     var annotations = [MGLPointAnnotation]()
+    var notificationToken: NotificationToken?
     var bathrooms = try! Realm().objects(Bathrooms)
-    
-    @IBOutlet weak var textField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        populateMap()
+        
+        self.mapView.delegate = self
         self.mapView.userTrackingMode  = MGLUserTrackingMode.FollowWithHeading
         
+        //Button Inset
+        zoomButton.backgroundColor =  UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.8)
+        zoomButton.layer.cornerRadius = 50/2
+        
+        //Button Shadow
+        zoomButton.layer.shadowColor = UIColor.grayColor().CGColor
+        zoomButton.layer.shadowOpacity = 0.5
+        zoomButton.layer.shadowRadius = 0
+        zoomButton.layer.shadowOffset = CGSizeMake(0, 1.0)
+        
+        zoomButton.setImage(UIImage(named:"location"), forState: .Normal)
+        zoomButton.addTarget(self, action: #selector(buttonAction), forControlEvents: .TouchUpInside)
+        
+        let appdelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appdelegate.showActivityIndicator()
+        
+        self.view.addSubview(zoomButton)
+        
+        //Realm Notifications
+        let results = try! Realm().objects(Bathrooms)
+        
+        notificationToken = results.addNotificationBlock {[weak self] (changes: RealmCollectionChange<Results<Bathrooms>>) in
+            self!.populateMap()
+        }
+    }
+    func buttonAction(sender: UIButton!) {
+        centerToUsersLocation()
     }
     
     @IBAction func searchButton(sender: AnyObject) {
         performSegueWithIdentifier("about", sender: sender)
-        
     }
     
     func populateMap() {
+        
         for bathroom in bathrooms {
             let annotation = MGLPointAnnotation()
             let coordinate = CLLocationCoordinate2DMake(bathroom.latitude, bathroom.longitude)
@@ -39,23 +70,23 @@ class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManager
             annotation.title = bathroom.buildingName
             annotation.subtitle = "Availability: \(bathroom.buildingAvailability)"
             annotations.append(annotation)
-            mapView.delegate = self
-            mapView.addAnnotations(annotations)
+            self.mapView.addAnnotation(annotation)
+            
+            let appdelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            appdelegate.hideActivityIndicator()
         }
     }
     
-    @IBAction func unwindToMapVC(segue:UIStoryboardSegue) {
-        
-    }
-    @IBAction func centerToUserLocationTapped(sender: AnyObject) {
-        centerToUsersLocation()
+    @IBAction func menuButtonObj(sender: AnyObject) {
+        let newView = self.storyboard!.instantiateViewControllerWithIdentifier("MenuViewController") as! MenuViewController
+        newView.modalPresentationStyle = UIModalPresentationStyle.OverFullScreen
+        self.presentViewController(newView, animated: true, completion: nil)
     }
     
     func centerToUsersLocation() {
         let center = mapView.userLocation!.coordinate
         mapView.setCenterCoordinate(center, zoomLevel: 15, animated: true)
     }
-    
     
     func mapView(mapView: MGLMapView, imageForAnnotation annotation: MGLAnnotation) -> MGLAnnotationImage? {
         
@@ -69,12 +100,13 @@ class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManager
         
         if let subtitle = annotation.subtitle {
             switch subtitle {
-            case "Availability: Public"?: imageName.image = UIImage(named: "blueNote")
-            case "Availability: Limited"?: imageName.image = UIImage(named: "orangeNote")
-            case "Availability: Limited and Public"?: imageName.image = UIImage(named: "darkblueNote")
+            case "Availability: Public"?: imageName.image = UIImage(named: "purple")
+            case "Availability: Limited"?: imageName.image = UIImage(named: "orange")
+            case "Availability: Limited and Public"?: imageName.image = UIImage(named: "darkBlue")
             default: return nil
                 
             }
+            
             self.view.addSubview(imageName)
             return imageName
         }
@@ -84,6 +116,7 @@ class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManager
     
     func mapView(mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
         return true
+        
     }
     
     func mapView(mapView: MGLMapView, rightCalloutAccessoryViewForAnnotation annotation: MGLAnnotation) -> UIView? {
@@ -96,12 +129,11 @@ class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManager
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if (segue.identifier == "room" )
-        {
+        if (segue.identifier == "room" ) {
             let controller = segue.destinationViewController as! BuildingViewController
             controller.bathrooms = bathrooms
             controller.buildingName = sender as? String
-            
         }
     }
 }
+

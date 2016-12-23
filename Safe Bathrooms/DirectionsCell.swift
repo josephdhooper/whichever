@@ -10,8 +10,10 @@ import UIKit
 
 class DirectionsCell: UITableViewCell {
 
-    @IBOutlet weak var label: UILabel!
-    
+    @IBOutlet weak var mainLabel: UILabel!
+    @IBOutlet weak var subLabel: UILabel!
+    @IBOutlet weak var directionImage: UIImageView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         

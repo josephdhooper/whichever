@@ -8,25 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		8BB283DBF332AEABA5CFA267 /* Pods_whichever.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC37DE29CDEC003A400EAEF /* Pods_whichever.framework */; };
+		A4164AAE1DECE97B009F69EF /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4164AAD1DECE97B009F69EF /* MenuManager.swift */; };
+		A418D9BC1DDD68D70095E839 /* DetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A418D9BB1DDD68D70095E839 /* DetailsTableViewController.swift */; };
+		A419DFF01E0893C1004F8818 /* gender.png in Resources */ = {isa = PBXBuildFile; fileRef = A419DFED1E0893C1004F8818 /* gender.png */; };
+		A419DFF11E0893C1004F8818 /* gender@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A419DFEE1E0893C1004F8818 /* gender@2x.png */; };
+		A419DFF21E0893C1004F8818 /* gender@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A419DFEF1E0893C1004F8818 /* gender@3x.png */; };
+		A41CA9531DE623E400E122A7 /* GrandHotel-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A41CA9521DE623E400E122A7 /* GrandHotel-Regular.ttf */; };
+		A41CA9541DE627D600E122A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46A8A361D4C8B0600C772FF /* LaunchScreen.storyboard */; };
 		A424CDEE1D94797000D8BB27 /* BuildingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424CDED1D94797000D8BB27 /* BuildingCell.swift */; };
 		A424CDF31D99AFCB00D8BB27 /* Buildings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424CDF21D99AFCB00D8BB27 /* Buildings.swift */; };
 		A424CE581D9EC5F900D8BB27 /* DistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424CE571D9EC5F900D8BB27 /* DistanceViewController.swift */; };
 		A424CE821D9ED37300D8BB27 /* DistanceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424CE811D9ED37300D8BB27 /* DistanceAnnotation.swift */; };
+		A42A35101E0AFC6B00EA6905 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42A350F1E0AFC6B00EA6905 /* WebViewController.swift */; };
 		A46A89EF1D4C7F2000C772FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89EE1D4C7F2000C772FF /* AppDelegate.swift */; };
-		A46A89F11D4C7F3600C772FF /* BathroomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89F01D4C7F3600C772FF /* BathroomViewController.swift */; };
 		A46A89FD1D4C7F6300C772FF /* Bathrooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89F21D4C7F6300C772FF /* Bathrooms.swift */; };
 		A46A89FE1D4C7F6300C772FF /* BuildingsAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89F31D4C7F6300C772FF /* BuildingsAnnotation.swift */; };
 		A46A8A001D4C7F6300C772FF /* CustomPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89F51D4C7F6300C772FF /* CustomPointAnnotation.swift */; };
-		A46A8A021D4C7F6300C772FF /* LoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89F71D4C7F6300C772FF /* LoadViewController.swift */; };
 		A46A8A041D4C7F6300C772FF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89F91D4C7F6300C772FF /* MapViewController.swift */; };
 		A46A8A051D4C7F6300C772FF /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89FA1D4C7F6300C772FF /* Networking.swift */; };
 		A46A8A061D4C7F6300C772FF /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89FB1D4C7F6300C772FF /* SearchCell.swift */; };
 		A46A8A071D4C7F6300C772FF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89FC1D4C7F6300C772FF /* SearchViewController.swift */; };
-		A46A8A301D4C87D700C772FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46A8A2F1D4C87D700C772FF /* Assets.xcassets */; };
-		A46A8A381D4C8B0600C772FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46A8A361D4C8B0600C772FF /* LaunchScreen.storyboard */; };
 		A489548B1DA1EFE3009E0E4F /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A489548A1DA1EFE3009E0E4F /* Mapbox.framework */; };
 		A489548C1DA1EFE3009E0E4F /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A489548A1DA1EFE3009E0E4F /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A4D60DA01DBEE96200CD482A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4D60D9F1DBEE96200CD482A /* Main.storyboard */; };
+		A48999311DFA461100202B6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A48999301DFA461100202B6D /* Main.storyboard */; };
+		A48C02871DE7F03E00C6D2AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A48C02861DE7F03E00C6D2AC /* Assets.xcassets */; };
+		A4B8417A1DECD7EC0085B971 /* SegueFromRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B841791DECD7EC0085B971 /* SegueFromRight.swift */; };
+		A4BBED2D1E08C1D3005899EB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BBED2C1E08C1D3005899EB /* MenuViewController.swift */; };
 		A4D60DA21DBEED8000CD482A /* DirectionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D60DA11DBEED8000CD482A /* DirectionsTableViewController.swift */; };
 		A4D60DA41DBEEE7400CD482A /* DirectionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D60DA31DBEEE7400CD482A /* DirectionsCell.swift */; };
 		A4E12E5C1DBAE62E00443DFD /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F11E6F1DBADC2B0044122E /* RealmSwift.framework */; };
@@ -53,30 +60,36 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		151F9B0F1DC3DD5600884D91 /* University.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = University.gpx; sourceTree = "<group>"; };
 		5C3567F4D7A2CB1A98B773AE /* Pods-whichever.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whichever.release.xcconfig"; path = "Pods/Target Support Files/Pods-whichever/Pods-whichever.release.xcconfig"; sourceTree = "<group>"; };
 		9EC37DE29CDEC003A400EAEF /* Pods_whichever.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whichever.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4164AAD1DECE97B009F69EF /* MenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
+		A418D9BB1DDD68D70095E839 /* DetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailsTableViewController.swift; path = ../DetailsTableViewController.swift; sourceTree = "<group>"; };
+		A419DFED1E0893C1004F8818 /* gender.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gender.png; sourceTree = "<group>"; };
+		A419DFEE1E0893C1004F8818 /* gender@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gender@2x.png"; sourceTree = "<group>"; };
+		A419DFEF1E0893C1004F8818 /* gender@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gender@3x.png"; sourceTree = "<group>"; };
+		A41CA9521DE623E400E122A7 /* GrandHotel-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GrandHotel-Regular.ttf"; sourceTree = "<group>"; };
 		A424CDED1D94797000D8BB27 /* BuildingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingCell.swift; sourceTree = "<group>"; };
 		A424CDF21D99AFCB00D8BB27 /* Buildings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buildings.swift; sourceTree = "<group>"; };
 		A424CE571D9EC5F900D8BB27 /* DistanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceViewController.swift; sourceTree = "<group>"; };
 		A424CE811D9ED37300D8BB27 /* DistanceAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceAnnotation.swift; sourceTree = "<group>"; };
+		A42A350F1E0AFC6B00EA6905 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		A46A89EE1D4C7F2000C772FF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A46A89F01D4C7F3600C772FF /* BathroomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BathroomViewController.swift; sourceTree = "<group>"; };
 		A46A89F21D4C7F6300C772FF /* Bathrooms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bathrooms.swift; sourceTree = "<group>"; };
 		A46A89F31D4C7F6300C772FF /* BuildingsAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingsAnnotation.swift; sourceTree = "<group>"; };
 		A46A89F51D4C7F6300C772FF /* CustomPointAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPointAnnotation.swift; sourceTree = "<group>"; };
 		A46A89F61D4C7F6300C772FF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A46A89F71D4C7F6300C772FF /* LoadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadViewController.swift; sourceTree = "<group>"; };
 		A46A89F91D4C7F6300C772FF /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A46A89FA1D4C7F6300C772FF /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		A46A89FB1D4C7F6300C772FF /* SearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		A46A89FC1D4C7F6300C772FF /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		A46A8A2F1D4C87D700C772FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A46A8A371D4C8B0600C772FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A489548A1DA1EFE3009E0E4F /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		A48999301DFA461100202B6D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A48C02861DE7F03E00C6D2AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4B841791DECD7EC0085B971 /* SegueFromRight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueFromRight.swift; sourceTree = "<group>"; };
+		A4BBED2C1E08C1D3005899EB /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		A4BCF0511CF3E5C200675644 /* whichever .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "whichever .app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4D4831B1D4CB11500D5E1F2 /* whichever.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = whichever.xcodeproj; sourceTree = "<group>"; };
-		A4D60D9F1DBEE96200CD482A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A4D60DA11DBEED8000CD482A /* DirectionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsTableViewController.swift; sourceTree = "<group>"; };
 		A4D60DA31DBEEE7400CD482A /* DirectionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsCell.swift; sourceTree = "<group>"; };
 		A4F108BA1DA1D1290090DA84 /* BuildingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingViewController.swift; sourceTree = "<group>"; };
@@ -108,25 +121,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		151F9B0E1DC3DD3C00884D91 /* Utils */ = {
+		A41CA94D1DE6203200E122A7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				151F9B0F1DC3DD5600884D91 /* University.gpx */,
+				A419DFED1E0893C1004F8818 /* gender.png */,
+				A419DFEE1E0893C1004F8818 /* gender@2x.png */,
+				A419DFEF1E0893C1004F8818 /* gender@3x.png */,
+				A41CA9521DE623E400E122A7 /* GrandHotel-Regular.ttf */,
 			);
-			path = Utils;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		A48954911DA43921009E0E4F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A46A89F51D4C7F6300C772FF /* CustomPointAnnotation.swift */,
 				A46A89F21D4C7F6300C772FF /* Bathrooms.swift */,
 				A424CDF21D99AFCB00D8BB27 /* Buildings.swift */,
-				A46A89F31D4C7F6300C772FF /* BuildingsAnnotation.swift */,
-				A46A89F51D4C7F6300C772FF /* CustomPointAnnotation.swift */,
 				A46A89FB1D4C7F6300C772FF /* SearchCell.swift */,
 				A424CDED1D94797000D8BB27 /* BuildingCell.swift */,
 				A4D60DA31DBEEE7400CD482A /* DirectionsCell.swift */,
 				A424CE811D9ED37300D8BB27 /* DistanceAnnotation.swift */,
+				A46A89F31D4C7F6300C772FF /* BuildingsAnnotation.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -134,13 +150,14 @@
 		A48954921DA439AA009E0E4F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A418D9BB1DDD68D70095E839 /* DetailsTableViewController.swift */,
 				A4D60DA11DBEED8000CD482A /* DirectionsTableViewController.swift */,
 				A424CE571D9EC5F900D8BB27 /* DistanceViewController.swift */,
 				A46A89F91D4C7F6300C772FF /* MapViewController.swift */,
-				A46A89F01D4C7F3600C772FF /* BathroomViewController.swift */,
 				A46A89FC1D4C7F6300C772FF /* SearchViewController.swift */,
 				A4F108BA1DA1D1290090DA84 /* BuildingViewController.swift */,
-				A46A89F71D4C7F6300C772FF /* LoadViewController.swift */,
+				A4BBED2C1E08C1D3005899EB /* MenuViewController.swift */,
+				A42A350F1E0AFC6B00EA6905 /* WebViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -156,6 +173,8 @@
 		A48954941DA43C58009E0E4F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A4164AAD1DECE97B009F69EF /* MenuManager.swift */,
+				A4B841791DECD7EC0085B971 /* SegueFromRight.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -185,16 +204,16 @@
 		A4BCF0531CF3E5C200675644 /* Safe Bathrooms */ = {
 			isa = PBXGroup;
 			children = (
-				151F9B0E1DC3DD3C00884D91 /* Utils */,
+				A41CA94D1DE6203200E122A7 /* Resources */,
 				A48954931DA43B0E009E0E4F /* API */,
 				A48954911DA43921009E0E4F /* Model */,
 				A48954941DA43C58009E0E4F /* View */,
 				A48954921DA439AA009E0E4F /* Controller */,
 				A46A89EE1D4C7F2000C772FF /* AppDelegate.swift */,
 				A46A89F61D4C7F6300C772FF /* Info.plist */,
+				A48999301DFA461100202B6D /* Main.storyboard */,
 				A46A8A361D4C8B0600C772FF /* LaunchScreen.storyboard */,
-				A4D60D9F1DBEE96200CD482A /* Main.storyboard */,
-				A46A8A2F1D4C87D700C772FF /* Assets.xcassets */,
+				A48C02861DE7F03E00C6D2AC /* Assets.xcassets */,
 			);
 			path = "Safe Bathrooms";
 			sourceTree = "<group>";
@@ -252,13 +271,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = josephdhooper;
 				TargetAttributes = {
 					A4BCF0501CF3E5C200675644 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = UV5LLXJC79;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -300,9 +319,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4D60DA01DBEE96200CD482A /* Main.storyboard in Resources */,
-				A46A8A381D4C8B0600C772FF /* LaunchScreen.storyboard in Resources */,
-				A46A8A301D4C87D700C772FF /* Assets.xcassets in Resources */,
+				A41CA9541DE627D600E122A7 /* LaunchScreen.storyboard in Resources */,
+				A41CA9531DE623E400E122A7 /* GrandHotel-Regular.ttf in Resources */,
+				A419DFF01E0893C1004F8818 /* gender.png in Resources */,
+				A419DFF11E0893C1004F8818 /* gender@2x.png in Resources */,
+				A48999311DFA461100202B6D /* Main.storyboard in Resources */,
+				A419DFF21E0893C1004F8818 /* gender@3x.png in Resources */,
+				A48C02871DE7F03E00C6D2AC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,16 +470,19 @@
 			files = (
 				A46A89FE1D4C7F6300C772FF /* BuildingsAnnotation.swift in Sources */,
 				A4D60DA21DBEED8000CD482A /* DirectionsTableViewController.swift in Sources */,
+				A418D9BC1DDD68D70095E839 /* DetailsTableViewController.swift in Sources */,
+				A42A35101E0AFC6B00EA6905 /* WebViewController.swift in Sources */,
 				A46A8A071D4C7F6300C772FF /* SearchViewController.swift in Sources */,
 				A424CE821D9ED37300D8BB27 /* DistanceAnnotation.swift in Sources */,
+				A4164AAE1DECE97B009F69EF /* MenuManager.swift in Sources */,
 				A4F108BB1DA1D1290090DA84 /* BuildingViewController.swift in Sources */,
 				A46A8A061D4C7F6300C772FF /* SearchCell.swift in Sources */,
 				A424CDEE1D94797000D8BB27 /* BuildingCell.swift in Sources */,
+				A4BBED2D1E08C1D3005899EB /* MenuViewController.swift in Sources */,
+				A4B8417A1DECD7EC0085B971 /* SegueFromRight.swift in Sources */,
 				A46A89FD1D4C7F6300C772FF /* Bathrooms.swift in Sources */,
-				A46A8A021D4C7F6300C772FF /* LoadViewController.swift in Sources */,
 				A4D60DA41DBEEE7400CD482A /* DirectionsCell.swift in Sources */,
 				A46A8A051D4C7F6300C772FF /* Networking.swift in Sources */,
-				A46A89F11D4C7F3600C772FF /* BathroomViewController.swift in Sources */,
 				A46A89EF1D4C7F2000C772FF /* AppDelegate.swift in Sources */,
 				A46A8A001D4C7F6300C772FF /* CustomPointAnnotation.swift in Sources */,
 				A424CDF31D99AFCB00D8BB27 /* Buildings.swift in Sources */,
@@ -579,7 +605,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Zaid Pathan (PUDB9J3LNK)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Joesph Hooper (TZ8K2VBSGX)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = UV5LLXJC79;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -596,6 +622,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -610,7 +637,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Zaid Pathan (PUDB9J3LNK)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Joesph Hooper (TZ8K2VBSGX)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = UV5LLXJC79;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -627,6 +654,7 @@
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = 1;

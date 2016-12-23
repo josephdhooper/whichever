@@ -9,6 +9,7 @@
 import UIKit
 import Foundation
 import RealmSwift
+import Mapbox
 
 class Bathrooms: Object {
     
@@ -20,10 +21,16 @@ class Bathrooms: Object {
     dynamic var signageText = ""
     dynamic var buildingAvailability = ""
     dynamic var roomAvailability = ""
+    dynamic var numberOfRooms = ""
     dynamic var details = ""
     dynamic var latitude = 0.0
     dynamic var longitude = 0.0
     dynamic var image = ""
+    
+    var coordinate: CLLocation {
+        return CLLocation(latitude: Double(latitude), longitude: Double(longitude));
+    }
+    
     
     override  static func primaryKey() -> String? {
         return "bathroomID"

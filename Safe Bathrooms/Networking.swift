@@ -11,11 +11,14 @@ import RealmSwift
 import UIKit
 import Haneke
 
+
 class Networking: NSObject {
     
     static func getData (completionHandler:(AnyObject?) -> ()) {
-        if let url = NSURL(string: "https://quarkbackend.com/getfile/josephdhooper/unc-bathroom-data") {
-            NSURLSession.sharedSession().dataTaskWithURL(url) { (data, response, error) in
+        //if let url = NSURL(string: "https://jdhooper.000webhostapp.com/chData.json") {
+        
+        if let url = NSURL(string: "https://gist.githubusercontent.com/josephdhooper/d4c305e57670907874ee72dad77cdc37/raw/39ae629e192d648a1bb07f988a410e93088c3e48/spaces.json") {
+             NSURLSession.sharedSession().dataTaskWithURL(url)  { (data, response, error) in
                 
                 guard let data = data,
                     let dataStore = String(data: data, encoding: NSASCIIStringEncoding) else {
@@ -50,6 +53,7 @@ class Networking: NSObject {
                     try! realm.write {
                         
                         for space in spaces {
+                            
                             realm.create(Bathrooms.self, value: space, update: true)
                             realm.create(Buildings.self, value: space, update: true)
                         }
@@ -60,7 +64,8 @@ class Networking: NSObject {
                     print("Error: \(error)")
                     completionHandler(nil)
                 }
-            } .resume()
+                
+                } .resume()
         }
     }
 }

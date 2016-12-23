@@ -15,6 +15,8 @@ class BuildingViewController: UITableViewController {
     var bathrooms: Results<(Bathrooms)>?
     var image: Results<(Bathrooms)>?
     
+    @IBOutlet weak var menuButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if let buildingNameObj = buildingName{
@@ -22,14 +24,20 @@ class BuildingViewController: UITableViewController {
             image = try! Realm().objects(Bathrooms).sorted("image", ascending: true)
         }
     }
-    
     @IBAction func unwindToSearchAndBuildingVC(segue:UIStoryboardSegue) {
         
     }
     
+    @IBAction func menuButtonObj(sender: AnyObject) {
+        let newView = self.storyboard!.instantiateViewControllerWithIdentifier("MenuViewController") as! MenuViewController
+        newView.modalPresentationStyle = UIModalPresentationStyle.OverFullScreen
+        self.presentViewController(newView, animated: true, completion: nil)
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "showDetail") {
-            let controller = segue.destinationViewController as! BathroomViewController
+            let controller = segue.destinationViewController as! DetailsTableViewController
+           
             var bathroom: Bathrooms!
             let indexPath = tableView.indexPathForSelectedRow
             if let bathroomsObj = bathrooms{
@@ -62,15 +70,14 @@ class BuildingViewController: UITableViewController {
             
             switch bathroom.roomAvailability {
             case "Public":
-                cell.dbImage.image = UIImage(named: "blue")
+                cell.dbImage.image = UIImage(named: "purple")
             case "Limited":
                 cell.dbImage.image = UIImage(named: "orange")
             default:
-                cell.dbImage.image = UIImage(named: "blue")
+                cell.dbImage.image = UIImage(named: "purple")
             }
         }
 
         return cell
     }
-    
 }

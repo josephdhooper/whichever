@@ -14,11 +14,9 @@ import MapboxDirections
 import CoreLocation
 
 enum RouteType:Int {
-    case Driving = 0
+    case Walking = 0
     case Cycling = 1
-    case Walking = 2
 }
-
 class DistanceViewController: UIViewController, MGLMapViewDelegate, CLLocationManagerDelegate {
     
     var locationManager = CLLocationManager()
@@ -28,7 +26,7 @@ class DistanceViewController: UIViewController, MGLMapViewDelegate, CLLocationMa
     var longitude: Double?
     var buildingName:String?
     var bathrooms: Results<(Bathrooms)>?
-    var selectedRouteType = RouteType.Driving
+    var selectedRouteType = RouteType.Walking
     var steps: [RouteStep]?
     
     private let segueId = "showList"
@@ -38,17 +36,23 @@ class DistanceViewController: UIViewController, MGLMapViewDelegate, CLLocationMa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.startUpdatingLocation()
         destinationPoint()
         mapView.delegate = self
+        
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        
+        segmentedControl.frame = CGRect(x: segmentedControl.frame.origin.x, y: segmentedControl.frame.origin.y, width: segmentedControl.frame.size.width, height: 28)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == segueId{
+        if segue.identifier == segueId {
             if let directionsVC = segue.destinationViewController as? DirectionsTableViewController{
-                if let steps = steps{
+                if let steps = steps {
                     directionsVC.steps = steps
                 }else{
                     print("No direction available")
@@ -59,13 +63,13 @@ class DistanceViewController: UIViewController, MGLMapViewDelegate, CLLocationMa
     }
     
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
-        if identifier == segueId{
+        if identifier == segueId {
             if steps != nil{
                 return true
-            }else{
+            } else {
                 return false
             }
-        }else{
+        } else {
             return false
         }
     }
@@ -92,26 +96,20 @@ class DistanceViewController: UIViewController, MGLMapViewDelegate, CLLocationMa
     
     func updateRoute(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
         let userLocation:CLLocation = locations[0] as CLLocation
+        
         manager.stopUpdatingLocation()
-        let waypoints = [Waypoint(coordinate: CLLocationCoordinate2D (latitude: userLocation.coordinate.latitude,longitude: userLocation.coordinate.longitude), name: "StartPoint"),
-                         Waypoint(coordinate: CLLocationCoordinate2D(latitude: latitude!, longitude: longitude!), name: "EndPoint"),]
+        
+        let waypoints = [Waypoint(coordinate: CLLocationCoordinate2D (latitude: userLocation.coordinate.latitude,longitude: userLocation.coordinate.longitude), name: "StartPoint"), Waypoint(coordinate: CLLocationCoordinate2D(latitude: latitude!, longitude: longitude!), name: "EndPoint"),]
         
         var routeOptions:RouteOptions?
         
         switch selectedRouteType {
-        case RouteType.Driving:
-            routeOptions = RouteOptions(waypoints: waypoints, profileIdentifier: MBDirectionsProfileIdentifierAutomobile)
-            print("Driving")
-        case RouteType.Cycling:
-            routeOptions = RouteOptions(waypoints: waypoints, profileIdentifier: MBDirectionsProfileIdentifierCycling)
-            print("Cycling")
         case RouteType.Walking:
             routeOptions = RouteOptions(waypoints: waypoints, profileIdentifier: MBDirectionsProfileIdentifierWalking)
             print("Walking")
-        //Default will never be executed
-//        default:
-//            routeOptions = RouteOptions(waypoints: waypoints, profileIdentifier: MBDirectionsProfileIdentifierAutomobile)
-//            print("Driving")
+        case RouteType.Cycling:
+            routeOptions = RouteOptions(waypoints: waypoints, profileIdentifier: MBDirectionsProfileIdentifierCycling)
+            print("Cylcing")
         }
         
         if let options = routeOptions{
@@ -127,13 +125,15 @@ class DistanceViewController: UIViewController, MGLMapViewDelegate, CLLocationMa
                     print("Route via \(leg):")
                     
                     let distanceFormatter = NSLengthFormatter()
+                    
                     let formattedDistance = distanceFormatter.stringFromMeters(route.distance)
                     
                     let travelTimeFormatter = NSDateComponentsFormatter()
                     travelTimeFormatter.unitsStyle = .Short
                     let formattedTravelTime = travelTimeFormatter.stringFromTimeInterval(route.expectedTravelTime)
                     
-                    print("Distance: \(formattedDistance); ETA: \(formattedTravelTime!)")
+                    print ("Distance: \(formattedDistance)")
+                    print ("ETA: \(formattedTravelTime!)")
                     
                     self.steps = leg.steps
                     
@@ -148,22 +148,16 @@ class DistanceViewController: UIViewController, MGLMapViewDelegate, CLLocationMa
                                 }
                             }
                         }
-                        
-                        
                         self.routeLine = MGLPolyline(coordinates: &routeCoordinates, count: route.coordinateCount)
                         
-                        // Add the polyline to the map and fit the viewport to the polyline.
                         self.mapView.addAnnotation(self.routeLine)
-                        self.mapView.setVisibleCoordinates(&routeCoordinates, count: route.coordinateCount, edgePadding: UIEdgeInsetsMake(15.0, 15.0, 15.0, 15.0), animated: true)
-                        
+                        self.mapView.setVisibleCoordinates(&routeCoordinates, count: route.coordinateCount, edgePadding: UIEdgeInsetsMake(20.0, 20.0, 20.0, 20.0), animated: true)
                     }
                 }
-                
             }
         }
     }
     
-  
     @IBAction func IBActionBack(sender: AnyObject) {
         navigationController?.popViewControllerAnimated(true)
     }
@@ -171,7 +165,7 @@ class DistanceViewController: UIViewController, MGLMapViewDelegate, CLLocationMa
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         updateRoute(manager, didUpdateLocations: locations)
     }
-
+    
     @IBAction func segmentControl(sender: AnyObject) {
         switchRouteStyle()
     }
@@ -179,5 +173,5 @@ class DistanceViewController: UIViewController, MGLMapViewDelegate, CLLocationMa
     @IBAction func unwindToDistanceVC(segue:UIStoryboardSegue) {
         
     }
-
+    
 }
