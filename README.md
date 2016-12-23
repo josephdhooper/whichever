@@ -3,6 +3,4 @@ This iOS app (iPhone only) utilizes the [Realm] (https://realm.io/docs/swift/lat
 
 NB: This project originally used Carthage, but now it utilizes cocoapods for MapboxDirections, Polyline and HanekeSwift.  
 
---
 
-Future iterations: Create switch for users to choose walking, cylcing  or driving directions. And, create a tableview controller to view a list of directions. 
