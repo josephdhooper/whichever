@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8BB283DBF332AEABA5CFA267 /* Pods_whichever.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC37DE29CDEC003A400EAEF /* Pods_whichever.framework */; };
+		A40A8C301E0CCB6600F2028E /* DetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40A8C2F1E0CCB6600F2028E /* DetailsTableViewController.swift */; };
 		A4164AAE1DECE97B009F69EF /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4164AAD1DECE97B009F69EF /* MenuManager.swift */; };
-		A418D9BC1DDD68D70095E839 /* DetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A418D9BB1DDD68D70095E839 /* DetailsTableViewController.swift */; };
 		A419DFF01E0893C1004F8818 /* gender.png in Resources */ = {isa = PBXBuildFile; fileRef = A419DFED1E0893C1004F8818 /* gender.png */; };
 		A419DFF11E0893C1004F8818 /* gender@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A419DFEE1E0893C1004F8818 /* gender@2x.png */; };
 		A419DFF21E0893C1004F8818 /* gender@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A419DFEF1E0893C1004F8818 /* gender@3x.png */; };
@@ -61,8 +61,8 @@
 /* Begin PBXFileReference section */
 		5C3567F4D7A2CB1A98B773AE /* Pods-whichever.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whichever.release.xcconfig"; path = "Pods/Target Support Files/Pods-whichever/Pods-whichever.release.xcconfig"; sourceTree = "<group>"; };
 		9EC37DE29CDEC003A400EAEF /* Pods_whichever.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whichever.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A40A8C2F1E0CCB6600F2028E /* DetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsTableViewController.swift; sourceTree = "<group>"; };
 		A4164AAD1DECE97B009F69EF /* MenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
-		A418D9BB1DDD68D70095E839 /* DetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailsTableViewController.swift; path = ../DetailsTableViewController.swift; sourceTree = "<group>"; };
 		A419DFED1E0893C1004F8818 /* gender.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gender.png; sourceTree = "<group>"; };
 		A419DFEE1E0893C1004F8818 /* gender@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gender@2x.png"; sourceTree = "<group>"; };
 		A419DFEF1E0893C1004F8818 /* gender@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gender@3x.png"; sourceTree = "<group>"; };
@@ -147,7 +147,7 @@
 		A48954921DA439AA009E0E4F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A418D9BB1DDD68D70095E839 /* DetailsTableViewController.swift */,
+				A40A8C2F1E0CCB6600F2028E /* DetailsTableViewController.swift */,
 				A4D60DA11DBEED8000CD482A /* DirectionsTableViewController.swift */,
 				A424CE571D9EC5F900D8BB27 /* DistanceViewController.swift */,
 				A46A89F91D4C7F6300C772FF /* MapViewController.swift */,
@@ -466,7 +466,6 @@
 			files = (
 				A46A89FE1D4C7F6300C772FF /* BuildingsAnnotation.swift in Sources */,
 				A4D60DA21DBEED8000CD482A /* DirectionsTableViewController.swift in Sources */,
-				A418D9BC1DDD68D70095E839 /* DetailsTableViewController.swift in Sources */,
 				A42A35101E0AFC6B00EA6905 /* WebViewController.swift in Sources */,
 				A46A8A071D4C7F6300C772FF /* SearchViewController.swift in Sources */,
 				A424CE821D9ED37300D8BB27 /* DistanceAnnotation.swift in Sources */,
@@ -481,6 +480,7 @@
 				A46A8A051D4C7F6300C772FF /* Networking.swift in Sources */,
 				A46A89EF1D4C7F2000C772FF /* AppDelegate.swift in Sources */,
 				A46A8A001D4C7F6300C772FF /* CustomPointAnnotation.swift in Sources */,
+				A40A8C301E0CCB6600F2028E /* DetailsTableViewController.swift in Sources */,
 				A424CDF31D99AFCB00D8BB27 /* Buildings.swift in Sources */,
 				A424CE581D9EC5F900D8BB27 /* DistanceViewController.swift in Sources */,
 				A46A8A041D4C7F6300C772FF /* MapViewController.swift in Sources */,
