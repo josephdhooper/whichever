@@ -29,7 +29,10 @@ class DistanceViewController: UIViewController, MGLMapViewDelegate, CLLocationMa
     var selectedRouteType = RouteType.Walking
     var steps: [RouteStep]?
     
+    @IBOutlet weak var distanceLabel: UILabel!
+    
     private let segueId = "showList"
+    
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet var mapView: MGLMapView!
@@ -50,6 +53,7 @@ class DistanceViewController: UIViewController, MGLMapViewDelegate, CLLocationMa
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
         if segue.identifier == segueId {
             if let directionsVC = segue.destinationViewController as? DirectionsTableViewController{
                 if let steps = steps {
@@ -57,11 +61,10 @@ class DistanceViewController: UIViewController, MGLMapViewDelegate, CLLocationMa
                 }else{
                     print("No direction available")
                 }
-                print(directionsVC)
             }
         }
     }
-    
+
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
         if identifier == segueId {
             if steps != nil{
@@ -125,7 +128,6 @@ class DistanceViewController: UIViewController, MGLMapViewDelegate, CLLocationMa
                     print("Route via \(leg):")
                     
                     let distanceFormatter = NSLengthFormatter()
-                    
                     let formattedDistance = distanceFormatter.stringFromMeters(route.distance)
                     
                     let travelTimeFormatter = NSDateComponentsFormatter()
@@ -134,6 +136,8 @@ class DistanceViewController: UIViewController, MGLMapViewDelegate, CLLocationMa
                     
                     print ("Distance: \(formattedDistance)")
                     print ("ETA: \(formattedTravelTime!)")
+                    
+                    self.distanceLabel.text = "Estimated travel time: \(formattedTravelTime!)"
                     
                     self.steps = leg.steps
                     

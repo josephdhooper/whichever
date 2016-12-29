@@ -324,8 +324,6 @@ public enum ManeuverDirection: Int, CustomStringConvertible {
      */
     case UTurn
     
-    case Head
-    
     public init?(description: String) {
         let direction: ManeuverDirection
         switch description {
@@ -345,8 +343,6 @@ public enum ManeuverDirection: Int, CustomStringConvertible {
             direction = .SharpLeft
         case "uturn":
             direction = .UTurn
-        case "head":
-            direction = .Head
         default:
             return nil
         }
@@ -371,8 +367,6 @@ public enum ManeuverDirection: Int, CustomStringConvertible {
             return "sharp left"
         case .UTurn:
             return "uturn"
-        case .Head:
-            return "head"
         }
     }
 }

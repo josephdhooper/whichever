@@ -20,7 +20,7 @@ class WebViewController: UIViewController, UIWebViewDelegate {
     }
     
     func loadAddress(){
-        let requestURL = NSURL(string: "https://jdhooper.wixsite.com/whicheverapp")
+        let requestURL = NSURL(string: "http://jdhooper.wixsite.com/agbathroomapp")
         let request = NSURLRequest(URL: requestURL!)
         webView.loadRequest(request)
         

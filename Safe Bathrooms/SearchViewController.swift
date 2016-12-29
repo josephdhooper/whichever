@@ -18,7 +18,7 @@ class SearchViewController: UITableViewController {
     var searchController: UISearchController!
     var image = try! Realm().objects(Bathrooms).sorted("image", ascending: true)
     var annotation :BuildingsAnnotation?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -109,12 +109,12 @@ extension SearchViewController {
         }
         
         cell.titleLabel.text = building.buildingName
-        //cell.subtitleLabel.text = building.buildingAvailability
+        //cell.subtitleLabel.text = building.buildingAvailability +
         cell.subtitleLabel.text = ("No. of Rooms: \(building.numberOfRooms)")
         
         switch building.buildingAvailability {
         case "Public":
-            cell.dbImage.image = UIImage(named: "purple")
+            cell.dbImage.image = UIImage(named: "green")
         case "Limited":
             cell.dbImage.image = UIImage(named: "orange")
         case "Limited and Public":
@@ -126,7 +126,7 @@ extension SearchViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let buildingViewController = storyboard?.instantiateViewControllerWithIdentifier("BuildingViewController") as! BuildingViewController
+        let buildingViewController = storyboard?.instantiateViewControllerWithIdentifier("BuildingTwoViewController") as! BuildingTwoViewController
         
         if (searchController?.searchBar.text?.isEmpty)!{
             buildingViewController.buildingName = buildings[indexPath.row].buildingName
@@ -134,5 +134,8 @@ extension SearchViewController {
             buildingViewController.buildingName = searchResults[indexPath.row].buildingName
         }
         navigationController?.pushViewController(buildingViewController, animated: true)
+    
+        
     }
+
 }

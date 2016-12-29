@@ -12,6 +12,7 @@ import CoreLocation
 import RealmSwift
 import QuartzCore
 
+
 class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManagerDelegate, UIViewControllerTransitioningDelegate  {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
@@ -23,7 +24,6 @@ class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManager
     var bathrooms = try! Realm().objects(Bathrooms)
     
     let appdelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -100,7 +100,7 @@ class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManager
         
         if let subtitle = annotation.subtitle {
             switch subtitle {
-            case "Availability: Public"?: imageName.image = UIImage(named: "purple")
+            case "Availability: Public"?: imageName.image = UIImage(named: "green")
             case "Availability: Limited"?: imageName.image = UIImage(named: "orange")
             case "Availability: Limited and Public"?: imageName.image = UIImage(named: "darkBlue")
             default: return nil
@@ -128,7 +128,12 @@ class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManager
         
     }
     
+    @IBAction func unwindToMapVC(segue:UIStoryboardSegue) {
+        
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
         if (segue.identifier == "room" ) {
             let controller = segue.destinationViewController as! BuildingViewController
             controller.bathrooms = bathrooms

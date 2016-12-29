@@ -1,20 +1,20 @@
 //
-//  BuildingViewController.swift
+//  BuildingTwoViewController.swift
 //  whichever
 //
-//  Created by Joseph Hooper on 9/22/16.
+//  Created by Joseph Hooper on 12/27/16.
 //  Copyright © 2016 josephdhooper. All rights reserved.
 //
 
 import UIKit
 import RealmSwift
 
-class BuildingViewController: UITableViewController {
+class BuildingTwoViewController: UITableViewController {
     
     var buildingName:String?
     var bathrooms: Results<(Bathrooms)>?
     var image: Results<(Bathrooms)>?
-   
+    
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
     override func viewDidLoad() {
@@ -26,19 +26,22 @@ class BuildingViewController: UITableViewController {
         }
     }
     
-    
     @IBAction func unwindToSearchAndBuildingVC(segue:UIStoryboardSegue) {
         
     }
-
-    @IBAction func menuButtonObj(sender: AnyObject) {
-        let newView = self.storyboard!.instantiateViewControllerWithIdentifier("MenuViewController") as! MenuViewController
+    
+    func completeLabel() {
+        
+    }
+    
+    @IBAction func menuButton(sender: AnyObject) {
+              let newView = self.storyboard!.instantiateViewControllerWithIdentifier("MenuViewController") as! MenuViewController
         newView.modalPresentationStyle = UIModalPresentationStyle.OverFullScreen
         self.presentViewController(newView, animated: true, completion: nil)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        if (segue.identifier == "showDetail") {
+        if (segue.identifier == "showDetails") {
             let controller = segue.destinationViewController as! DetailsTableViewController
             
             var bathroom: Bathrooms!
@@ -48,8 +51,6 @@ class BuildingViewController: UITableViewController {
             }
             controller.detailBathroom = bathroom
         }
-        
-        
         
     }
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -65,13 +66,13 @@ class BuildingViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("BuildingCell") as! BuildingCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("BuildingTwoCell") as! BuildingTwoCell
         
         let bathroom: Bathrooms
         if let bathroomsObj = bathrooms{
             bathroom = bathroomsObj[indexPath.row]
             cell.titleLabel.text = bathroom.buildingName
-            cell.subtitleLabel.text = ("Room Number: \(bathroom.roomNumber)")
+            cell.subTitleLabel.text = ("Room Number: \(bathroom.roomNumber)")
             
             switch bathroom.roomAvailability {
             case "Public":

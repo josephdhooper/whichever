@@ -15,16 +15,11 @@ class DirectionsTableViewController: UITableViewController {
     
     internal var steps = [RouteStep]()
     
-    let formattedTravelTime = String()
-    
-    @IBOutlet weak var distanceLabel: UILabel!
-    
     @IBOutlet weak var menuButton: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadData()
-    
-}
+        
+    }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -39,10 +34,6 @@ class DirectionsTableViewController: UITableViewController {
         self.presentViewController(newView, animated: true, completion: nil)
     }
     
-    func loadData() {
-        
-    }
-    
     override func tableView(_tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = self.tableView.dequeueReusableCellWithIdentifier("DirectionsCell") as! DirectionsCell
@@ -51,6 +42,8 @@ class DirectionsTableViewController: UITableViewController {
         let distanceFormatter = NSLengthFormatter()
         let formattedDistance = distanceFormatter.stringFromMeters(steps[indexPath.row].distance)
         cell.subLabel?.text = "- \(formattedDistance) -"
+        
+        cell.directionImage.image = UIImage(named: "marker")
         
         if let directions = steps[indexPath.row].maneuverDirection {
             switch directions {
@@ -70,33 +63,23 @@ class DirectionsTableViewController: UITableViewController {
                 cell.directionImage.image = UIImage(named: "right")
             case .UTurn :
                 cell.directionImage.image = UIImage(named: "uTurn")
-            default:
-                cell.directionImage.image = UIImage(named: "marker")
+                
                 
             }
             
-            if let direction = steps[indexPath.row].maneuverType  {
-                switch direction {
+            if let directions = steps[indexPath.row].maneuverType {
+                switch directions {
                 case .Arrive :
                     cell.directionImage.image = UIImage(named: "arrived")
-                case .Continue :
-                    cell.directionImage.image = UIImage(named: "forward")
-                case .TakeRoundabout :
-                    cell.directionImage.image = nil
-                case .TurnAtRoundabout :
-                    cell.directionImage.image = nil
-                case .Depart :
-                    cell.directionImage.image = nil
-                case .TakeOffRamp :
-                    cell.directionImage.image = UIImage(named: "ramp")
-                case .TakeOnRamp :
-                    cell.directionImage.image = UIImage(named: "ramp")
-                default: break
-                
+                default:break
+        
+                }
                 }
             }
-        }
         
+            
+    
         return cell
-    }
+    
+        }
 }

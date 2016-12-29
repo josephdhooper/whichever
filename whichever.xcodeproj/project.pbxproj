@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8BB283DBF332AEABA5CFA267 /* Pods_whichever.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC37DE29CDEC003A400EAEF /* Pods_whichever.framework */; };
+		A40531901E11989F00F8E0B8 /* RealmConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A405318F1E11989F00F8E0B8 /* RealmConfig.swift */; };
+		A40531931E11999600F8E0B8 /* NSURLext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40531921E11999600F8E0B8 /* NSURLext.swift */; };
+		A40531951E119B9500F8E0B8 /* Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40531941E119B9500F8E0B8 /* Struct.swift */; };
 		A40A8C301E0CCB6600F2028E /* DetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40A8C2F1E0CCB6600F2028E /* DetailsTableViewController.swift */; };
 		A4164AAE1DECE97B009F69EF /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4164AAD1DECE97B009F69EF /* MenuManager.swift */; };
 		A419DFF01E0893C1004F8818 /* gender.png in Resources */ = {isa = PBXBuildFile; fileRef = A419DFED1E0893C1004F8818 /* gender.png */; };
@@ -19,6 +22,8 @@
 		A424CE581D9EC5F900D8BB27 /* DistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424CE571D9EC5F900D8BB27 /* DistanceViewController.swift */; };
 		A424CE821D9ED37300D8BB27 /* DistanceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424CE811D9ED37300D8BB27 /* DistanceAnnotation.swift */; };
 		A42A35101E0AFC6B00EA6905 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42A350F1E0AFC6B00EA6905 /* WebViewController.swift */; };
+		A46052B41E13430700305D54 /* BuildingTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46052B31E13430700305D54 /* BuildingTwoViewController.swift */; };
+		A46052B61E1352F700305D54 /* BuildingTwoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46052B51E1352F700305D54 /* BuildingTwoCell.swift */; };
 		A46A89EF1D4C7F2000C772FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89EE1D4C7F2000C772FF /* AppDelegate.swift */; };
 		A46A89FD1D4C7F6300C772FF /* Bathrooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89F21D4C7F6300C772FF /* Bathrooms.swift */; };
 		A46A89FE1D4C7F6300C772FF /* BuildingsAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89F31D4C7F6300C772FF /* BuildingsAnnotation.swift */; };
@@ -61,6 +66,11 @@
 /* Begin PBXFileReference section */
 		5C3567F4D7A2CB1A98B773AE /* Pods-whichever.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whichever.release.xcconfig"; path = "Pods/Target Support Files/Pods-whichever/Pods-whichever.release.xcconfig"; sourceTree = "<group>"; };
 		9EC37DE29CDEC003A400EAEF /* Pods_whichever.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whichever.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A405318B1E0CE87D00F8E0B8 /* whichever.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = whichever.entitlements; sourceTree = "<group>"; };
+		A405318F1E11989F00F8E0B8 /* RealmConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmConfig.swift; sourceTree = "<group>"; };
+		A40531911E11997200F8E0B8 /* default_v1.0.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default_v1.0.realm; sourceTree = "<group>"; };
+		A40531921E11999600F8E0B8 /* NSURLext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURLext.swift; sourceTree = "<group>"; };
+		A40531941E119B9500F8E0B8 /* Struct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Struct.swift; sourceTree = "<group>"; };
 		A40A8C2F1E0CCB6600F2028E /* DetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsTableViewController.swift; sourceTree = "<group>"; };
 		A4164AAD1DECE97B009F69EF /* MenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
 		A419DFED1E0893C1004F8818 /* gender.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gender.png; sourceTree = "<group>"; };
@@ -71,6 +81,8 @@
 		A424CE571D9EC5F900D8BB27 /* DistanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceViewController.swift; sourceTree = "<group>"; };
 		A424CE811D9ED37300D8BB27 /* DistanceAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceAnnotation.swift; sourceTree = "<group>"; };
 		A42A350F1E0AFC6B00EA6905 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		A46052B31E13430700305D54 /* BuildingTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildingTwoViewController.swift; path = "Safe Bathrooms/BuildingTwoViewController.swift"; sourceTree = "<group>"; };
+		A46052B51E1352F700305D54 /* BuildingTwoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildingTwoCell.swift; path = "Safe Bathrooms/BuildingTwoCell.swift"; sourceTree = "<group>"; };
 		A46A89EE1D4C7F2000C772FF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A46A89F21D4C7F6300C772FF /* Bathrooms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bathrooms.swift; sourceTree = "<group>"; };
 		A46A89F31D4C7F6300C772FF /* BuildingsAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingsAnnotation.swift; sourceTree = "<group>"; };
@@ -122,6 +134,7 @@
 		A41CA94D1DE6203200E122A7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A40531911E11997200F8E0B8 /* default_v1.0.realm */,
 				A419DFED1E0893C1004F8818 /* gender.png */,
 				A419DFEE1E0893C1004F8818 /* gender@2x.png */,
 				A419DFEF1E0893C1004F8818 /* gender@3x.png */,
@@ -140,6 +153,7 @@
 				A4D60DA31DBEEE7400CD482A /* DirectionsCell.swift */,
 				A424CE811D9ED37300D8BB27 /* DistanceAnnotation.swift */,
 				A46A89F31D4C7F6300C772FF /* BuildingsAnnotation.swift */,
+				A46052B51E1352F700305D54 /* BuildingTwoCell.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -155,6 +169,7 @@
 				A4F108BA1DA1D1290090DA84 /* BuildingViewController.swift */,
 				A4BBED2C1E08C1D3005899EB /* MenuViewController.swift */,
 				A42A350F1E0AFC6B00EA6905 /* WebViewController.swift */,
+				A46052B31E13430700305D54 /* BuildingTwoViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -163,6 +178,9 @@
 			isa = PBXGroup;
 			children = (
 				A46A89FA1D4C7F6300C772FF /* Networking.swift */,
+				A405318F1E11989F00F8E0B8 /* RealmConfig.swift */,
+				A40531921E11999600F8E0B8 /* NSURLext.swift */,
+				A40531941E119B9500F8E0B8 /* Struct.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -179,6 +197,7 @@
 		A4BCF0481CF3E5C200675644 = {
 			isa = PBXGroup;
 			children = (
+				A405318B1E0CE87D00F8E0B8 /* whichever.entitlements */,
 				A4D4831B1D4CB11500D5E1F2 /* whichever.xcodeproj */,
 				A4F11E6F1DBADC2B0044122E /* RealmSwift.framework */,
 				A4F11E6D1DBADC240044122E /* Realm.framework */,
@@ -282,6 +301,9 @@
 							};
 							com.apple.BackgroundModes = {
 								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
 							};
 						};
 					};
@@ -470,16 +492,21 @@
 				A46A8A071D4C7F6300C772FF /* SearchViewController.swift in Sources */,
 				A424CE821D9ED37300D8BB27 /* DistanceAnnotation.swift in Sources */,
 				A4164AAE1DECE97B009F69EF /* MenuManager.swift in Sources */,
+				A40531931E11999600F8E0B8 /* NSURLext.swift in Sources */,
 				A4F108BB1DA1D1290090DA84 /* BuildingViewController.swift in Sources */,
 				A46A8A061D4C7F6300C772FF /* SearchCell.swift in Sources */,
+				A46052B41E13430700305D54 /* BuildingTwoViewController.swift in Sources */,
 				A424CDEE1D94797000D8BB27 /* BuildingCell.swift in Sources */,
+				A46052B61E1352F700305D54 /* BuildingTwoCell.swift in Sources */,
 				A4BBED2D1E08C1D3005899EB /* MenuViewController.swift in Sources */,
 				A4B8417A1DECD7EC0085B971 /* SegueFromRight.swift in Sources */,
 				A46A89FD1D4C7F6300C772FF /* Bathrooms.swift in Sources */,
 				A4D60DA41DBEEE7400CD482A /* DirectionsCell.swift in Sources */,
 				A46A8A051D4C7F6300C772FF /* Networking.swift in Sources */,
+				A40531901E11989F00F8E0B8 /* RealmConfig.swift in Sources */,
 				A46A89EF1D4C7F2000C772FF /* AppDelegate.swift in Sources */,
 				A46A8A001D4C7F6300C772FF /* CustomPointAnnotation.swift in Sources */,
+				A40531951E119B9500F8E0B8 /* Struct.swift in Sources */,
 				A40A8C301E0CCB6600F2028E /* DetailsTableViewController.swift in Sources */,
 				A424CDF31D99AFCB00D8BB27 /* Buildings.swift in Sources */,
 				A424CE581D9EC5F900D8BB27 /* DistanceViewController.swift in Sources */,
@@ -600,7 +627,6 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Joesph Hooper (TZ8K2VBSGX)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = UV5LLXJC79;
@@ -613,7 +639,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.josephdhooper.whichever;
+				PRODUCT_BUNDLE_IDENTIFIER = josephdhooper.whichever;
 				PRODUCT_NAME = "whichever ";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -632,7 +658,6 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Joesph Hooper (TZ8K2VBSGX)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = UV5LLXJC79;
@@ -645,7 +670,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.josephdhooper.whichever;
+				PRODUCT_BUNDLE_IDENTIFIER = josephdhooper.whichever;
 				PRODUCT_NAME = "whichever ";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
