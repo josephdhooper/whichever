@@ -17,7 +17,7 @@ class Networking: NSObject {
     static func getData (completionHandler:(AnyObject?) -> ()) {
       //  if let url = NSURL(string: "https://jdhooper.000webhostapp.com/chData.json") {
         
-if let url = NSURL(string: "https://gist.githubusercontent.com/josephdhooper/d4c305e57670907874ee72dad77cdc37/raw/39ae629e192d648a1bb07f988a410e93088c3e48/spaces.json") {
+if let url = NSURL(string: "https://gist.githubusercontent.com/josephdhooper/d4c305e57670907874ee72dad77cdc37/raw/2a698b81e14fb8cc29f099c4643ff648c925a5f8/spaces.json") {
              NSURLSession.sharedSession().dataTaskWithURL(url)  { (data, response, error) in
                 
                 guard let data = data,

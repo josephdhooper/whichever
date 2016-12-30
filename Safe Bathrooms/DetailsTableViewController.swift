@@ -40,7 +40,7 @@ class DetailsTableViewController: UITableViewController {
         buttonObj.layer.borderColor = UIColor( red: 34/255, green: 167/255, blue: 240/255, alpha: 1.0 ).CGColor
         buttonObj.layer.borderWidth = 1.0
         buttonObj.layer.cornerRadius = 4
-        
+       
         populationDirections()
         self.configureView()
         activityIndicator.startAnimating()

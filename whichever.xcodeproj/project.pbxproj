@@ -13,6 +13,7 @@
 		A40531951E119B9500F8E0B8 /* Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40531941E119B9500F8E0B8 /* Struct.swift */; };
 		A40A8C301E0CCB6600F2028E /* DetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40A8C2F1E0CCB6600F2028E /* DetailsTableViewController.swift */; };
 		A4164AAE1DECE97B009F69EF /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4164AAD1DECE97B009F69EF /* MenuManager.swift */; };
+		A4190A101E14D57C0095C445 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4190A0F1E14D57C0095C445 /* DBManager.swift */; };
 		A419DFF01E0893C1004F8818 /* gender.png in Resources */ = {isa = PBXBuildFile; fileRef = A419DFED1E0893C1004F8818 /* gender.png */; };
 		A419DFF11E0893C1004F8818 /* gender@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A419DFEE1E0893C1004F8818 /* gender@2x.png */; };
 		A419DFF21E0893C1004F8818 /* gender@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A419DFEF1E0893C1004F8818 /* gender@3x.png */; };
@@ -73,6 +74,7 @@
 		A40531941E119B9500F8E0B8 /* Struct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Struct.swift; sourceTree = "<group>"; };
 		A40A8C2F1E0CCB6600F2028E /* DetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsTableViewController.swift; sourceTree = "<group>"; };
 		A4164AAD1DECE97B009F69EF /* MenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
+		A4190A0F1E14D57C0095C445 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		A419DFED1E0893C1004F8818 /* gender.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gender.png; sourceTree = "<group>"; };
 		A419DFEE1E0893C1004F8818 /* gender@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gender@2x.png"; sourceTree = "<group>"; };
 		A419DFEF1E0893C1004F8818 /* gender@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gender@3x.png"; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 		A48954941DA43C58009E0E4F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A4190A0F1E14D57C0095C445 /* DBManager.swift */,
 				A4164AAD1DECE97B009F69EF /* MenuManager.swift */,
 				A4B841791DECD7EC0085B971 /* SegueFromRight.swift */,
 			);
@@ -489,6 +492,7 @@
 				A46A89FE1D4C7F6300C772FF /* BuildingsAnnotation.swift in Sources */,
 				A4D60DA21DBEED8000CD482A /* DirectionsTableViewController.swift in Sources */,
 				A42A35101E0AFC6B00EA6905 /* WebViewController.swift in Sources */,
+				A4190A101E14D57C0095C445 /* DBManager.swift in Sources */,
 				A46A8A071D4C7F6300C772FF /* SearchViewController.swift in Sources */,
 				A424CE821D9ED37300D8BB27 /* DistanceAnnotation.swift in Sources */,
 				A4164AAE1DECE97B009F69EF /* MenuManager.swift in Sources */,
