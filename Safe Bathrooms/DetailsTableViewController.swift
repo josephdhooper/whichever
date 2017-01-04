@@ -39,8 +39,7 @@ class DetailsTableViewController: UITableViewController, MFMailComposeViewContro
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+    
         buttonObj.layer.borderColor = UIColor( red: 34/255, green: 167/255, blue: 240/255, alpha: 1.0 ).CGColor
         buttonObj.layer.borderWidth = 1.0
         buttonObj.layer.cornerRadius = 4
@@ -51,6 +50,11 @@ class DetailsTableViewController: UITableViewController, MFMailComposeViewContro
         updateView()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.buttonObj.userInteractionEnabled = false
+        
+    }
     override func scrollViewDidScroll(scrollView: UIScrollView) {
         setNewView()
     }
@@ -186,6 +190,7 @@ class DetailsTableViewController: UITableViewController, MFMailComposeViewContro
                dispatch_async(dispatch_get_main_queue()) {
                     if let url = NSURL(string: detailBathroom.image) {
                         self.imageView.hnk_setImageFromURL(url, placeholder: nil, success: { (image) -> Void in
+                            self.buttonObj.userInteractionEnabled = true
                             self.imageView.image = image
                             self.activityIndicator.stopAnimating()
                             }, failure: { (error) -> Void in
