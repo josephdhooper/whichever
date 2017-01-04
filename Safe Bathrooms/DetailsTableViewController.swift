@@ -224,5 +224,4 @@ class DetailsTableViewController: UITableViewController, MFMailComposeViewContro
     @IBAction func unwindToBathroomVC(segue:UIStoryboardSegue) {
         
     }
-    
 }
