@@ -14,9 +14,4 @@ class DirectionsCell: UITableViewCell {
     @IBOutlet weak var subLabel: UILabel!
     @IBOutlet weak var directionImage: UIImageView!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
-
 }

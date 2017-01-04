@@ -10,17 +10,20 @@ import UIKit
 import RealmSwift
 import QuartzCore
 import Haneke
+import MessageUI
 
 private let headerHeight: CGFloat = 200
 
-class DetailsTableViewController: UITableViewController {
+class DetailsTableViewController: UITableViewController, MFMailComposeViewControllerDelegate {
     
     var imageView: UIImageView!
     var headerView: UIView!
     var newHeaderLayer: CAShapeLayer!
     
+    
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
+    @IBOutlet weak var suggestions: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var room: UILabel!
@@ -36,11 +39,12 @@ class DetailsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
         buttonObj.layer.borderColor = UIColor( red: 34/255, green: 167/255, blue: 240/255, alpha: 1.0 ).CGColor
         buttonObj.layer.borderWidth = 1.0
         buttonObj.layer.cornerRadius = 4
-       
+        
         populationDirections()
         self.configureView()
         activityIndicator.startAnimating()
@@ -57,6 +61,38 @@ class DetailsTableViewController: UITableViewController {
         self.presentViewController(newView, animated: true, completion: nil)
     }
     
+    @IBAction func addSuggestions(sender: AnyObject) {
+        let mailComposeViewController = configuredMailComposeViewController()
+        if MFMailComposeViewController.canSendMail() {
+            self.presentViewController(mailComposeViewController, animated: true, completion: nil)
+        } else {
+            self.showSendMailErrorAlert()
+        }
+    }
+    
+    func configuredMailComposeViewController() -> MFMailComposeViewController {
+        let mailComposerVC = MFMailComposeViewController()
+        mailComposerVC.mailComposeDelegate = self
+        mailComposerVC.setToRecipients(["consciousraisingapps@gmail.com"])
+        mailComposerVC.setSubject("I have a suggestion")
+        mailComposerVC.setMessageBody("Sending suggestions...", isHTML: false)
+        
+        return mailComposerVC
+    
+    }
+    
+    func showSendMailErrorAlert() {
+        let alert = UIAlertController(title: "Uh-oh!", message: "Your device could not send e-mail. Check your e-mail configuration and try again.", preferredStyle: .Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .Default) { _ in })
+        self.presentViewController(alert, animated: true){}
+        
+    }
+    
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+        controller.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+
     func updateView(){
         
         tableView.backgroundColor = UIColor.whiteColor()
@@ -104,7 +140,7 @@ class DetailsTableViewController: UITableViewController {
         performSegueWithIdentifier("showDirections", sender: nil)
         
     }
-    
+   
     var detailBathroom: Bathrooms? {
         didSet {
             self.configureView()
@@ -147,7 +183,7 @@ class DetailsTableViewController: UITableViewController {
                 default:
                     availabilityIcon.image = UIImage(named: "darkBlue")
                 }
-                dispatch_async(dispatch_get_main_queue()) {
+               dispatch_async(dispatch_get_main_queue()) {
                     if let url = NSURL(string: detailBathroom.image) {
                         self.imageView.hnk_setImageFromURL(url, placeholder: nil, success: { (image) -> Void in
                             self.imageView.image = image
@@ -155,13 +191,14 @@ class DetailsTableViewController: UITableViewController {
                             }, failure: { (error) -> Void in
                                 self.imageView.image = UIImage(named: "noPicture")
                                 self.imageView?.contentMode = UIViewContentMode.ScaleAspectFill
-                              self.activityIndicator.stopAnimating()
-                                let alertController = UIAlertController(title: "Uh-oh!", message: "Something's wrong. Check your wifi or cellular connection.", preferredStyle: .Alert)
+                                 self.activityIndicator.stopAnimating()
+                                let alertController = UIAlertController(title: "Uh-oh!", message: "Check your wifi or cellular connection.", preferredStyle: .Alert)
                                 let OKAction = UIAlertAction(title: "OK", style: .Default) { (action:UIAlertAction) in
                                     print("You've pressed OK button");
                                 }
+                               
                                 alertController.addAction(OKAction)
-                                self.presentViewController(alertController, animated: true, completion:nil)
+                                self.presentViewController(alertController, animated: true, completion: nil)
                         })
                     }
                     return

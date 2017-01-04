@@ -30,8 +30,6 @@ class Bathrooms: Object {
     var coordinate: CLLocation {
         return CLLocation(latitude: Double(latitude), longitude: Double(longitude));
     }
-    
-    
     override  static func primaryKey() -> String? {
         return "bathroomID"
     }

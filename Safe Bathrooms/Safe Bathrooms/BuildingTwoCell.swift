@@ -9,11 +9,11 @@
 import UIKit
 
 class BuildingTwoCell: UITableViewCell {
-
+    
     @IBOutlet weak var dbImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subTitleLabel: UILabel!
     
-    }
+}
 
 

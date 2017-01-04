@@ -11,15 +11,11 @@ import RealmSwift
 import UIKit
 import Haneke
 
-
 class Networking: NSObject {
     
     static func getData (completionHandler:(AnyObject?) -> ()) {
-      //  if let url = NSURL(string: "https://jdhooper.000webhostapp.com/chData.json") {
-        
-if let url = NSURL(string: "https://gist.githubusercontent.com/josephdhooper/d4c305e57670907874ee72dad77cdc37/raw/2a698b81e14fb8cc29f099c4643ff648c925a5f8/spaces.json") {
-             NSURLSession.sharedSession().dataTaskWithURL(url)  { (data, response, error) in
-                
+        if let url = NSURL(string: "https://jdhooper.000webhostapp.com/chData.json") {
+            NSURLSession.sharedSession().dataTaskWithURL(url)  { (data, response, error) in
                 guard let data = data,
                     let dataStore = String(data: data, encoding: NSASCIIStringEncoding) else {
                         print("Could not find network")
@@ -51,7 +47,7 @@ if let url = NSURL(string: "https://gist.githubusercontent.com/josephdhooper/d4c
                     
                     let realm = try! Realm()
                     try! realm.write {
-                        
+                    
                         for space in spaces {
                             
                             realm.create(Bathrooms.self, value: space, update: true)

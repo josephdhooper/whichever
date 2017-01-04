@@ -11,10 +11,10 @@ import RealmSwift
 
 class DBManager: NSObject {
 
-    func saveDBItem (bathoom: Bathrooms) {
+    func saveDBItem (bathroom: Bathrooms) {
         let realm  = try! Realm()
         try! realm.write {
-            realm.add(bathoom)
+            realm.add(bathroom)
         }
     }
     

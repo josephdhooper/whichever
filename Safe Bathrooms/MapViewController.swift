@@ -12,7 +12,6 @@ import CoreLocation
 import RealmSwift
 import QuartzCore
 
-
 class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManagerDelegate, UIViewControllerTransitioningDelegate  {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
@@ -28,6 +27,11 @@ class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManager
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Reachability
+        showNetworkingConnection()
+        appdelegate.showActivityIndicator()
+        
+        //Mapbox MapView
         self.mapView.delegate = self
         self.mapView.userTrackingMode  = MGLUserTrackingMode.FollowWithHeading
         
@@ -44,23 +48,55 @@ class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManager
         zoomButton.setImage(UIImage(named:"location"), forState: .Normal)
         zoomButton.addTarget(self, action: #selector(buttonAction), forControlEvents: .TouchUpInside)
         
-        appdelegate.showActivityIndicator()
-        
         self.view.addSubview(zoomButton)
         
         //Realm Notifications
         let results = try! Realm().objects(Bathrooms)
-        
-        notificationToken = results.addNotificationBlock {[weak self] (changes: RealmCollectionChange<Results<Bathrooms>>) in
+        notificationToken = results.addNotificationBlock {[weak self] (changes: RealmCollectionChange <Results<Bathrooms>>) in
             self!.populateMap()
         }
     }
+    
     func buttonAction(sender: UIButton!) {
         centerToUsersLocation()
     }
     
     @IBAction func searchButton(sender: AnyObject) {
         performSegueWithIdentifier("about", sender: sender)
+    }
+    
+    func showNetworkingConnection(){
+        if ReachabilityManager.sharedInstance.isConnectedToNetwork() {
+            print("Connected")
+            
+        } else {
+            
+            print("Not Connected")
+            let alertController = UIAlertController(title: "Uh-oh!", message: "Check your wifi or cellular settings and restart application.", preferredStyle: .Alert)
+            let actionRetry = UIAlertAction(title: "Retry", style: .Default) { (action:UIAlertAction) in
+                print("You've pressed the Retry button")
+                UIApplication.sharedApplication().keyWindow?.rootViewController = self.storyboard!.instantiateViewControllerWithIdentifier("navigationController")
+                let del = UIApplication.sharedApplication().delegate as! AppDelegate
+                del.populateInformation()
+            }
+            
+            let settingsButton = UIAlertAction(title: "Settings", style: .Default) { (action:UIAlertAction) in
+                print("You've pressed the Setting button")
+                
+                let settingsUrl = NSURL(string: UIApplicationOpenSettingsURLString)
+                let url = settingsUrl
+                UIApplication.sharedApplication().openURL(url!, options: [:], completionHandler: nil)
+                
+                UIApplication.sharedApplication().keyWindow?.rootViewController = self.storyboard!.instantiateViewControllerWithIdentifier("navigationController")
+                let del = UIApplication.sharedApplication().delegate as! AppDelegate
+                del.populateInformation()
+                
+            }
+            
+            alertController.addAction(actionRetry)
+            alertController.addAction(settingsButton)
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
     }
     
     func populateMap() {

@@ -33,7 +33,6 @@ class DistanceViewController: UIViewController, MGLMapViewDelegate, CLLocationMa
     
     private let segueId = "showList"
     
-    
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet var mapView: MGLMapView!
     

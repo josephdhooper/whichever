@@ -24,10 +24,11 @@ class MenuViewController: UITableViewController, MFMailComposeViewControllerDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.transitioningDelegate = self.menuManager
         dismissButton.addTarget(self, action: #selector(buttonAction), forControlEvents: .TouchUpInside)
         
-    }
+            }
     
     @IBAction func sendEmail(sender: AnyObject) {
         let mailComposeViewController = configuredMailComposeViewController()
@@ -41,9 +42,9 @@ class MenuViewController: UITableViewController, MFMailComposeViewControllerDele
     func configuredMailComposeViewController() -> MFMailComposeViewController {
         let mailComposerVC = MFMailComposeViewController()
         mailComposerVC.mailComposeDelegate = self
-        mailComposerVC.setToRecipients(["whicheverapp@gmail.com"])
-        mailComposerVC.setSubject("Bathroom Details Update")
-        mailComposerVC.setMessageBody("Sending updated bathroom details.", isHTML: false)
+        mailComposerVC.setToRecipients(["consciousraisingapps@gmail.com"])
+        mailComposerVC.setSubject("I have a question")
+        mailComposerVC.setMessageBody("Sending questions...", isHTML: false)
         
         return mailComposerVC
         
@@ -61,18 +62,18 @@ class MenuViewController: UITableViewController, MFMailComposeViewControllerDele
         
     }
     
-    @IBAction func rateAppSend(sender: AnyObject) {
-        let url = NSURL(string: "http://apple.com")
+    @IBAction func websiteButton(sender: AnyObject) {
+        let url = NSURL(string: "http://consciousraisingapps.wixsite.com/allgender")
         UIApplication.sharedApplication().openURL(url!, options: [:], completionHandler: nil)
-
         
     }
+
         func buttonAction(sender: UIButton!) {
         dismissViewControllerAnimated(true, completion: nil)
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 4
     }
     
 }

@@ -64,7 +64,6 @@ class DirectionsTableViewController: UITableViewController {
             case .UTurn :
                 cell.directionImage.image = UIImage(named: "uTurn")
                 
-                
             }
             
             if let directions = steps[indexPath.row].maneuverType {

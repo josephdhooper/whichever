@@ -23,6 +23,5 @@ class BuildingsAnnotation: NSObject, MGLAnnotation {
         self.title = title
         self.subtitle = subtitle
         self.imageName = imageName
-
     }
 }
