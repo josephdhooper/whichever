@@ -93,7 +93,7 @@
 		A48C02861DE7F03E00C6D2AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4B841791DECD7EC0085B971 /* SegueFromRight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueFromRight.swift; sourceTree = "<group>"; };
 		A4BBED2C1E08C1D3005899EB /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		A4BCF0511CF3E5C200675644 /* whichever .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "whichever .app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4BCF0511CF3E5C200675644 /* whichever .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "whichever .app"; path = whichever.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4D4831B1D4CB11500D5E1F2 /* whichever.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = whichever.xcodeproj; sourceTree = "<group>"; };
 		A4D60DA11DBEED8000CD482A /* DirectionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsTableViewController.swift; sourceTree = "<group>"; };
 		A4D60DA31DBEEE7400CD482A /* DirectionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsCell.swift; sourceTree = "<group>"; };
@@ -194,7 +194,7 @@
 				A4F11E6F1DBADC2B0044122E /* RealmSwift.framework */,
 				A4F11E6D1DBADC240044122E /* Realm.framework */,
 				A489548A1DA1EFE3009E0E4F /* Mapbox.framework */,
-				A4BCF0531CF3E5C200675644 /* Safe Bathrooms */,
+				A4BCF0531CF3E5C200675644 /* whichever */,
 				A4BCF0521CF3E5C200675644 /* Products */,
 				FAC9C5163B924850D2097F0B /* Pods */,
 				1350544C570D7A8B3757506B /* Frameworks */,
@@ -209,7 +209,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A4BCF0531CF3E5C200675644 /* Safe Bathrooms */ = {
+		A4BCF0531CF3E5C200675644 /* whichever */ = {
 			isa = PBXGroup;
 			children = (
 				A41CA94D1DE6203200E122A7 /* Resources */,
@@ -223,7 +223,6 @@
 				A46A8A361D4C8B0600C772FF /* LaunchScreen.storyboard */,
 				A48C02861DE7F03E00C6D2AC /* Assets.xcassets */,
 			);
-			name = "Safe Bathrooms";
 			path = whichever;
 			sourceTree = "<group>";
 		};
@@ -631,7 +630,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = josephdhooper.whichever;
-				PRODUCT_NAME = "whichever ";
+				PRODUCT_NAME = whichever;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -662,7 +661,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = josephdhooper.whichever;
-				PRODUCT_NAME = "whichever ";
+				PRODUCT_NAME = whichever;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
