@@ -93,7 +93,7 @@
 		A48C02861DE7F03E00C6D2AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4B841791DECD7EC0085B971 /* SegueFromRight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueFromRight.swift; sourceTree = "<group>"; };
 		A4BBED2C1E08C1D3005899EB /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		A4BCF0511CF3E5C200675644 /* whichever .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "whichever .app"; path = whichever.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4BCF0511CF3E5C200675644 /* whichever.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whichever.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4D4831B1D4CB11500D5E1F2 /* whichever.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = whichever.xcodeproj; sourceTree = "<group>"; };
 		A4D60DA11DBEED8000CD482A /* DirectionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsTableViewController.swift; sourceTree = "<group>"; };
 		A4D60DA31DBEEE7400CD482A /* DirectionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsCell.swift; sourceTree = "<group>"; };
@@ -204,7 +204,7 @@
 		A4BCF0521CF3E5C200675644 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A4BCF0511CF3E5C200675644 /* whichever .app */,
+				A4BCF0511CF3E5C200675644 /* whichever.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -269,7 +269,7 @@
 			);
 			name = whichever;
 			productName = "Safe Bathrooms";
-			productReference = A4BCF0511CF3E5C200675644 /* whichever .app */;
+			productReference = A4BCF0511CF3E5C200675644 /* whichever.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
