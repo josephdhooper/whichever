@@ -12,7 +12,6 @@
 		A4164AAE1DECE97B009F69EF /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4164AAD1DECE97B009F69EF /* MenuManager.swift */; };
 		A4190A121E1A04B00095C445 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4190A111E1A04B00095C445 /* Reachability.swift */; };
 		A4190A141E1A04F60095C445 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4190A131E1A04F60095C445 /* ReachabilityManager.swift */; };
-		A4190A241E1C79100095C445 /* data.realm in Resources */ = {isa = PBXBuildFile; fileRef = A4190A231E1C79100095C445 /* data.realm */; };
 		A419DFF01E0893C1004F8818 /* gender.png in Resources */ = {isa = PBXBuildFile; fileRef = A419DFED1E0893C1004F8818 /* gender.png */; };
 		A419DFF11E0893C1004F8818 /* gender@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A419DFEE1E0893C1004F8818 /* gender@2x.png */; };
 		A419DFF21E0893C1004F8818 /* gender@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A419DFEF1E0893C1004F8818 /* gender@3x.png */; };
@@ -70,7 +69,6 @@
 		A4164AAD1DECE97B009F69EF /* MenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
 		A4190A111E1A04B00095C445 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		A4190A131E1A04F60095C445 /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
-		A4190A231E1C79100095C445 /* data.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.realm; sourceTree = "<group>"; };
 		A419DFED1E0893C1004F8818 /* gender.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gender.png; sourceTree = "<group>"; };
 		A419DFEE1E0893C1004F8818 /* gender@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gender@2x.png"; sourceTree = "<group>"; };
 		A419DFEF1E0893C1004F8818 /* gender@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gender@3x.png"; sourceTree = "<group>"; };
@@ -131,7 +129,6 @@
 		A41CA94D1DE6203200E122A7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A4190A231E1C79100095C445 /* data.realm */,
 				A419DFED1E0893C1004F8818 /* gender.png */,
 				A419DFEE1E0893C1004F8818 /* gender@2x.png */,
 				A419DFEF1E0893C1004F8818 /* gender@3x.png */,
@@ -338,7 +335,6 @@
 				A419DFF11E0893C1004F8818 /* gender@2x.png in Resources */,
 				A48999311DFA461100202B6D /* Main.storyboard in Resources */,
 				A419DFF21E0893C1004F8818 /* gender@3x.png in Resources */,
-				A4190A241E1C79100095C445 /* data.realm in Resources */,
 				A48C02871DE7F03E00C6D2AC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
