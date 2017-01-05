@@ -223,7 +223,8 @@
 				A46A8A361D4C8B0600C772FF /* LaunchScreen.storyboard */,
 				A48C02861DE7F03E00C6D2AC /* Assets.xcassets */,
 			);
-			path = "Safe Bathrooms";
+			name = "Safe Bathrooms";
+			path = whichever;
 			sourceTree = "<group>";
 		};
 		A4D4831C1D4CB11500D5E1F2 /* Products */ = {
@@ -625,7 +626,7 @@
 					"$(PROJECT_DIR)",
 					RealmSwift.framework,
 				);
-				INFOPLIST_FILE = "Safe Bathrooms/Info.plist";
+				INFOPLIST_FILE = whichever/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
@@ -656,7 +657,7 @@
 					"$(PROJECT_DIR)",
 					RealmSwift.framework,
 				);
-				INFOPLIST_FILE = "Safe Bathrooms/Info.plist";
+				INFOPLIST_FILE = whichever/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
