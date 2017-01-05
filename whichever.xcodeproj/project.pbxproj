@@ -12,7 +12,6 @@
 		A4164AAE1DECE97B009F69EF /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4164AAD1DECE97B009F69EF /* MenuManager.swift */; };
 		A4190A121E1A04B00095C445 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4190A111E1A04B00095C445 /* Reachability.swift */; };
 		A4190A141E1A04F60095C445 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4190A131E1A04F60095C445 /* ReachabilityManager.swift */; };
-		A4190A1A1E1C5D680095C445 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4190A191E1C5D680095C445 /* DBManager.swift */; };
 		A4190A241E1C79100095C445 /* data.realm in Resources */ = {isa = PBXBuildFile; fileRef = A4190A231E1C79100095C445 /* data.realm */; };
 		A419DFF01E0893C1004F8818 /* gender.png in Resources */ = {isa = PBXBuildFile; fileRef = A419DFED1E0893C1004F8818 /* gender.png */; };
 		A419DFF11E0893C1004F8818 /* gender@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A419DFEE1E0893C1004F8818 /* gender@2x.png */; };
@@ -71,7 +70,6 @@
 		A4164AAD1DECE97B009F69EF /* MenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
 		A4190A111E1A04B00095C445 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		A4190A131E1A04F60095C445 /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
-		A4190A191E1C5D680095C445 /* DBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		A4190A231E1C79100095C445 /* data.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.realm; sourceTree = "<group>"; };
 		A419DFED1E0893C1004F8818 /* gender.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gender.png; sourceTree = "<group>"; };
 		A419DFEE1E0893C1004F8818 /* gender@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gender@2x.png"; sourceTree = "<group>"; };
@@ -175,7 +173,6 @@
 		A48954931DA43B0E009E0E4F /* API */ = {
 			isa = PBXGroup;
 			children = (
-				A4190A191E1C5D680095C445 /* DBManager.swift */,
 				A46A89FA1D4C7F6300C772FF /* Networking.swift */,
 			);
 			name = API;
@@ -490,7 +487,6 @@
 				A46A8A071D4C7F6300C772FF /* SearchViewController.swift in Sources */,
 				A424CE821D9ED37300D8BB27 /* DistanceAnnotation.swift in Sources */,
 				A4164AAE1DECE97B009F69EF /* MenuManager.swift in Sources */,
-				A4190A1A1E1C5D680095C445 /* DBManager.swift in Sources */,
 				A4F108BB1DA1D1290090DA84 /* BuildingViewController.swift in Sources */,
 				A46A8A061D4C7F6300C772FF /* SearchCell.swift in Sources */,
 				A46052B41E13430700305D54 /* BuildingTwoViewController.swift in Sources */,
