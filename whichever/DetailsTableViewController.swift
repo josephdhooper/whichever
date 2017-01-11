@@ -1,4 +1,4 @@
-//
+//  
 //  DetailsTableViewController.swift
 //  whichever
 //
@@ -36,7 +36,6 @@ class DetailsTableViewController: UITableViewController, MFMailComposeViewContro
     var bathrooms = try! Realm().objects(Bathrooms)
     var latitudeObj = Double?()
     var longitudeObj = Double?()
-    var logoImages: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()

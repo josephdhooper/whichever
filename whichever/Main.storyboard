@@ -422,7 +422,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         </activityIndicatorView>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.16158405172413792" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="Gn1-4x-0lZ" secondAttribute="bottom" constant="8" id="Xdh-Ux-xPe"/>
                                         <constraint firstItem="Gn1-4x-0lZ" firstAttribute="leading" secondItem="NMT-Ra-Eaz" secondAttribute="leading" constant="8" id="hu2-oJ-Acg"/>
