@@ -213,8 +213,10 @@ class DetailsTableViewController: UITableViewController, MFMailComposeViewContro
                 }
                 dispatch_async(dispatch_get_main_queue()) {
                     if let url = NSURL(string: detailBathroom.image) {
-                        self.imageView.hnk_setImageFromURL(url, placeholder: nil, success: { (image) -> Void in
+                        self.imageView.hnk_setImageFromURL(url, placeholder: nil, success: { (image) ->
+                            Void in
                             self.imageView.image = image
+                                                     
                             self.activityIndicator.stopAnimating()
                             }, failure: { (error) -> Void in
                                 let alertController = UIAlertController(title: "Uh-oh!", message: "Check your wifi or cellular connection.", preferredStyle: .Alert)
@@ -224,6 +226,7 @@ class DetailsTableViewController: UITableViewController, MFMailComposeViewContro
                                     self.imageView.contentMode = UIViewContentMode.ScaleAspectFill
                                     self.activityIndicator.stopAnimating()
                                     self.showNetworkingConnection()
+                                    
                                     
                                 }
                                 

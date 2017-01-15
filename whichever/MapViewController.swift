@@ -11,6 +11,8 @@ import Mapbox
 import CoreLocation
 import RealmSwift
 import QuartzCore
+import Haneke
+
 
 class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManagerDelegate, UIViewControllerTransitioningDelegate  {
     
@@ -21,12 +23,13 @@ class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManager
     var annotations = [MGLPointAnnotation]()
     var notificationToken: NotificationToken?
     var bathrooms = try! Realm().objects(Bathrooms)
+    var image: Results<(Bathrooms)>?
     
     let appdelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         //Reachability
         showNetworkingConnection()
         appdelegate.showActivityIndicator()
@@ -47,7 +50,6 @@ class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManager
         
         zoomButton.setImage(UIImage(named:"location"), forState: .Normal)
         zoomButton.addTarget(self, action: #selector(buttonAction), forControlEvents: .TouchUpInside)
-        
         self.view.addSubview(zoomButton)
         
         //Realm Notifications

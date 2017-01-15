@@ -14,7 +14,7 @@ import Haneke
 class Networking: NSObject {
     
     static func getData (completionHandler:(AnyObject?) -> ()) {
-        if let url = NSURL(string: "https://jdhooper.000webhostapp.com/chData.json") {
+        if let url = NSURL(string: "https://jdhooper.000webhostapp.com/testdata.json") {
             NSURLSession.sharedSession().dataTaskWithURL(url)  { (data, response, error) in
                 guard let data = data,
                     let dataStore = String(data: data, encoding: NSASCIIStringEncoding) else {

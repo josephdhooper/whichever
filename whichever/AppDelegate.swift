@@ -9,6 +9,7 @@
 import UIKit
 import Mapbox
 import RealmSwift
+import Haneke
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ReachabilityManager.sharedInstance
         populateInformation()
         addActivityIndicator()
+    
         
         UIApplication.sharedApplication().statusBarStyle = .LightContent
         UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: UIFont.systemFontOfSize(16, weight: UIFontWeightSemibold),NSForegroundColorAttributeName : UIColor.whiteColor()]
@@ -30,7 +32,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-    
     func addActivityIndicator(){
         indicator = UIActivityIndicatorView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.height)) as UIActivityIndicatorView
         indicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.WhiteLarge

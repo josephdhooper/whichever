@@ -117,6 +117,7 @@
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
                                                     <connections>
+                                                        <action selector="updateData:" destination="wFZ-IB-DUe" eventType="touchUpInside" id="otm-nq-a6N"/>
                                                         <segue destination="4Ez-gy-zgQ" kind="custom" customClass="SegueFromRight" customModule="whichever" customModuleProvider="target" id="eRh-tO-46t"/>
                                                     </connections>
                                                 </button>
