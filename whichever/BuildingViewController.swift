@@ -14,32 +14,31 @@ class BuildingViewController: UITableViewController {
     var buildingName:String?
     var bathrooms: Results<(Bathrooms)>?
     var image: Results<(Bathrooms)>?
-   
+    
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if let buildingNameObj = buildingName{
-            bathrooms = try! Realm().objects(Bathrooms).filter("buildingName == '\(buildingNameObj)'").sorted("buildingName", ascending: true)
-            image = try! Realm().objects(Bathrooms).sorted("image", ascending: true)
+            bathrooms = try! Realm().objects(Bathrooms.self).filter("buildingName == '\(buildingNameObj)'").sorted(byKeyPath: "buildingName", ascending: true)
+            image = try! Realm().objects(Bathrooms.self).sorted(byKeyPath: "image", ascending: true)
         }
     }
     
-    
-    @IBAction func unwindToSearchAndBuildingVC(segue:UIStoryboardSegue) {
+    @IBAction func unwindToSearchAndBuildingVC(_ segue:UIStoryboardSegue) {
         
     }
-
-    @IBAction func menuButtonObj(sender: AnyObject) {
-        let newView = self.storyboard!.instantiateViewControllerWithIdentifier("MenuViewController") as! MenuViewController
-        newView.modalPresentationStyle = UIModalPresentationStyle.OverFullScreen
-        self.presentViewController(newView, animated: true, completion: nil)
+    
+    @IBAction func menuButtonObj(_ sender: AnyObject) {
+        let newView = self.storyboard!.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+        newView.modalPresentationStyle = UIModalPresentationStyle.overFullScreen
+        self.present(newView, animated: true, completion: nil)
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
         if (segue.identifier == "showDetail") {
-            let controller = segue.destinationViewController as! DetailsTableViewController
+            let controller = segue.destination as! DetailsTableViewController
             
             var bathroom: Bathrooms!
             let indexPath = tableView.indexPathForSelectedRow
@@ -48,15 +47,12 @@ class BuildingViewController: UITableViewController {
             }
             controller.detailBathroom = bathroom
         }
-        
-        
-        
     }
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let bathroomsObj = bathrooms{
             return bathroomsObj.count
         }else{
@@ -64,8 +60,8 @@ class BuildingViewController: UITableViewController {
         }
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("BuildingCell") as! BuildingCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "BuildingCell") as! BuildingCell
         
         let bathroom: Bathrooms
         if let bathroomsObj = bathrooms{

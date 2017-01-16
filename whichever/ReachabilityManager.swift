@@ -4,59 +4,58 @@
 //
 //  Created by Joseph Hooper on 1/1/17.
 //  Copyright © 2017 josephdhooper. All rights reserved.
-//  Code below is atributed to douarbou at http://stackoverflow.com/questions/30743408/check-for-internet-connection-in-swift-2-ios-9
+//  Code below is atributed to Jad at http://stackoverflow.com/questions/39558868/check-internet-connection-ios-10
 
-import Foundation
+import SystemConfiguration
 
-enum ReachabilityManagerType {
-    case Wifi
-    case Cellular
-    case None
-}
+protocol Utilities { }
 
-class ReachabilityManager {
-    static let sharedInstance = ReachabilityManager()
+extension NSObject:Utilities {
     
-    private var reachability: Reachability!
-    private var reachabilityManagerType: ReachabilityManagerType = .None
-    
-    
-    private init() {
-        do {
-            self.reachability = try Reachability.reachabilityForInternetConnection()
-        } catch {
-            print("Unable to create Reachability")
-            return
-        }
-        
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ReachabilityManager.reachabilityChanged(_:)),name: ReachabilityChangedNotification,object: self.reachability)
-        do{
-            try self.reachability.startNotifier()
-        }catch{
-            print("could not start reachability notifier")
-        }
+    enum ReachabilityStatus {
+        case notReachable
+        case reachableViaWWAN
+        case reachableViaWiFi
     }
     
-    @objc private func reachabilityChanged(note: NSNotification) {
+    var currentReachabilityStatus: ReachabilityStatus {
         
-        let reachability = note.object as! Reachability
+        var zeroAddress = sockaddr_in()
+        zeroAddress.sin_len = UInt8(MemoryLayout<sockaddr_in>.size)
+        zeroAddress.sin_family = sa_family_t(AF_INET)
         
-        if reachability.isReachable() {
-            if reachability.isReachableViaWiFi() {
-                self.reachabilityManagerType = .Wifi
-            } else {
-                self.reachabilityManagerType = .Cellular
+        guard let defaultRouteReachability = withUnsafePointer(to: &zeroAddress, {
+            $0.withMemoryRebound(to: sockaddr.self, capacity: 1) {
+                SCNetworkReachabilityCreateWithAddress(nil, $0)
             }
-        } else {
-            self.reachabilityManagerType = .None
+        }) else {
+            return .notReachable
         }
-    }
-}
-
-extension ReachabilityManager {
-    
-    func isConnectedToNetwork() -> Bool {
-        return reachabilityManagerType != .None
+        
+        var flags: SCNetworkReachabilityFlags = []
+        if !SCNetworkReachabilityGetFlags(defaultRouteReachability, &flags) {
+            return .notReachable
+        }
+        
+        if flags.contains(.reachable) == false {
+            // The target host is not reachable.
+            return .notReachable
+        }
+        else if flags.contains(.isWWAN) == true {
+            // WWAN connections are OK if the calling application is using the CFNetwork APIs.
+            return .reachableViaWWAN
+        }
+        else if flags.contains(.connectionRequired) == false {
+            // If the target host is reachable and no connection is required then we'll assume that you're on Wi-Fi...
+            return .reachableViaWiFi
+        }
+        else if (flags.contains(.connectionOnDemand) == true || flags.contains(.connectionOnTraffic) == true) && flags.contains(.interventionRequired) == false {
+            // The connection is on-demand (or on-traffic) if the calling application is using the CFSocketStream or higher APIs and no [user] intervention is needed
+            return .reachableViaWiFi
+        }
+        else {
+            return .notReachable
+        }
     }
     
 }

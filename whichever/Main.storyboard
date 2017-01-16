@@ -747,11 +747,11 @@
                         <barButtonItem key="leftBarButtonItem" image="backarrow" id="V48-2n-wqU">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <action selector="IBActionBack:" destination="RyC-PR-TdR" id="l0T-XZ-A28"/>
+                                <action selector="IBActionBack:" destination="RyC-PR-TdR" id="DKg-sq-g2r"/>
                             </connections>
                         </barButtonItem>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" id="4vn-ge-Uhu">
-                            <rect key="frame" x="94.5" y="7" width="186" height="30"/>
+                            <rect key="frame" x="95" y="7" width="186" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
                                 <segment title="Walk"/>

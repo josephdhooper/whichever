@@ -13,11 +13,11 @@ import Haneke
 
 class Networking: NSObject {
     
-    static func getData (completionHandler:(AnyObject?) -> ()) {
-        if let url = NSURL(string: "https://jdhooper.000webhostapp.com/testdata.json") {
-            NSURLSession.sharedSession().dataTaskWithURL(url)  { (data, response, error) in
+    static func getData (_ completionHandler:@escaping (AnyObject?) -> ()) {
+        if let url = URL(string: "https://jdhooper.000webhostapp.com/testdata.json") {
+            URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
                 guard let data = data,
-                    let dataStore = String(data: data, encoding: NSASCIIStringEncoding) else {
+                    let dataStore = String(data: data, encoding: String.Encoding.ascii) else {
                         print("Could not find network")
                         completionHandler(nil)
                         return
@@ -29,7 +29,7 @@ class Networking: NSObject {
                     return
                 }
                 
-                let HTTPResponse = response as! NSHTTPURLResponse
+                let HTTPResponse = response as! HTTPURLResponse
                 let statusCode = HTTPResponse.statusCode
                 
                 if (statusCode == 200) {
@@ -41,8 +41,8 @@ class Networking: NSObject {
                 
                 do {
                     
-                    let json = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments)
-                    completionHandler(json)
+                    let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
+                    completionHandler(json as AnyObject?)
                     let spaces = (json as! NSDictionary)["spaces"] as! [NSDictionary]
                     
                     let realm = try! Realm()
@@ -61,7 +61,7 @@ class Networking: NSObject {
                     completionHandler(nil)
                 }
                 
-                } .resume()
+                })   .resume()
         }
     }
 }

@@ -3,8 +3,10 @@ use_frameworks!
 
 target 'whichever' do
 
-pod 'MapboxDirections.swift', :git => 'https://github.com/mapbox/MapboxDirections.swift.git', :tag => ‘v0.6.0'
-pod 'HanekeSwift'
+#pod 'MapboxDirections.swift', :git => 'https://github.com/mapbox/MapboxDirections.swift.git', :tag => ‘v0.6.0'
+pod 'MapboxDirections.swift', :git => 'https://github.com/mapbox/MapboxDirections.swift.git', :branch => 'swift3'
+#pod 'HanekeSwift'
+pod "HanekeSwift", :git => 'https://github.com/Haneke/HanekeSwift.git', :branch => 'feature/swift-3'
 
 end
 

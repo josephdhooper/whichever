@@ -26,14 +26,14 @@ class MenuViewController: UITableViewController, MFMailComposeViewControllerDele
         super.viewDidLoad()
         
         self.transitioningDelegate = self.menuManager
-        dismissButton.addTarget(self, action: #selector(buttonAction), forControlEvents: .TouchUpInside)
+        dismissButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
         
             }
     
-    @IBAction func sendEmail(sender: AnyObject) {
+    @IBAction func sendEmail(_ sender: AnyObject) {
         let mailComposeViewController = configuredMailComposeViewController()
         if MFMailComposeViewController.canSendMail() {
-            self.presentViewController(mailComposeViewController, animated: true, completion: nil)
+            self.present(mailComposeViewController, animated: true, completion: nil)
         } else {
             self.showSendMailErrorAlert()
         }
@@ -51,28 +51,28 @@ class MenuViewController: UITableViewController, MFMailComposeViewControllerDele
     }
     
     func showSendMailErrorAlert() {
-        let alert = UIAlertController(title: "Uh-oh!", message: "Your device could not send e-mail. Check your e-mail configuration and try again.", preferredStyle: .Alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .Default) { _ in })
-        self.presentViewController(alert, animated: true){}
+        let alert = UIAlertController(title: "Uh-oh!", message: "Your device could not send e-mail. Check your e-mail configuration and try again.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default) { _ in })
+        self.present(alert, animated: true){}
         
     }
     
-    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
-        controller.dismissViewControllerAnimated(true, completion: nil)
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
         
     }
     
-    @IBAction func websiteButton(sender: AnyObject) {
-        let url = NSURL(string: "http://consciousraisingapps.wixsite.com/allgender")
-        UIApplication.sharedApplication().openURL(url!, options: [:], completionHandler: nil)
+    @IBAction func websiteButton(_ sender: AnyObject) {
+        let url = URL(string: "http://consciousraisingapps.wixsite.com/allgender")
+        UIApplication.shared.open(url!, options: [:], completionHandler: nil)
         
     }
 
-        func buttonAction(sender: UIButton!) {
-        dismissViewControllerAnimated(true, completion: nil)
+        func buttonAction(_ sender: UIButton!) {
+        dismiss(animated: true, completion: nil)
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
     }
     

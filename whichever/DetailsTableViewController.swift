@@ -1,4 +1,4 @@
-//  
+//
 //  DetailsTableViewController.swift
 //  whichever
 //
@@ -33,65 +33,63 @@ class DetailsTableViewController: UITableViewController, MFMailComposeViewContro
     @IBOutlet var buttonObj: UIButton!
     
     
-    var bathrooms = try! Realm().objects(Bathrooms)
-    var latitudeObj = Double?()
-    var longitudeObj = Double?()
+    var bathrooms = try! Realm().objects(Bathrooms.self)
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         showNetworkingConnection()
         
-        buttonObj.layer.borderColor = UIColor( red: 34/255, green: 167/255, blue: 240/255, alpha: 1.0 ).CGColor
+        buttonObj.layer.borderColor = UIColor( red: 34/255, green: 167/255, blue: 240/255, alpha: 1.0 ).cgColor
         buttonObj.layer.borderWidth = 1.0
         buttonObj.layer.cornerRadius = 4
         
-        populationDirections()
         self.configureView()
         activityIndicator.startAnimating()
         updateView()
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.translucent = true
+        self.navigationController?.navigationBar.isTranslucent = true
     }
     
     
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.translucent = false
+        self.navigationController?.navigationBar.isTranslucent = false
     }
     
     func showNetworkingConnection(){
-        if ReachabilityManager.sharedInstance.isConnectedToNetwork() {
+        if currentReachabilityStatus != .notReachable {
             print("Connected")
-            self.buttonObj.userInteractionEnabled = true
+            self.buttonObj.isUserInteractionEnabled = true
             
         } else {
             print("Not Connected")
-            self.buttonObj.userInteractionEnabled = false
+            self.buttonObj.isUserInteractionEnabled = false
         }
     }
     
-    override func scrollViewDidScroll(scrollView: UIScrollView) {
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         setNewView()
     }
     
-    @IBAction func menuButtonObj(sender: AnyObject) {
-        let newView = self.storyboard!.instantiateViewControllerWithIdentifier("MenuViewController") as! MenuViewController
-        newView.modalPresentationStyle = UIModalPresentationStyle.OverFullScreen
-        self.presentViewController(newView, animated: true, completion: nil)
+    @IBAction func menuButtonObj(_ sender: AnyObject) {
+        let newView = self.storyboard!.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+        newView.modalPresentationStyle = UIModalPresentationStyle.overFullScreen
+        self.present(newView, animated: true, completion: nil)
     }
     
-    @IBAction func addSuggestions(sender: AnyObject) {
+    @IBAction func addSuggestions(_ sender: AnyObject) {
         let mailComposeViewController = configuredMailComposeViewController()
         if MFMailComposeViewController.canSendMail() {
-            self.presentViewController(mailComposeViewController, animated: true, completion: nil)
+            self.present(mailComposeViewController, animated: true, completion: nil)
         } else {
             self.showSendMailErrorAlert()
         }
@@ -109,27 +107,27 @@ class DetailsTableViewController: UITableViewController, MFMailComposeViewContro
     }
     
     func showSendMailErrorAlert() {
-        let alert = UIAlertController(title: "Uh-oh!", message: "Your device could not send e-mail. Check your e-mail configuration and try again.", preferredStyle: .Alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .Default) { _ in })
-        self.presentViewController(alert, animated: true){}
+        let alert = UIAlertController(title: "Uh-oh!", message: "Your device could not send e-mail. Check your e-mail configuration and try again.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default) { _ in })
+        self.present(alert, animated: true){}
         
     }
     
-    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
-        controller.dismissViewControllerAnimated(true, completion: nil)
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
         
     }
     
     func updateView(){
         
-        tableView.backgroundColor = UIColor.whiteColor()
+        tableView.backgroundColor = UIColor.white
         headerView = tableView.tableHeaderView
         tableView.tableHeaderView = nil
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.addSubview(headerView)
         
         newHeaderLayer = CAShapeLayer()
-        newHeaderLayer.fillColor = UIColor.blackColor().CGColor
+        newHeaderLayer.fillColor = UIColor.black.cgColor
         headerView.layer.mask = newHeaderLayer
         
         let newHeight = headerHeight
@@ -151,20 +149,20 @@ class DetailsTableViewController: UITableViewController, MFMailComposeViewContro
         
         headerView.frame = getHeaderFrame
         let cutDirection = UIBezierPath()
-        cutDirection.moveToPoint(CGPoint(x: 0, y: 0))
-        cutDirection.addLineToPoint(CGPoint(x: getHeaderFrame.width, y: 0))
-        cutDirection.addLineToPoint(CGPoint(x: getHeaderFrame.width, y: getHeaderFrame.height))
-        cutDirection.addLineToPoint(CGPoint(x: 0, y: getHeaderFrame.height))
-        newHeaderLayer.path = cutDirection.CGPath
+        cutDirection.move(to: CGPoint(x: 0, y: 0))
+        cutDirection.addLine(to: CGPoint(x: getHeaderFrame.width, y: 0))
+        cutDirection.addLine(to: CGPoint(x: getHeaderFrame.width, y: getHeaderFrame.height))
+        cutDirection.addLine(to: CGPoint(x: 0, y: getHeaderFrame.height))
+        newHeaderLayer.path = cutDirection.cgPath
         
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 6
     }
     
-    @IBAction func loadRoute(sender: AnyObject) {
-        performSegueWithIdentifier("showDirections", sender: nil)
+    @IBAction func loadRoute(_ sender: AnyObject) {
+        performSegue(withIdentifier: "showDirections", sender: nil)
         
     }
     
@@ -173,27 +171,16 @@ class DetailsTableViewController: UITableViewController, MFMailComposeViewContro
             self.configureView()
         }
     }
-    func populationDirections(){
-        if let detailBathroom = detailBathroom {
-            if let
-                latitudeObj = latitudeObj,
-                longitudeObj = longitudeObj
-                
-            {
-                latitudeObj.distanceTo(detailBathroom.latitude)
-                longitudeObj.distanceTo(detailBathroom.longitude)
-            }
-        }
-    }
+
     func configureView() {
         if let detailBathroom = detailBathroom {
             if let
                 name = name,
-                room = room,
-                floorNumber = floorNumber,
-                signageInfo = signageInfo,
-                roomDetails = roomDetails,
-                availabilityIcon = availabilityIcon
+                let room = room,
+                let floorNumber = floorNumber,
+                let signageInfo = signageInfo,
+                let roomDetails = roomDetails,
+                let availabilityIcon = availabilityIcon
                 
             {
                 name.text = detailBathroom.buildingName
@@ -211,28 +198,27 @@ class DetailsTableViewController: UITableViewController, MFMailComposeViewContro
                 default:
                     availabilityIcon.image = UIImage(named: "darkBlue")
                 }
-                dispatch_async(dispatch_get_main_queue()) {
-                    if let url = NSURL(string: detailBathroom.image) {
-                        self.imageView.hnk_setImageFromURL(url, placeholder: nil, success: { (image) ->
-                            Void in
-                            self.imageView.image = image
-                                                     
-                            self.activityIndicator.stopAnimating()
-                            }, failure: { (error) -> Void in
-                                let alertController = UIAlertController(title: "Uh-oh!", message: "Check your wifi or cellular connection.", preferredStyle: .Alert)
-                                let OKAction = UIAlertAction(title: "OK", style: .Default) { (action:UIAlertAction) in
+                DispatchQueue.main.async {
+                    if let url = URL(string: detailBathroom.image) {
+                        self.imageView.hnk_setImageFromURL(url, placeholder: nil, failure: { (error) -> Void in
+                                let alertController = UIAlertController(title: "Uh-oh!", message: "Check your wifi or cellular connection.", preferredStyle: .alert)
+                                let OKAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in
                                     print("You've pressed OK button")
                                     self.imageView.image = UIImage(named: "noPicture")
-                                    self.imageView.contentMode = UIViewContentMode.ScaleAspectFill
+                                    self.imageView.contentMode = UIViewContentMode.scaleAspectFill
                                     self.activityIndicator.stopAnimating()
                                     self.showNetworkingConnection()
-                                    
                                     
                                 }
                                 
                                 alertController.addAction(OKAction)
-                                self.presentViewController(alertController, animated: true, completion: nil)
-                        })
+                                self.present(alertController, animated: true, completion: nil)
+                        }, success: { (image) ->
+                            Void in
+                            self.imageView.image = image
+                                                     
+                            self.activityIndicator.stopAnimating()
+                            })
                     }
                     return
                 }
@@ -240,16 +226,16 @@ class DetailsTableViewController: UITableViewController, MFMailComposeViewContro
         }
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDirections" {
-            let controller = segue.destinationViewController as! DistanceViewController
+            let controller = segue.destination as! DistanceViewController
             controller.latitude = detailBathroom?.latitude
             controller.longitude = detailBathroom?.longitude
             controller.buildingName = detailBathroom?.buildingName
         }
     }
     
-    @IBAction func unwindToBathroomVC(segue:UIStoryboardSegue) {
+    @IBAction func unwindToBathroomVC(_ segue:UIStoryboardSegue) {
         
     }
 }

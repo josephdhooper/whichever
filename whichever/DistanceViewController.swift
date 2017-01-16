@@ -14,8 +14,8 @@ import MapboxDirections
 import CoreLocation
 
 enum RouteType:Int {
-    case Walking = 0
-    case Cycling = 1
+    case walking = 0
+    case cycling = 1
 }
 class DistanceViewController: UIViewController, MGLMapViewDelegate, CLLocationManagerDelegate {
     
@@ -26,19 +26,21 @@ class DistanceViewController: UIViewController, MGLMapViewDelegate, CLLocationMa
     var longitude: Double?
     var buildingName:String?
     var bathrooms: Results<(Bathrooms)>?
-    var selectedRouteType = RouteType.Walking
+    var selectedRouteType = RouteType.walking
     var steps: [RouteStep]?
     
     @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet var mapView: MGLMapView!
     
-    private let segueId = "showList"
+    fileprivate let segueId = "showList"
+    
+    let directions = Directions.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        showNetworkingConnection()
+        //showNetworkingConnection()
         
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -46,33 +48,33 @@ class DistanceViewController: UIViewController, MGLMapViewDelegate, CLLocationMa
         destinationPoint()
         mapView.delegate = self
         
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         
         segmentedControl.frame = CGRect(x: segmentedControl.frame.origin.x, y: segmentedControl.frame.origin.y, width: segmentedControl.frame.size.width, height: 28)
     }
     
     func showNetworkingConnection(){
-        if ReachabilityManager.sharedInstance.isConnectedToNetwork() {
+        if currentReachabilityStatus != .notReachable {
             print("Connected")
             
         } else {
-            let alertController = UIAlertController(title: "Uh-oh!", message: "ETA can't be calculated. Check your wifi or cellular connection.", preferredStyle: .Alert)
-            let OKAction = UIAlertAction(title: "OK", style: .Default) { (action:UIAlertAction) in
+            let alertController = UIAlertController(title: "Uh-oh!", message: "ETA can't be calculated. Check your wifi or cellular connection.", preferredStyle: .alert)
+            let OKAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction) in
                 print("You've pressed OK button")
                 
             }
             
             alertController.addAction(OKAction)
-            self.presentViewController(alertController, animated: true, completion: nil)
+            self.present(alertController, animated: true, completion: nil)
 
         }
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == segueId {
-            if let directionsVC = segue.destinationViewController as? DirectionsTableViewController{
+            if let directionsVC = segue.destination as? DirectionsTableViewController{
                 if let steps = steps {
                     directionsVC.steps = steps
                 }else{
@@ -82,7 +84,7 @@ class DistanceViewController: UIViewController, MGLMapViewDelegate, CLLocationMa
         }
     }
     
-    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if identifier == segueId {
             if steps != nil{
                 return true
@@ -106,15 +108,15 @@ class DistanceViewController: UIViewController, MGLMapViewDelegate, CLLocationMa
         mapView.addAnnotation(annotation)
     }
     
-    func mapView(mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
+    func mapView(_ mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
         return true
     }
     
-    func mapView(mapView: MGLMapView, calloutViewForAnnotation annotation: MGLAnnotation) -> UIView? {
+    func mapView(_ mapView: MGLMapView, calloutViewFor annotation: MGLAnnotation) -> UIView? {
         return nil
     }
     
-    func updateRoute(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
+    func updateRoute(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
         let userLocation:CLLocation = locations[0] as CLLocation
         
         manager.stopUpdatingLocation()
@@ -124,10 +126,10 @@ class DistanceViewController: UIViewController, MGLMapViewDelegate, CLLocationMa
         var routeOptions:RouteOptions?
         
         switch selectedRouteType {
-        case RouteType.Walking:
+        case RouteType.walking:
             routeOptions = RouteOptions(waypoints: waypoints, profileIdentifier: MBDirectionsProfileIdentifierWalking)
             print("Walking")
-        case RouteType.Cycling:
+        case RouteType.cycling:
             routeOptions = RouteOptions(waypoints: waypoints, profileIdentifier: MBDirectionsProfileIdentifierCycling)
             print("Cylcing")
         }
@@ -135,7 +137,8 @@ class DistanceViewController: UIViewController, MGLMapViewDelegate, CLLocationMa
         if let options = routeOptions{
             options.includesSteps = true
             
-            Directions(accessToken: "pk.eyJ1IjoiamRob29wZXIiLCJhIjoiY2ltNWZibjYxMDFrMHU0bTY0ZmhkbDN1ZiJ9.QfG6ts2mzoZIg13N-JqMSQ").calculateDirections(options: options) { (waypoints, routes, error) in
+            _ = directions.calculate(options) { (waypoints, routes, error) in
+
                 guard error == nil else {
                     print("Error calculating directions: \(error!)")
                     return
@@ -144,12 +147,12 @@ class DistanceViewController: UIViewController, MGLMapViewDelegate, CLLocationMa
                 if let route = routes?.first, let leg = route.legs.first {
                     print("Route via \(leg):")
                     
-                    let distanceFormatter = NSLengthFormatter()
-                    let formattedDistance = distanceFormatter.stringFromMeters(route.distance)
+                    let distanceFormatter = LengthFormatter()
+                    let formattedDistance = distanceFormatter.string(fromMeters: route.distance)
                     
-                    let travelTimeFormatter = NSDateComponentsFormatter()
-                    travelTimeFormatter.unitsStyle = .Short
-                    let formattedTravelTime = travelTimeFormatter.stringFromTimeInterval(route.expectedTravelTime)
+                    let travelTimeFormatter = DateComponentsFormatter()
+                    travelTimeFormatter.unitsStyle = .short
+                    let formattedTravelTime = travelTimeFormatter.string(from: route.expectedTravelTime)
                     
                     print ("Distance: \(formattedDistance)")
                     print ("ETA: \(formattedTravelTime!)")
@@ -179,19 +182,19 @@ class DistanceViewController: UIViewController, MGLMapViewDelegate, CLLocationMa
         }
     }
     
-    @IBAction func IBActionBack(sender: AnyObject) {
-        navigationController?.popViewControllerAnimated(true)
+    @IBAction func IBActionBack(_ sender: AnyObject) {
+        _ = navigationController?.popViewController(animated: true)
     }
     
-    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         updateRoute(manager, didUpdateLocations: locations)
     }
     
-    @IBAction func segmentControl(sender: AnyObject) {
+    @IBAction func segmentControl(_ sender: AnyObject) {
         switchRouteStyle()
     }
     
-    @IBAction func unwindToDistanceVC(segue:UIStoryboardSegue) {
+    @IBAction func unwindToDistanceVC(_ segue:UIStoryboardSegue) {
         
     }
     

@@ -13,32 +13,32 @@ import Mapbox
 class SearchViewController: UITableViewController {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
-    var searchResults = try! Realm().objects(Buildings)
-    var buildings = try! Realm().objects(Buildings).sorted("buildingID", ascending: true)
+    var searchResults = try! Realm().objects(Buildings.self)
+    var buildings = try! Realm().objects(Buildings.self).sorted(byKeyPath: "buildingID", ascending: true)
     var searchController: UISearchController!
-    var image = try! Realm().objects(Bathrooms).sorted("image", ascending: true)
+    var image = try! Realm().objects(Bathrooms.self).sorted(byKeyPath: "image", ascending: true)
     var annotation :BuildingsAnnotation?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.clearColor()
-        view.opaque = false
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        view.backgroundColor = UIColor.clear
+        view.isOpaque = false
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         
         //Set up Table View
-        let searchResultsController = UITableViewController(style: .Plain)
+        let searchResultsController = UITableViewController(style: .plain)
         searchResultsController.tableView.delegate = self
         searchResultsController.tableView.dataSource = self
         searchResultsController.tableView.rowHeight = 65
-        searchResultsController.tableView.registerClass(SearchCell.self, forCellReuseIdentifier: "SearchCell")
+        searchResultsController.tableView.register(SearchCell.self, forCellReuseIdentifier: "SearchCell")
         
         // Setup  Search Controller
         searchController = UISearchController(searchResultsController: searchResultsController)
-        searchController.searchBar.tintColor = UIColor.whiteColor()
+        searchController.searchBar.tintColor = UIColor.white
         searchController.searchBar.barTintColor = UIColor(red: 34/255, green: 167/255, blue: 240/255, alpha: 1.0)
-        searchController.searchBar.layer.borderColor = UIColor(red: 34/255, green: 167/255, blue: 240/255, alpha: 1.0).CGColor
+        searchController.searchBar.layer.borderColor = UIColor(red: 34/255, green: 167/255, blue: 240/255, alpha: 1.0).cgColor
         searchController.searchBar.layer.borderWidth = 1.00
 
         tableView.tableHeaderView?.addSubview(searchController.searchBar)
@@ -53,24 +53,24 @@ class SearchViewController: UITableViewController {
         tableView.tableHeaderView = searchController.searchBar
     }
     
-    @IBAction func unwindToSearchVC(segue:UIStoryboardSegue) {
+    @IBAction func unwindToSearchVC(_ segue:UIStoryboardSegue) {
         
     }
     
-    @IBAction func menuButtonObj(sender: AnyObject) {
-        let newView = self.storyboard!.instantiateViewControllerWithIdentifier("MenuViewController") as! MenuViewController
-        newView.modalPresentationStyle = UIModalPresentationStyle.OverFullScreen
-        self.presentViewController(newView, animated: true, completion: nil)
+    @IBAction func menuButtonObj(_ sender: AnyObject) {
+        let newView = self.storyboard!.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+        newView.modalPresentationStyle = UIModalPresentationStyle.overFullScreen
+        self.present(newView, animated: true, completion: nil)
     }
 
-    func filterResultsWithSearchString(searchString: String) {
+    func filterResultsWithSearchString(_ searchString: String) {
         let predicate = NSPredicate(format: "buildingName CONTAINS [c]%@", searchString)
         let realm = try! Realm()
-        searchResults = realm.objects(Buildings).filter(predicate)
+        searchResults = realm.objects(Buildings.self).filter(predicate)
     }
 }
 extension SearchViewController: UISearchResultsUpdating {
-    func updateSearchResultsForSearchController(searchController: UISearchController) {
+    func updateSearchResults(for searchController: UISearchController) {
         let searchString = searchController.searchBar.text!
         filterResultsWithSearchString(searchString)
         let searchResultsController = searchController.searchResultsController as! UITableViewController
@@ -84,25 +84,25 @@ extension SearchViewController:  UISearchBarDelegate {
 
 extension SearchViewController {
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        if searchController.active && searchController.searchBar.text != "" {
+        if searchController.isActive && searchController.searchBar.text != "" {
             return searchResults.count
         }
         return buildings.count
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = self.tableView.dequeueReusableCellWithIdentifier("SearchCell") as! SearchCell
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "SearchCell") as! SearchCell
         
         let building: Buildings
         
-        if searchController.active && searchController.searchBar.text != "" {
+        if searchController.isActive && searchController.searchBar.text != "" {
             building = searchResults[indexPath.row]
         } else {
             building = buildings[indexPath.row]
@@ -125,8 +125,8 @@ extension SearchViewController {
         return cell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let buildingViewController = storyboard?.instantiateViewControllerWithIdentifier("BuildingTwoViewController") as! BuildingTwoViewController
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let buildingViewController = storyboard?.instantiateViewController(withIdentifier: "BuildingTwoViewController") as! BuildingTwoViewController
         
         if (searchController?.searchBar.text?.isEmpty)!{
             buildingViewController.buildingName = buildings[indexPath.row].buildingName

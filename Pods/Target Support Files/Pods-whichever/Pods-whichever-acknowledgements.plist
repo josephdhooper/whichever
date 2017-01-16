@@ -191,10 +191,18 @@
 
    END OF TERMS AND CONDITIONS
 
-   Copyright 2014 Hermes Pique (@hpique)
-             2014 Joan Romano (@joanromano)
-             2014 Luis Ascorbe (@lascorbe)
-             2014 Oriol Blanc (@oriolblanc)
+   APPENDIX: How to apply the Apache License to your work.
+
+      To apply the Apache License to your work, attach the following
+      boilerplate notice, with the fields enclosed by brackets "{}"
+      replaced with your own identifying information. (Don't include
+      the brackets!)  The text should be enclosed in the appropriate
+      comment syntax for the file format. We also recommend that a
+      file or class name and description of purpose be included on the
+      same "printed page" as the copyright notice for easier
+      identification within third-party archives.
+
+   Copyright {yyyy} {name of copyright owner}
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -207,6 +215,8 @@
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.</string>
+			<key>License</key>
+			<string>Apache</string>
 			<key>Title</key>
 			<string>HanekeSwift</string>
 			<key>Type</key>
@@ -214,7 +224,7 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright &#169; 2014&#8211;2016, Mapbox
+			<string>Copyright © 2014–2016, Mapbox
 
 Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted, provided that the above
@@ -228,6 +238,8 @@ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
 ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 </string>
+			<key>License</key>
+			<string>ISC</string>
 			<key>Title</key>
 			<string>MapboxDirections.swift</string>
 			<key>Type</key>
@@ -237,7 +249,7 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 			<key>FooterText</key>
 			<string>The MIT License (MIT)
 
-Copyright (c) 2015 Rapha&#235;l Mor
+Copyright (c) 2015 Raphaël Mor
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -256,6 +268,8 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.</string>
+			<key>License</key>
+			<string>MIT</string>
 			<key>Title</key>
 			<string>Polyline</string>
 			<key>Type</key>

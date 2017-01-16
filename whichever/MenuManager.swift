@@ -12,12 +12,12 @@ import UIKit
 class MenuManager: NSObject, UIViewControllerAnimatedTransitioning, UIViewControllerTransitioningDelegate
 
 {
-    private var presenting = false
-    func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
+    fileprivate var presenting = false
+    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         
-        let container = transitionContext.containerView()
+        let container = transitionContext.containerView
         
-        let screens : (from:UIViewController, to:UIViewController) = (transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)!, transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)!)
+        let screens : (from:UIViewController, to:UIViewController) = (transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from)!, transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to)!)
         
         let menuViewController = !self.presenting ? screens.from as! MenuViewController : screens.to as! MenuViewController
         let bottomViewController = !self.presenting ? screens.to as UIViewController : screens.from as UIViewController
@@ -27,35 +27,35 @@ class MenuManager: NSObject, UIViewControllerAnimatedTransitioning, UIViewContro
         
         
         if (self.presenting){
-            menuView.alpha = 0
+            menuView?.alpha = 0
         }
         
-        container.addSubview(bottomView)
-        container.addSubview(menuView)
+        container.addSubview(bottomView!)
+        container.addSubview(menuView!)
         
-        let duration = self.transitionDuration(transitionContext)
+        let duration = self.transitionDuration(using: transitionContext)
         
-        UIView.animateWithDuration(duration, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.8, options: [], animations: {
+        UIView.animate(withDuration: duration, delay: 0.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.8, options: [], animations: {
             
-            menuView.alpha = self.presenting ? 1 : 0
+            menuView?.alpha = self.presenting ? 1 : 0
             
             }, completion: { finished in
                 transitionContext.completeTransition(true)
-                UIApplication.sharedApplication().keyWindow!.addSubview(screens.to.view)
+                UIApplication.shared.keyWindow!.addSubview(screens.to.view)
         })
         
     }
     
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
+    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.5
     }
     
-    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         self.presenting = true
         return self
     }
     
-    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         self.presenting = false
         return self
     }

@@ -20,65 +20,63 @@ class DirectionsTableViewController: UITableViewController {
         super.viewDidLoad()
         
     }
-    func numberOfSections(in tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return steps.count
     }
     
-    @IBAction func menuButtonObj(sender: AnyObject) {
-        let newView = self.storyboard!.instantiateViewControllerWithIdentifier("MenuViewController") as! MenuViewController
-        newView.modalPresentationStyle = UIModalPresentationStyle.OverFullScreen
-        self.presentViewController(newView, animated: true, completion: nil)
+    @IBAction func menuButtonObj(_ sender: AnyObject) {
+        let newView = self.storyboard!.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+        newView.modalPresentationStyle = UIModalPresentationStyle.overFullScreen
+        self.present(newView, animated: true, completion: nil)
     }
     
-    override func tableView(_tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ _tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = self.tableView.dequeueReusableCellWithIdentifier("DirectionsCell") as! DirectionsCell
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "DirectionsCell") as! DirectionsCell
         cell.mainLabel?.text = steps[indexPath.row].instructions
         
-        let distanceFormatter = NSLengthFormatter()
-        let formattedDistance = distanceFormatter.stringFromMeters(steps[indexPath.row].distance)
+        let distanceFormatter = LengthFormatter()
+        let formattedDistance = distanceFormatter.string(fromMeters: steps[indexPath.row].distance)
         cell.subLabel?.text = "- \(formattedDistance) -"
         
         cell.directionImage.image = UIImage(named: "marker")
         
         if let directions = steps[indexPath.row].maneuverDirection {
             switch directions {
-            case .StraightAhead :
+            case .straightAhead :
                 cell.directionImage.image = UIImage(named: "forward")
-            case .SharpLeft :
+            case .sharpLeft :
                 cell.directionImage.image = UIImage(named: "hardLeft")
-            case .SharpRight :
+            case .sharpRight :
                 cell.directionImage.image = UIImage(named: "hardRight")
-            case .SlightLeft :
+            case .slightLeft :
                 cell.directionImage.image = UIImage(named: "slightLeft")
-            case .SlightRight :
+            case .slightRight :
                 cell.directionImage.image = UIImage(named: "slightRight")
-            case .Left :
+            case .left :
                 cell.directionImage.image = UIImage(named: "left")
-            case .Right :
+            case .right :
                 cell.directionImage.image = UIImage(named: "right")
-            case .UTurn :
+            case .uTurn :
                 cell.directionImage.image = UIImage(named: "uTurn")
                 
             }
             
             if let directions = steps[indexPath.row].maneuverType {
                 switch directions {
-                case .Arrive :
+                case .arrive :
                     cell.directionImage.image = UIImage(named: "arrived")
                 default:break
-        
-                }
+                    
                 }
             }
-        
-            
-    
-        return cell
-    
         }
+        
+        return cell
+        
+    }
 }
