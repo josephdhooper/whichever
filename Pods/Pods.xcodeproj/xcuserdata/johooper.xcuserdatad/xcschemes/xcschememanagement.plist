@@ -7,50 +7,42 @@
 		<key>HanekeSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<true/>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<false/>
 		</dict>
 		<key>MapboxDirections.swift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<true/>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<false/>
 		</dict>
 		<key>Pods-whichever.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<true/>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<false/>
 		</dict>
 		<key>Polyline.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<true/>
-			<key>orderHint</key>
-			<integer>6</integer>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1C080055654F530AA845FF3429077B74</key>
+		<key>54DD374144A221B7ED9EC9835EB5CFF9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2C2B1953A91633859BF7AD238FF567A0</key>
+		<key>AAD616609C789739A241CC784B233D5D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7C93BB2C850F2E4BB09BF2BBE1A027FE</key>
+		<key>AE4759774042D8E013517E82C6F7A058</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9FA1CF1E69F4ACEF475C44BADE4264DC</key>
+		<key>B45D5562CD0E56A60B88858C2DCC6527</key>
 		<dict>
 			<key>primary</key>
 			<true/>

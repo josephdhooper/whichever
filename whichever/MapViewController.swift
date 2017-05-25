@@ -36,7 +36,7 @@ class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManager
         
         //Mapbox MapView
         self.mapView.delegate = self
-        self.mapView.userTrackingMode  = MGLUserTrackingMode.followWithHeading
+        self.mapView.userTrackingMode  = .followWithHeading
         
         //Button Inset
         zoomButton.backgroundColor =  UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.8)
@@ -134,7 +134,7 @@ class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManager
     func mapView(_ mapView: MGLMapView, leftCalloutAccessoryViewFor annotation: MGLAnnotation) -> UIView? {
         
         let imageName = UIImageView()
-        imageName.frame = (frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+        imageName.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
         
         if let subtitle = annotation.subtitle {
             switch subtitle {

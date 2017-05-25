@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0820"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7C93BB2C850F2E4BB09BF2BBE1A027FE"
+               BlueprintIdentifier = "AAD616609C789739A241CC784B233D5D"
                BuildableName = "MapboxDirections.framework"
                BlueprintName = "MapboxDirections.swift"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7C93BB2C850F2E4BB09BF2BBE1A027FE"
+            BlueprintIdentifier = "AAD616609C789739A241CC784B233D5D"
             BuildableName = "MapboxDirections.framework"
             BlueprintName = "MapboxDirections.swift"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -60,15 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7C93BB2C850F2E4BB09BF2BBE1A027FE"
-            BuildableName = "MapboxDirections.framework"
-            BlueprintName = "MapboxDirections.swift"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

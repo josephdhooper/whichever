@@ -19,9 +19,9 @@ class DetailsTableViewController: UITableViewController, MFMailComposeViewContro
     var imageView: UIImageView!
     var headerView: UIView!
     var newHeaderLayer: CAShapeLayer!
+    var bathrooms = try! Realm().objects(Bathrooms.self)
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
-    
     @IBOutlet weak var suggestions: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var name: UILabel!
@@ -31,10 +31,6 @@ class DetailsTableViewController: UITableViewController, MFMailComposeViewContro
     @IBOutlet weak var roomDetails: UILabel!
     @IBOutlet weak var availabilityIcon: UIImageView!
     @IBOutlet var buttonObj: UIButton!
-    
-    
-    var bathrooms = try! Realm().objects(Bathrooms.self)
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -232,6 +228,8 @@ class DetailsTableViewController: UITableViewController, MFMailComposeViewContro
             controller.latitude = detailBathroom?.latitude
             controller.longitude = detailBathroom?.longitude
             controller.buildingName = detailBathroom?.buildingName
+            
+
         }
     }
     

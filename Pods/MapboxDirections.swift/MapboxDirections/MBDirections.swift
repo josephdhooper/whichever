@@ -257,7 +257,7 @@ open class Directions: NSObject {
                     intervalFormatter.unitsStyle = .full
                     let formattedInterval = intervalFormatter.string(from: timeInterval)
                     let formattedCount = NumberFormatter.localizedString(from: NSNumber(value: maximumCountOfRequests), number: .decimal)
-                    failureReason = "More than \(formattedCount) requests have been made with this access token within a period of \(formattedInterval)."
+                    failureReason = "More than \(formattedCount) requests have been made with this access token within a period of \(String(describing: formattedInterval))."
                 }
                 if let rolloverTimestamp = response.allHeaderFields["x-rate-limit-reset"] as? Double {
                     let date = Date(timeIntervalSince1970: rolloverTimestamp)

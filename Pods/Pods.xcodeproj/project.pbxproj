@@ -7,179 +7,187 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0334CE4DA47426AB21D29BD6E8DF368E /* MapboxDirections.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A17BD2267BE0848D30C2D966F99503 /* MapboxDirections.swift-dummy.m */; };
-		04CEF9E33C6B52612BB04023CA8D03FA /* Polyline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 327512FF927EC475EE414D049567E054 /* Polyline.framework */; };
-		0D361BC02EA3B8C476545E29A293CCB8 /* Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52725832541CD24587389EB4AAEC71EB /* Format.swift */; };
-		1D27B06296C346D4F23F5ED14B0A5D1A /* UIButton+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = D391103EE6F48153B9135DDC235695E9 /* UIButton+Haneke.swift */; };
-		24E7FCE3DF42DC6D616DC39F8AC69566 /* UIImageView+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4049E4A7E84BA4588DCD8521E4CAE364 /* UIImageView+Haneke.swift */; };
-		3D90F67A3A10F71FD01DEDA59496C1D7 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4014CC2001234EA17374375468FBBE /* Data.swift */; };
-		3EA2C091B8672D75066EEEEFE63B5A86 /* NetworkFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4965A4843C89B7C9C9879B9F3DD9EF /* NetworkFetcher.swift */; };
-		4087A4914E74CBFB5C8C58846F7862AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B552FB164D8D78579C7DDBDCCDEEF4 /* Foundation.framework */; };
-		410D0641B813947CA53F07D75F4624CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B552FB164D8D78579C7DDBDCCDEEF4 /* Foundation.framework */; };
-		49A5E2B820A83801CEE267AA6E1D923F /* DiskFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8A915B2EC69CB9FB36AD781288535E /* DiskFetcher.swift */; };
-		55F3BC1465BB2EB6F02ADC5A2D1F9F83 /* String+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D955C68AD1E7B6CDC29FE3C87ED961 /* String+Haneke.swift */; };
-		5AA2A0D128578189A44E78DADCB5624A /* MBRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91D9E419B9F44D5C43C4A12E28E55C6 /* MBRoute.swift */; };
-		67AC3489311600D930CC2C92ECD47848 /* Polyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C596BD803EF41E3F6D6C14C853512 /* Polyline.swift */; };
-		707F8109814BFBF751EA120219898703 /* MapboxDirections.h in Headers */ = {isa = PBXBuildFile; fileRef = A9CC3950DC0203DA1E9737E0A574DE44 /* MapboxDirections.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		74ECEBB2473D14E389570892706A0B5B /* Pods-whichever-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFEBD428A049B7BF407B8E1DD412E14 /* Pods-whichever-dummy.m */; };
-		8A85C4CDF0FE775E0BD0C44B0C3E6159 /* NSURLResponse+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B2EED4CE58CF5984BFF2045E242144 /* NSURLResponse+Haneke.swift */; };
-		8C357B44EA2BC147AA0219CD8CC03B5F /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC7BA62971C0775DDD5A52A40F2CA53 /* Fetcher.swift */; };
-		92A2D4839D45ABA48D77923C035C8943 /* NSFileManager+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4519B60BE0CC4DB01300C70950418E10 /* NSFileManager+Haneke.swift */; };
-		95A81D3A9F8EEC76F4D925702E270FF5 /* MBDirections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A1F628180E341E7A88A3EA503BCC39 /* MBDirections.swift */; };
-		96F7C5AE7BE30C0B8242CFF1BD840B55 /* Pods-whichever-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AE41219CB8667603F9DA7EBE6333AB3 /* Pods-whichever-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9831DDC5256EF014D93FF2DBE055E7B6 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02CF885AFF82D3E16738B4B3C0F1E68 /* Cache.swift */; };
-		9911E1A886CD44872C07FAA6A1521A85 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0816634812CC2A75132608A00A21A7 /* Log.swift */; };
-		9D5F6868132325D38051C5A07F128C5C /* UIView+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6B0666BA7F1958E92F9D5F1F8F9B07 /* UIView+Haneke.swift */; };
-		9E629066D218DC1DC616E339DB68E49C /* CryptoSwiftMD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9279CE856D7034F813D8065A50D51DEC /* CryptoSwiftMD5.swift */; };
-		9F4D113C6A4469F0DFAC637F1CA2C087 /* CGSize+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C2AAE14A5BD58D7286FC8DCD99A60F /* CGSize+Swift.swift */; };
-		A6547BE5E4CE0156705A016AE48B14CD /* MBRouteLeg.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA337DC99E19AC41412482781E8C563 /* MBRouteLeg.swift */; };
-		A8CF635DBE430F95FB17D371B918B3FB /* UIImage+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6327E8F03EE559D193389486667BA7C9 /* UIImage+Haneke.swift */; };
-		AB02DD775A289B55B03F87A73525B611 /* HanekeSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A172DDA765F66E6330EB6549ABC1A5F6 /* HanekeSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AEB48C925DC8D4B812C4ABF9F15C822E /* DiskCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658243742D4362E9A46105556739B44C /* DiskCache.swift */; };
-		AFE4A2DB9D78E2CE7818539286BCF291 /* MBRouteStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722CFB54381B354A319E4F67B9B15128 /* MBRouteStep.swift */; };
-		B0B11F4C8BEDCB6E25BAD6A0CA65D441 /* MBRouteOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E303F7034E6E8FF04029303D0F5B2C0 /* MBRouteOptions.swift */; };
-		B1CCF02E757EE856275CE85BF171ED90 /* Fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FD1942D01B291C18617C5D1D4C51F3 /* Fetch.swift */; };
-		B504A84B309C5D2BB8489C50AB9ABCAD /* Polyline.h in Headers */ = {isa = PBXBuildFile; fileRef = 784B26B1C23ED46E6724383649A01E13 /* Polyline.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B72600B945A2F5FCABA5C82EC00D8767 /* Polyline-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3766C0AF7827E3CDEBE17F20829EF532 /* Polyline-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BD038EFFD2D1B49B136B42B5E07D59C5 /* Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155771FFEEE2E66F468B0A6DAD9C5E9E /* Haneke.swift */; };
-		C6A0DEA45F6E32495FF3EA299C9331C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B552FB164D8D78579C7DDBDCCDEEF4 /* Foundation.framework */; };
-		DF2C437AC8B85AC648693C3AFCDA38BB /* Polyline-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D6C7D753D25C2B5ACAF856C6AE960A /* Polyline-dummy.m */; };
-		DF6DBB5FA4E663A5AE7F272CA1CBA3BB /* NSHTTPURLResponse+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDBA53130FA134F330965E80F902D3E /* NSHTTPURLResponse+Haneke.swift */; };
-		EBCB36BF1A777B379130C00A2AA55643 /* MBWaypoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B079E690C4C016961081422ADA42ECF /* MBWaypoint.swift */; };
-		ED732F87FB7295E5E3D806071A389B3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B552FB164D8D78579C7DDBDCCDEEF4 /* Foundation.framework */; };
-		F03916F3658FFB4643AD5FC815A4F5A7 /* HanekeSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E813073794E1D686D3F35365939E264C /* HanekeSwift-dummy.m */; };
-		F5BE18B44AF66A8496E01B6C554D0603 /* MapboxDirections.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E187AD2AF0C43867D71B5A29129DC928 /* MapboxDirections.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		048BE8B1399E22885B758F58B5103AAF /* UIImage+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2719412C98380B691CEC7054BF6AB0 /* UIImage+Haneke.swift */; };
+		0C36199088B40772B074108FB4B19CB1 /* MBRouteStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECE72F5BF6B2DAF25B4AAB92F55364F /* MBRouteStep.swift */; };
+		0DA289E3CFC0496E8A393A78831458C6 /* Fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51D02CD0480439474EF4FD5BE232CB5 /* Fetch.swift */; };
+		1875235E9FE81834EBA825075FE3AC7D /* MBWaypoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84902A6D56607C384330AD78D6A8F83C /* MBWaypoint.swift */; };
+		233D0C74026D4F77CB562E90B2714777 /* DiskFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E40E59874E36FC4102AFFC9EB5F9E8 /* DiskFetcher.swift */; };
+		25F558B3167CC7FAFCCC902B83ED0599 /* String+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0F1397CA1AB55DC4EE849109B7FE2D /* String+Haneke.swift */; };
+		2D93F149491F25BCC11EBF259DE1791D /* NSURLResponse+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF6E7CB87316A2E63C64B2A1DB7B9D9 /* NSURLResponse+Haneke.swift */; };
+		34BA8F11703FC6F1FC94812A2B451A2D /* HanekeSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD51327BFE7D026CCF4C3DB39BCEC50 /* HanekeSwift-dummy.m */; };
+		368FBAAE5E624FDDB6F39D1ACB1DA144 /* UIImageView+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB89220248127C74F2984B5175B16CBF /* UIImageView+Haneke.swift */; };
+		371653DAF95829FCCC9AB1D2005FD12E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286CAF8DB11369AC0C5624ADCCA73A68 /* Foundation.framework */; };
+		424F2EE8F3FF0206A8C0455939698D41 /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E308506A8AF5AC6D8ECB609D870C7B3 /* Fetcher.swift */; };
+		44ACFD0543993523C7B2875814A25A65 /* DiskCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD616C18FA657002A57B8017A3EE22F /* DiskCache.swift */; };
+		45D941F68F765620760E8EC56F4C3904 /* NetworkFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B0138783F8403586E6F7E58AF4A64B /* NetworkFetcher.swift */; };
+		516B284EC38BCC14EBF5A275790CFA9E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA779CC4D9B9284B429EB27E185AD8FE /* Data.swift */; };
+		58D2B54A156CCEF75F31F9FF0DAF6EA2 /* Polyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E72FF30F3FFE2B4F6D74E54D5305BA1 /* Polyline.swift */; };
+		5946A4834D77660F3D8188ED70FDC603 /* NSHTTPURLResponse+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D38DBD2374D38E9E82C5C01BBA24B1F /* NSHTTPURLResponse+Haneke.swift */; };
+		5B0C120B808612B88145511E89961E9E /* Pods-whichever-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AE41219CB8667603F9DA7EBE6333AB3 /* Pods-whichever-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61AA45B719B741ABA10B2B4E48311388 /* MBLaneIndication.h in Headers */ = {isa = PBXBuildFile; fileRef = 70122F6A3C68644DBFAD72B0E1AB1086 /* MBLaneIndication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F41805C2984D3172CEBDCB232A9E205 /* CryptoSwiftMD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F22F17A8CA7EEFB4B25B947006B4EA4 /* CryptoSwiftMD5.swift */; };
+		734D2D7728F4FDB196AFBDA6FE131376 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1195F31B30478168A5A60EBD553236 /* Log.swift */; };
+		7D4ADA40C2AF79BC6AA2ADC3B5661B86 /* Polyline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 327512FF927EC475EE414D049567E054 /* Polyline.framework */; };
+		7E867974234ECCA3F0419879A37EF9A1 /* Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DAB36B3263BFCECBB3CED2085E8F59 /* Haneke.swift */; };
+		894DFA84EB2CB3E7D0E28F64515AD8D5 /* MBLaneIndication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6303560556EF2179CC67372F34BBC66D /* MBLaneIndication.swift */; };
+		8DAEFAD4890FE2555C84F89A05843C6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286CAF8DB11369AC0C5624ADCCA73A68 /* Foundation.framework */; };
+		9D012AFE709C245C5A4CFDE3BBF04A54 /* Pods-whichever-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFEBD428A049B7BF407B8E1DD412E14 /* Pods-whichever-dummy.m */; };
+		9D751AE797836951F9FD0A4E9E6AE344 /* CGSize+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0B2D12C41952ED76FD88DE92CAA503 /* CGSize+Swift.swift */; };
+		9F0ED20EDA02495C3CE53351168BDA34 /* UIView+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6546354136DA437ED8295DF19B484A /* UIView+Haneke.swift */; };
+		A257C7E3394A9813188DC886B978193F /* UIButton+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = F431038DE254C41793224CD88BB5B3CC /* UIButton+Haneke.swift */; };
+		A5A078DB7B33D1B52D39C9A6B30D14E4 /* MBRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E637D6DEED7E6FABFDC7C80DC306E26 /* MBRoute.swift */; };
+		A9E3810DF1CEC5C6B901A9C8243CADF8 /* MBIntersection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2153CD384325419845457A703B00F230 /* MBIntersection.swift */; };
+		C2C9B079841FB3E9554FB054598C56B0 /* Polyline-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 646471E96B032056C796C09790B15FDF /* Polyline-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C486A4EBC8576374B46FFD18D7CF15A7 /* MapboxDirections.h in Headers */ = {isa = PBXBuildFile; fileRef = 608851007A1E6747CF0AE498DCB40ABB /* MapboxDirections.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9FDF6F209E90829A8E96B03077116BB /* NSFileManager+Haneke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BB69871A50DAC9E8B9A543DE427D9E /* NSFileManager+Haneke.swift */; };
+		D5E20B716158656917009A6887C4F96D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286CAF8DB11369AC0C5624ADCCA73A68 /* Foundation.framework */; };
+		D734F5980CF4609635307AEE7ECB65B2 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F571659F0F48B632FBA2126575F95FE7 /* Cache.swift */; };
+		D82587FBC269E03A0500BB2A892A3005 /* MBDirections.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4903247D84A9A410789C01F5D31B2CF /* MBDirections.swift */; };
+		DA87DA8C067E1710EB276D4C3F9B01F6 /* MapboxDirections.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D16EA3C118FDFB89A5D9B855FCF2A46 /* MapboxDirections.swift-dummy.m */; };
+		E161242C5C59E83F527386A36F6209FC /* MapboxDirections.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C0F4ECC4D5680BA12C96F94CA4FF2889 /* MapboxDirections.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3FD4F93C7C8C47F812906BCA59E86BB /* Polyline.h in Headers */ = {isa = PBXBuildFile; fileRef = D92D55641D2C42EE5631FDC9A8893EB2 /* Polyline.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7597688B440E846D88E71305C750123 /* MBRouteOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EC6910234E335304B84C753BFDEDCA /* MBRouteOptions.swift */; };
+		E947E19E2693CB7255A31BA1DF4E596D /* MBLane.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B8DBE50B611DF74336D194ABA9693F /* MBLane.swift */; };
+		EAC47BB7AFEF34F9797A031154BFE74D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286CAF8DB11369AC0C5624ADCCA73A68 /* Foundation.framework */; };
+		EB67BA9884DA91B582DE0933588DB02E /* Polyline-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82AE24C5FF9C728035F70908BF172C3E /* Polyline-dummy.m */; };
+		F012B6D15421A59DBBE988C7D020CDB9 /* MBRouteLeg.swift in Sources */ = {isa = PBXBuildFile; fileRef = C441B663C6F9C22CD53B1E9D360AA916 /* MBRouteLeg.swift */; };
+		F211DBF02AD9CCDECA9BD1C3F58CD42E /* Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B22AEDE4973AF49E5ED1772E3CB1C1F /* Format.swift */; };
+		F9C156883B938B995522ECC76E4A65DD /* HanekeSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E150B81FC1B844BB76507D5AA3D13462 /* HanekeSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0B01627893541B5E2E83333127C60C2A /* PBXContainerItemProxy */ = {
+		35D43592D148CECA201263E8FC8041A9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7C93BB2C850F2E4BB09BF2BBE1A027FE;
-			remoteInfo = MapboxDirections.swift;
-		};
-		596766CC9F3ABDEDC13A8A272F3DEDC4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1C080055654F530AA845FF3429077B74;
-			remoteInfo = Polyline;
-		};
-		A4745E540E1F95541906B5DA79266759 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2C2B1953A91633859BF7AD238FF567A0;
+			remoteGlobalIDString = AE4759774042D8E013517E82C6F7A058;
 			remoteInfo = HanekeSwift;
 		};
-		E04CAFBAAFB719EDA6E553D733EED565 /* PBXContainerItemProxy */ = {
+		76BD84A5227FE783C559103541A43398 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1C080055654F530AA845FF3429077B74;
+			remoteGlobalIDString = 54DD374144A221B7ED9EC9835EB5CFF9;
+			remoteInfo = Polyline;
+		};
+		8340B07CC4BCCC2EA7D5F5BB63C805CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAD616609C789739A241CC784B233D5D;
+			remoteInfo = MapboxDirections.swift;
+		};
+		D31AE4EC10DF86DF676D8778843A268C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54DD374144A221B7ED9EC9835EB5CFF9;
 			remoteInfo = Polyline;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0063442F6B33FB04A2032AE6998B4932 /* MapboxDirections.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapboxDirections.swift-prefix.pch"; sourceTree = "<group>"; };
 		00E7DC18E27273D6034CF6F29818ADF0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07CC528A8FE4E6CA84DBE2B96C769B1E /* MapboxDirections.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MapboxDirections.swift.xcconfig; sourceTree = "<group>"; };
+		09BB69871A50DAC9E8B9A543DE427D9E /* NSFileManager+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSFileManager+Haneke.swift"; path = "Haneke/NSFileManager+Haneke.swift"; sourceTree = "<group>"; };
 		0AE41219CB8667603F9DA7EBE6333AB3 /* Pods-whichever-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-whichever-umbrella.h"; sourceTree = "<group>"; };
-		155771FFEEE2E66F468B0A6DAD9C5E9E /* Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Haneke.swift; path = Haneke/Haneke.swift; sourceTree = "<group>"; };
-		25A1F628180E341E7A88A3EA503BCC39 /* MBDirections.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBDirections.swift; path = MapboxDirections/MBDirections.swift; sourceTree = "<group>"; };
-		282944B4AADF62507FC71917E5E4BEFB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D8A915B2EC69CB9FB36AD781288535E /* DiskFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiskFetcher.swift; path = Haneke/DiskFetcher.swift; sourceTree = "<group>"; };
+		154841A3E8902C1B42B844340A18053D /* Polyline-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Polyline-prefix.pch"; sourceTree = "<group>"; };
+		1C0B2D12C41952ED76FD88DE92CAA503 /* CGSize+Swift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGSize+Swift.swift"; path = "Haneke/CGSize+Swift.swift"; sourceTree = "<group>"; };
+		208DAD513AC46DBBC83EA37FA6323A6A /* HanekeSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HanekeSwift-prefix.pch"; sourceTree = "<group>"; };
+		2153CD384325419845457A703B00F230 /* MBIntersection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBIntersection.swift; path = MapboxDirections/MBIntersection.swift; sourceTree = "<group>"; };
+		286CAF8DB11369AC0C5624ADCCA73A68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2C2719412C98380B691CEC7054BF6AB0 /* UIImage+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Haneke.swift"; path = "Haneke/UIImage+Haneke.swift"; sourceTree = "<group>"; };
+		2F22F17A8CA7EEFB4B25B947006B4EA4 /* CryptoSwiftMD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CryptoSwiftMD5.swift; path = Haneke/CryptoSwiftMD5.swift; sourceTree = "<group>"; };
 		30FEE7BCF505C9F24F7D86C4DED14A4E /* Pods-whichever.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-whichever.release.xcconfig"; sourceTree = "<group>"; };
 		327512FF927EC475EE414D049567E054 /* Polyline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Polyline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34B0A325F44B2CA53710A5FC7C0B67B1 /* Pods-whichever-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-whichever-resources.sh"; sourceTree = "<group>"; };
-		3766C0AF7827E3CDEBE17F20829EF532 /* Polyline-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Polyline-umbrella.h"; sourceTree = "<group>"; };
-		3B079E690C4C016961081422ADA42ECF /* MBWaypoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBWaypoint.swift; path = MapboxDirections/MBWaypoint.swift; sourceTree = "<group>"; };
-		3BA1466D228F9AE84B27B05BF162538F /* Polyline-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Polyline-prefix.pch"; sourceTree = "<group>"; };
-		3E303F7034E6E8FF04029303D0F5B2C0 /* MBRouteOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRouteOptions.swift; path = MapboxDirections/MBRouteOptions.swift; sourceTree = "<group>"; };
-		4049E4A7E84BA4588DCD8521E4CAE364 /* UIImageView+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Haneke.swift"; path = "Haneke/UIImageView+Haneke.swift"; sourceTree = "<group>"; };
-		40B2EED4CE58CF5984BFF2045E242144 /* NSURLResponse+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURLResponse+Haneke.swift"; path = "Haneke/NSURLResponse+Haneke.swift"; sourceTree = "<group>"; };
-		4519B60BE0CC4DB01300C70950418E10 /* NSFileManager+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSFileManager+Haneke.swift"; path = "Haneke/NSFileManager+Haneke.swift"; sourceTree = "<group>"; };
-		4D22A9BDC6CA7FCD2E8FAA7BDCF58A06 /* MapboxDirections.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapboxDirections.swift-prefix.pch"; sourceTree = "<group>"; };
-		4E0816634812CC2A75132608A00A21A7 /* Log.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Log.swift; path = Haneke/Log.swift; sourceTree = "<group>"; };
-		52725832541CD24587389EB4AAEC71EB /* Format.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Format.swift; path = Haneke/Format.swift; sourceTree = "<group>"; };
-		58C2AAE14A5BD58D7286FC8DCD99A60F /* CGSize+Swift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGSize+Swift.swift"; path = "Haneke/CGSize+Swift.swift"; sourceTree = "<group>"; };
-		6327E8F03EE559D193389486667BA7C9 /* UIImage+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Haneke.swift"; path = "Haneke/UIImage+Haneke.swift"; sourceTree = "<group>"; };
-		64B552FB164D8D78579C7DDBDCCDEEF4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		658243742D4362E9A46105556739B44C /* DiskCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiskCache.swift; path = Haneke/DiskCache.swift; sourceTree = "<group>"; };
-		722CFB54381B354A319E4F67B9B15128 /* MBRouteStep.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRouteStep.swift; path = MapboxDirections/MBRouteStep.swift; sourceTree = "<group>"; };
-		784B26B1C23ED46E6724383649A01E13 /* Polyline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Polyline.h; path = Polyline/Polyline.h; sourceTree = "<group>"; };
+		3D16EA3C118FDFB89A5D9B855FCF2A46 /* MapboxDirections.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MapboxDirections.swift-dummy.m"; sourceTree = "<group>"; };
+		4D38DBD2374D38E9E82C5C01BBA24B1F /* NSHTTPURLResponse+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSHTTPURLResponse+Haneke.swift"; path = "Haneke/NSHTTPURLResponse+Haneke.swift"; sourceTree = "<group>"; };
+		4E308506A8AF5AC6D8ECB609D870C7B3 /* Fetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Fetcher.swift; path = Haneke/Fetcher.swift; sourceTree = "<group>"; };
+		4E72FF30F3FFE2B4F6D74E54D5305BA1 /* Polyline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Polyline.swift; path = Polyline/Polyline.swift; sourceTree = "<group>"; };
+		570FF41347C1F0E58CD0939FD6D499CA /* MapboxDirections.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MapboxDirections.swift.modulemap; sourceTree = "<group>"; };
+		57DAB36B3263BFCECBB3CED2085E8F59 /* Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Haneke.swift; path = Haneke/Haneke.swift; sourceTree = "<group>"; };
+		5B22AEDE4973AF49E5ED1772E3CB1C1F /* Format.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Format.swift; path = Haneke/Format.swift; sourceTree = "<group>"; };
+		5BD616C18FA657002A57B8017A3EE22F /* DiskCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiskCache.swift; path = Haneke/DiskCache.swift; sourceTree = "<group>"; };
+		608851007A1E6747CF0AE498DCB40ABB /* MapboxDirections.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MapboxDirections.h; path = MapboxDirections/MapboxDirections.h; sourceTree = "<group>"; };
+		6303560556EF2179CC67372F34BBC66D /* MBLaneIndication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBLaneIndication.swift; path = MapboxDirections/MBLaneIndication.swift; sourceTree = "<group>"; };
+		646471E96B032056C796C09790B15FDF /* Polyline-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Polyline-umbrella.h"; sourceTree = "<group>"; };
+		655B2779DE14B87B7BB16C859F6935EB /* HanekeSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HanekeSwift.xcconfig; sourceTree = "<group>"; };
+		6E10EE0AFDFB08FAB36A830F182CFCD5 /* Polyline.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Polyline.modulemap; sourceTree = "<group>"; };
+		6E637D6DEED7E6FABFDC7C80DC306E26 /* MBRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRoute.swift; path = MapboxDirections/MBRoute.swift; sourceTree = "<group>"; };
+		70122F6A3C68644DBFAD72B0E1AB1086 /* MBLaneIndication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBLaneIndication.h; path = MapboxDirections/MBLaneIndication.h; sourceTree = "<group>"; };
+		7A6546354136DA437ED8295DF19B484A /* UIView+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Haneke.swift"; path = "Haneke/UIView+Haneke.swift"; sourceTree = "<group>"; };
 		7EF9F4AF4A62935EF4E07BB65EEE5B77 /* Pods-whichever.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-whichever.debug.xcconfig"; sourceTree = "<group>"; };
-		8530C454B85B52DD129DA892AC59330B /* HanekeSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HanekeSwift.xcconfig; sourceTree = "<group>"; };
-		86D955C68AD1E7B6CDC29FE3C87ED961 /* String+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Haneke.swift"; path = "Haneke/String+Haneke.swift"; sourceTree = "<group>"; };
-		88D6C7D753D25C2B5ACAF856C6AE960A /* Polyline-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Polyline-dummy.m"; sourceTree = "<group>"; };
+		82AE24C5FF9C728035F70908BF172C3E /* Polyline-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Polyline-dummy.m"; sourceTree = "<group>"; };
+		84902A6D56607C384330AD78D6A8F83C /* MBWaypoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBWaypoint.swift; path = MapboxDirections/MBWaypoint.swift; sourceTree = "<group>"; };
 		8E80E126E86E754B6540DC12DCEE5B12 /* Pods-whichever-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-whichever-acknowledgements.plist"; sourceTree = "<group>"; };
-		9279CE856D7034F813D8065A50D51DEC /* CryptoSwiftMD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CryptoSwiftMD5.swift; path = Haneke/CryptoSwiftMD5.swift; sourceTree = "<group>"; };
-		934365AAE324626E9595FF451C890CC8 /* Haneke.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Haneke.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8E8EC289DDF854D31F07B701E63E5D98 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		934365AAE324626E9595FF451C890CC8 /* Haneke.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Haneke.framework; path = HanekeSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DD51327BFE7D026CCF4C3DB39BCEC50 /* HanekeSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HanekeSwift-dummy.m"; sourceTree = "<group>"; };
+		9E634121B5FA635966E05E8B005CACB6 /* MapboxDirections.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MapboxDirections.swift.xcconfig; sourceTree = "<group>"; };
 		9FFEBD428A049B7BF407B8E1DD412E14 /* Pods-whichever-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-whichever-dummy.m"; sourceTree = "<group>"; };
-		A0F6D61D8C414457BDA56872192ED22B /* Polyline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Polyline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A172DDA765F66E6330EB6549ABC1A5F6 /* HanekeSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HanekeSwift-umbrella.h"; sourceTree = "<group>"; };
-		A362A8CA69B9A5BE67C859E8AD993C62 /* MapboxDirections.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MapboxDirections.swift.modulemap; sourceTree = "<group>"; };
-		A39BD1D1026BEE2F87FA7343A1E5ED5B /* MapboxDirections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapboxDirections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9CC3950DC0203DA1E9737E0A574DE44 /* MapboxDirections.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MapboxDirections.h; path = MapboxDirections/MapboxDirections.h; sourceTree = "<group>"; };
-		B02CF885AFF82D3E16738B4B3C0F1E68 /* Cache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cache.swift; path = Haneke/Cache.swift; sourceTree = "<group>"; };
-		B8A17BD2267BE0848D30C2D966F99503 /* MapboxDirections.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MapboxDirections.swift-dummy.m"; sourceTree = "<group>"; };
-		B91D9E419B9F44D5C43C4A12E28E55C6 /* MBRoute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRoute.swift; path = MapboxDirections/MBRoute.swift; sourceTree = "<group>"; };
-		BEA337DC99E19AC41412482781E8C563 /* MBRouteLeg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRouteLeg.swift; path = MapboxDirections/MBRouteLeg.swift; sourceTree = "<group>"; };
+		A0F6D61D8C414457BDA56872192ED22B /* Polyline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Polyline.framework; path = Polyline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A39BD1D1026BEE2F87FA7343A1E5ED5B /* MapboxDirections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MapboxDirections.framework; path = MapboxDirections.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A51D02CD0480439474EF4FD5BE232CB5 /* Fetch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Fetch.swift; path = Haneke/Fetch.swift; sourceTree = "<group>"; };
+		AB89220248127C74F2984B5175B16CBF /* UIImageView+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Haneke.swift"; path = "Haneke/UIImageView+Haneke.swift"; sourceTree = "<group>"; };
+		AD1195F31B30478168A5A60EBD553236 /* Log.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Log.swift; path = Haneke/Log.swift; sourceTree = "<group>"; };
+		B5B0138783F8403586E6F7E58AF4A64B /* NetworkFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkFetcher.swift; path = Haneke/NetworkFetcher.swift; sourceTree = "<group>"; };
+		B9B8DBE50B611DF74336D194ABA9693F /* MBLane.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBLane.swift; path = MapboxDirections/MBLane.swift; sourceTree = "<group>"; };
 		BEECC0C2A793C96D808661CEB31BD5D0 /* Pods-whichever-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-whichever-frameworks.sh"; sourceTree = "<group>"; };
-		C107B291288125BD5938C6CA795F6EAF /* Pods-whichever.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-whichever.modulemap"; sourceTree = "<group>"; };
-		C3484E31598C83EA6330B63A0BC7A264 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C8FD1942D01B291C18617C5D1D4C51F3 /* Fetch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Fetch.swift; path = Haneke/Fetch.swift; sourceTree = "<group>"; };
-		CCDBA53130FA134F330965E80F902D3E /* NSHTTPURLResponse+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSHTTPURLResponse+Haneke.swift"; path = "Haneke/NSHTTPURLResponse+Haneke.swift"; sourceTree = "<group>"; };
-		CD608A9B7027EDB358D9CB0F889384FB /* Polyline.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Polyline.modulemap; sourceTree = "<group>"; };
-		CE6B0666BA7F1958E92F9D5F1F8F9B07 /* UIView+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Haneke.swift"; path = "Haneke/UIView+Haneke.swift"; sourceTree = "<group>"; };
+		C0F4ECC4D5680BA12C96F94CA4FF2889 /* MapboxDirections.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapboxDirections.swift-umbrella.h"; sourceTree = "<group>"; };
+		C107B291288125BD5938C6CA795F6EAF /* Pods-whichever.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-whichever.modulemap"; sourceTree = "<group>"; };
+		C441B663C6F9C22CD53B1E9D360AA916 /* MBRouteLeg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRouteLeg.swift; path = MapboxDirections/MBRouteLeg.swift; sourceTree = "<group>"; };
+		C4903247D84A9A410789C01F5D31B2CF /* MBDirections.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBDirections.swift; path = MapboxDirections/MBDirections.swift; sourceTree = "<group>"; };
+		C9EC6910234E335304B84C753BFDEDCA /* MBRouteOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRouteOptions.swift; path = MapboxDirections/MBRouteOptions.swift; sourceTree = "<group>"; };
+		CA573F4FA35B98C337B33C24C06C86F3 /* Polyline.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Polyline.xcconfig; sourceTree = "<group>"; };
+		CA779CC4D9B9284B429EB27E185AD8FE /* Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Data.swift; path = Haneke/Data.swift; sourceTree = "<group>"; };
+		CB5C1723648F3B9059E87CEF97021B8D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD0F1397CA1AB55DC4EE849109B7FE2D /* String+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Haneke.swift"; path = "Haneke/String+Haneke.swift"; sourceTree = "<group>"; };
 		CED3AD06038FD47DA352672AF383EC29 /* Pods-whichever-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-whichever-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D37FFCF5B0BE30E166F13B4FF09C3E0E /* Pods_whichever.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whichever.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D391103EE6F48153B9135DDC235695E9 /* UIButton+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Haneke.swift"; path = "Haneke/UIButton+Haneke.swift"; sourceTree = "<group>"; };
-		DC71D9EAC67990E4F14F47A91E451761 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCF9B57D7482A1928896582F2584C18D /* HanekeSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HanekeSwift.modulemap; sourceTree = "<group>"; };
-		E187AD2AF0C43867D71B5A29129DC928 /* MapboxDirections.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapboxDirections.swift-umbrella.h"; sourceTree = "<group>"; };
-		E813073794E1D686D3F35365939E264C /* HanekeSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HanekeSwift-dummy.m"; sourceTree = "<group>"; };
-		EB4965A4843C89B7C9C9879B9F3DD9EF /* NetworkFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkFetcher.swift; path = Haneke/NetworkFetcher.swift; sourceTree = "<group>"; };
-		EBAF02D99E61D22A55351D6CC12E6E94 /* HanekeSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HanekeSwift-prefix.pch"; sourceTree = "<group>"; };
-		EBC7BA62971C0775DDD5A52A40F2CA53 /* Fetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Fetcher.swift; path = Haneke/Fetcher.swift; sourceTree = "<group>"; };
-		F9BBAE331347BAF9934FBA25B1CDF593 /* Polyline.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Polyline.xcconfig; sourceTree = "<group>"; };
-		FB4014CC2001234EA17374375468FBBE /* Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Data.swift; path = Haneke/Data.swift; sourceTree = "<group>"; };
-		FD4C596BD803EF41E3F6D6C14C853512 /* Polyline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Polyline.swift; path = Polyline/Polyline.swift; sourceTree = "<group>"; };
+		D04FCA6EE6CB780CA7AFEAA3DF8020CF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D37FFCF5B0BE30E166F13B4FF09C3E0E /* Pods_whichever.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_whichever.framework; path = "Pods-whichever.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D92D55641D2C42EE5631FDC9A8893EB2 /* Polyline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Polyline.h; path = Polyline/Polyline.h; sourceTree = "<group>"; };
+		DB442158BC4626A202723BFC56AC5726 /* HanekeSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HanekeSwift.modulemap; sourceTree = "<group>"; };
+		E150B81FC1B844BB76507D5AA3D13462 /* HanekeSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HanekeSwift-umbrella.h"; sourceTree = "<group>"; };
+		F431038DE254C41793224CD88BB5B3CC /* UIButton+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Haneke.swift"; path = "Haneke/UIButton+Haneke.swift"; sourceTree = "<group>"; };
+		F571659F0F48B632FBA2126575F95FE7 /* Cache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cache.swift; path = Haneke/Cache.swift; sourceTree = "<group>"; };
+		F5E40E59874E36FC4102AFFC9EB5F9E8 /* DiskFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiskFetcher.swift; path = Haneke/DiskFetcher.swift; sourceTree = "<group>"; };
+		FDF6E7CB87316A2E63C64B2A1DB7B9D9 /* NSURLResponse+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURLResponse+Haneke.swift"; path = "Haneke/NSURLResponse+Haneke.swift"; sourceTree = "<group>"; };
+		FECE72F5BF6B2DAF25B4AAB92F55364F /* MBRouteStep.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MBRouteStep.swift; path = MapboxDirections/MBRouteStep.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		83D81967333598F33C136570C17C2E9C /* Frameworks */ = {
+		0BAF33F7BAB08FD4CC3AE412DFCB82B9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4087A4914E74CBFB5C8C58846F7862AF /* Foundation.framework in Frameworks */,
-				04CEF9E33C6B52612BB04023CA8D03FA /* Polyline.framework in Frameworks */,
+				D5E20B716158656917009A6887C4F96D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		888F2E5EDAF461CEA7FB1B43FC600AA2 /* Frameworks */ = {
+		0EF933B2645DCED00964616A121E3943 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED732F87FB7295E5E3D806071A389B3D /* Foundation.framework in Frameworks */,
+				371653DAF95829FCCC9AB1D2005FD12E /* Foundation.framework in Frameworks */,
+				7D4ADA40C2AF79BC6AA2ADC3B5661B86 /* Polyline.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F0E55176A5AF13111D389E09381931E /* Frameworks */ = {
+		99BBD9C3F70F9149075034B6937C9002 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				410D0641B813947CA53F07D75F4624CE /* Foundation.framework in Frameworks */,
+				8DAEFAD4890FE2555C84F89A05843C6F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F070F56EC476792BCCDFCF04B3D6D5B3 /* Frameworks */ = {
+		A7AE8F3FCB72C7CD63ADDAF4C3227F08 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6A0DEA45F6E32495FF3EA299C9331C5 /* Foundation.framework in Frameworks */,
+				EAC47BB7AFEF34F9797A031154BFE74D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +203,20 @@
 				A0F6D61D8C414457BDA56872192ED22B /* Polyline.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1935FFDC057FE71FB2B5C5EEDADB2BF6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D04FCA6EE6CB780CA7AFEAA3DF8020CF /* Info.plist */,
+				570FF41347C1F0E58CD0939FD6D499CA /* MapboxDirections.swift.modulemap */,
+				9E634121B5FA635966E05E8B005CACB6 /* MapboxDirections.swift.xcconfig */,
+				3D16EA3C118FDFB89A5D9B855FCF2A46 /* MapboxDirections.swift-dummy.m */,
+				0063442F6B33FB04A2032AE6998B4932 /* MapboxDirections.swift-prefix.pch */,
+				C0F4ECC4D5680BA12C96F94CA4FF2889 /* MapboxDirections.swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MapboxDirections.swift";
 			sourceTree = "<group>";
 		};
 		1EDFE5E74D4C59F50568D1BA546C34BA /* Pods-whichever */ = {
@@ -215,77 +237,56 @@
 			path = "Target Support Files/Pods-whichever";
 			sourceTree = "<group>";
 		};
-		223EC96007BA1EC1FF92DD797C6EE308 /* Support Files */ = {
+		5735A4E5A75677DA957A7DC7FD0F6E90 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DCF9B57D7482A1928896582F2584C18D /* HanekeSwift.modulemap */,
-				8530C454B85B52DD129DA892AC59330B /* HanekeSwift.xcconfig */,
-				E813073794E1D686D3F35365939E264C /* HanekeSwift-dummy.m */,
-				EBAF02D99E61D22A55351D6CC12E6E94 /* HanekeSwift-prefix.pch */,
-				A172DDA765F66E6330EB6549ABC1A5F6 /* HanekeSwift-umbrella.h */,
-				DC71D9EAC67990E4F14F47A91E451761 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/HanekeSwift";
-			sourceTree = "<group>";
-		};
-		231B335CAB1AC4E105D3E866729CE7FC /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				64B552FB164D8D78579C7DDBDCCDEEF4 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		42FE33D94F266BDE2ADF5E7B8E906411 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4CE19CDD657C870446F97AB2FD781B3B /* HanekeSwift */,
-				9E9FBC9FC96A3FD27D78802BBC0896DB /* MapboxDirections.swift */,
-				D9E072E95C12C48D884C91F1839E7972 /* Polyline */,
+				7B088FCF2B03E847598B38B3D0E2BAC6 /* HanekeSwift */,
+				A7D5C059BFF6F6C60F6C43C125785643 /* MapboxDirections.swift */,
+				9C29A32D111BAB14FB8F3CADD040F2CC /* Polyline */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		4B238DB800383588C872E864C0887354 /* Support Files */ = {
+		6E58F38396943AAD00F895651B588DAC /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				282944B4AADF62507FC71917E5E4BEFB /* Info.plist */,
-				CD608A9B7027EDB358D9CB0F889384FB /* Polyline.modulemap */,
-				F9BBAE331347BAF9934FBA25B1CDF593 /* Polyline.xcconfig */,
-				88D6C7D753D25C2B5ACAF856C6AE960A /* Polyline-dummy.m */,
-				3BA1466D228F9AE84B27B05BF162538F /* Polyline-prefix.pch */,
-				3766C0AF7827E3CDEBE17F20829EF532 /* Polyline-umbrella.h */,
+				8E8EC289DDF854D31F07B701E63E5D98 /* Info.plist */,
+				6E10EE0AFDFB08FAB36A830F182CFCD5 /* Polyline.modulemap */,
+				CA573F4FA35B98C337B33C24C06C86F3 /* Polyline.xcconfig */,
+				82AE24C5FF9C728035F70908BF172C3E /* Polyline-dummy.m */,
+				154841A3E8902C1B42B844340A18053D /* Polyline-prefix.pch */,
+				646471E96B032056C796C09790B15FDF /* Polyline-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Polyline";
 			sourceTree = "<group>";
 		};
-		4CE19CDD657C870446F97AB2FD781B3B /* HanekeSwift */ = {
+		7B088FCF2B03E847598B38B3D0E2BAC6 /* HanekeSwift */ = {
 			isa = PBXGroup;
 			children = (
-				B02CF885AFF82D3E16738B4B3C0F1E68 /* Cache.swift */,
-				58C2AAE14A5BD58D7286FC8DCD99A60F /* CGSize+Swift.swift */,
-				9279CE856D7034F813D8065A50D51DEC /* CryptoSwiftMD5.swift */,
-				FB4014CC2001234EA17374375468FBBE /* Data.swift */,
-				658243742D4362E9A46105556739B44C /* DiskCache.swift */,
-				2D8A915B2EC69CB9FB36AD781288535E /* DiskFetcher.swift */,
-				C8FD1942D01B291C18617C5D1D4C51F3 /* Fetch.swift */,
-				EBC7BA62971C0775DDD5A52A40F2CA53 /* Fetcher.swift */,
-				52725832541CD24587389EB4AAEC71EB /* Format.swift */,
-				155771FFEEE2E66F468B0A6DAD9C5E9E /* Haneke.swift */,
-				4E0816634812CC2A75132608A00A21A7 /* Log.swift */,
-				EB4965A4843C89B7C9C9879B9F3DD9EF /* NetworkFetcher.swift */,
-				4519B60BE0CC4DB01300C70950418E10 /* NSFileManager+Haneke.swift */,
-				CCDBA53130FA134F330965E80F902D3E /* NSHTTPURLResponse+Haneke.swift */,
-				40B2EED4CE58CF5984BFF2045E242144 /* NSURLResponse+Haneke.swift */,
-				86D955C68AD1E7B6CDC29FE3C87ED961 /* String+Haneke.swift */,
-				D391103EE6F48153B9135DDC235695E9 /* UIButton+Haneke.swift */,
-				6327E8F03EE559D193389486667BA7C9 /* UIImage+Haneke.swift */,
-				4049E4A7E84BA4588DCD8521E4CAE364 /* UIImageView+Haneke.swift */,
-				CE6B0666BA7F1958E92F9D5F1F8F9B07 /* UIView+Haneke.swift */,
-				223EC96007BA1EC1FF92DD797C6EE308 /* Support Files */,
+				F571659F0F48B632FBA2126575F95FE7 /* Cache.swift */,
+				1C0B2D12C41952ED76FD88DE92CAA503 /* CGSize+Swift.swift */,
+				2F22F17A8CA7EEFB4B25B947006B4EA4 /* CryptoSwiftMD5.swift */,
+				CA779CC4D9B9284B429EB27E185AD8FE /* Data.swift */,
+				5BD616C18FA657002A57B8017A3EE22F /* DiskCache.swift */,
+				F5E40E59874E36FC4102AFFC9EB5F9E8 /* DiskFetcher.swift */,
+				A51D02CD0480439474EF4FD5BE232CB5 /* Fetch.swift */,
+				4E308506A8AF5AC6D8ECB609D870C7B3 /* Fetcher.swift */,
+				5B22AEDE4973AF49E5ED1772E3CB1C1F /* Format.swift */,
+				57DAB36B3263BFCECBB3CED2085E8F59 /* Haneke.swift */,
+				AD1195F31B30478168A5A60EBD553236 /* Log.swift */,
+				B5B0138783F8403586E6F7E58AF4A64B /* NetworkFetcher.swift */,
+				09BB69871A50DAC9E8B9A543DE427D9E /* NSFileManager+Haneke.swift */,
+				4D38DBD2374D38E9E82C5C01BBA24B1F /* NSHTTPURLResponse+Haneke.swift */,
+				FDF6E7CB87316A2E63C64B2A1DB7B9D9 /* NSURLResponse+Haneke.swift */,
+				CD0F1397CA1AB55DC4EE849109B7FE2D /* String+Haneke.swift */,
+				F431038DE254C41793224CD88BB5B3CC /* UIButton+Haneke.swift */,
+				2C2719412C98380B691CEC7054BF6AB0 /* UIImage+Haneke.swift */,
+				AB89220248127C74F2984B5175B16CBF /* UIImageView+Haneke.swift */,
+				7A6546354136DA437ED8295DF19B484A /* UIView+Haneke.swift */,
+				C882EC7473D6F794B12222073B4A11F1 /* Support Files */,
 			);
+			name = HanekeSwift;
 			path = HanekeSwift;
 			sourceTree = "<group>";
 		};
@@ -293,7 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				327512FF927EC475EE414D049567E054 /* Polyline.framework */,
-				231B335CAB1AC4E105D3E866729CE7FC /* iOS */,
+				8B62EFD3723A1D1AE739FDD58AC07358 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -303,7 +304,7 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				7D52FF8A91DDA1BFCCFCDED105969F1C /* Frameworks */,
-				42FE33D94F266BDE2ADF5E7B8E906411 /* Pods */,
+				5735A4E5A75677DA957A7DC7FD0F6E90 /* Pods */,
 				084FF6589ABA0D7C31CCAFAC14E76D96 /* Products */,
 				876197C0AAEC3ECF8376749272090BF6 /* Targets Support Files */,
 			);
@@ -317,92 +318,107 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9E9FBC9FC96A3FD27D78802BBC0896DB /* MapboxDirections.swift */ = {
+		8B62EFD3723A1D1AE739FDD58AC07358 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				A9CC3950DC0203DA1E9737E0A574DE44 /* MapboxDirections.h */,
-				25A1F628180E341E7A88A3EA503BCC39 /* MBDirections.swift */,
-				B91D9E419B9F44D5C43C4A12E28E55C6 /* MBRoute.swift */,
-				BEA337DC99E19AC41412482781E8C563 /* MBRouteLeg.swift */,
-				3E303F7034E6E8FF04029303D0F5B2C0 /* MBRouteOptions.swift */,
-				722CFB54381B354A319E4F67B9B15128 /* MBRouteStep.swift */,
-				3B079E690C4C016961081422ADA42ECF /* MBWaypoint.swift */,
-				F2BCE0700DC3102AE14EB6961D670088 /* Support Files */,
+				286CAF8DB11369AC0C5624ADCCA73A68 /* Foundation.framework */,
 			);
-			path = MapboxDirections.swift;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		D9E072E95C12C48D884C91F1839E7972 /* Polyline */ = {
+		9C29A32D111BAB14FB8F3CADD040F2CC /* Polyline */ = {
 			isa = PBXGroup;
 			children = (
-				784B26B1C23ED46E6724383649A01E13 /* Polyline.h */,
-				FD4C596BD803EF41E3F6D6C14C853512 /* Polyline.swift */,
-				4B238DB800383588C872E864C0887354 /* Support Files */,
+				D92D55641D2C42EE5631FDC9A8893EB2 /* Polyline.h */,
+				4E72FF30F3FFE2B4F6D74E54D5305BA1 /* Polyline.swift */,
+				6E58F38396943AAD00F895651B588DAC /* Support Files */,
 			);
+			name = Polyline;
 			path = Polyline;
 			sourceTree = "<group>";
 		};
-		F2BCE0700DC3102AE14EB6961D670088 /* Support Files */ = {
+		A7D5C059BFF6F6C60F6C43C125785643 /* MapboxDirections.swift */ = {
 			isa = PBXGroup;
 			children = (
-				C3484E31598C83EA6330B63A0BC7A264 /* Info.plist */,
-				A362A8CA69B9A5BE67C859E8AD993C62 /* MapboxDirections.swift.modulemap */,
-				07CC528A8FE4E6CA84DBE2B96C769B1E /* MapboxDirections.swift.xcconfig */,
-				B8A17BD2267BE0848D30C2D966F99503 /* MapboxDirections.swift-dummy.m */,
-				4D22A9BDC6CA7FCD2E8FAA7BDCF58A06 /* MapboxDirections.swift-prefix.pch */,
-				E187AD2AF0C43867D71B5A29129DC928 /* MapboxDirections.swift-umbrella.h */,
+				608851007A1E6747CF0AE498DCB40ABB /* MapboxDirections.h */,
+				C4903247D84A9A410789C01F5D31B2CF /* MBDirections.swift */,
+				2153CD384325419845457A703B00F230 /* MBIntersection.swift */,
+				B9B8DBE50B611DF74336D194ABA9693F /* MBLane.swift */,
+				70122F6A3C68644DBFAD72B0E1AB1086 /* MBLaneIndication.h */,
+				6303560556EF2179CC67372F34BBC66D /* MBLaneIndication.swift */,
+				6E637D6DEED7E6FABFDC7C80DC306E26 /* MBRoute.swift */,
+				C441B663C6F9C22CD53B1E9D360AA916 /* MBRouteLeg.swift */,
+				C9EC6910234E335304B84C753BFDEDCA /* MBRouteOptions.swift */,
+				FECE72F5BF6B2DAF25B4AAB92F55364F /* MBRouteStep.swift */,
+				84902A6D56607C384330AD78D6A8F83C /* MBWaypoint.swift */,
+				1935FFDC057FE71FB2B5C5EEDADB2BF6 /* Support Files */,
+			);
+			name = MapboxDirections.swift;
+			path = MapboxDirections.swift;
+			sourceTree = "<group>";
+		};
+		C882EC7473D6F794B12222073B4A11F1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB442158BC4626A202723BFC56AC5726 /* HanekeSwift.modulemap */,
+				655B2779DE14B87B7BB16C859F6935EB /* HanekeSwift.xcconfig */,
+				9DD51327BFE7D026CCF4C3DB39BCEC50 /* HanekeSwift-dummy.m */,
+				208DAD513AC46DBBC83EA37FA6323A6A /* HanekeSwift-prefix.pch */,
+				E150B81FC1B844BB76507D5AA3D13462 /* HanekeSwift-umbrella.h */,
+				CB5C1723648F3B9059E87CEF97021B8D /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/MapboxDirections.swift";
+			path = "../Target Support Files/HanekeSwift";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0C64655B97B501711541511851F1C8EB /* Headers */ = {
+		0D7D313FFE19C50A17479FBF8091C94F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB02DD775A289B55B03F87A73525B611 /* HanekeSwift-umbrella.h in Headers */,
+				C2C9B079841FB3E9554FB054598C56B0 /* Polyline-umbrella.h in Headers */,
+				E3FD4F93C7C8C47F812906BCA59E86BB /* Polyline.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0E5A572EEF4E97D553B8EA164999586E /* Headers */ = {
+		1230F5D0018AF9B0BFF25558571D1DB3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96F7C5AE7BE30C0B8242CFF1BD840B55 /* Pods-whichever-umbrella.h in Headers */,
+				F9C156883B938B995522ECC76E4A65DD /* HanekeSwift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		72434ACA1326E2FAAAFBDEDDB3C57AE8 /* Headers */ = {
+		6B435AADA51EE4718B1D04444931DE16 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B72600B945A2F5FCABA5C82EC00D8767 /* Polyline-umbrella.h in Headers */,
-				B504A84B309C5D2BB8489C50AB9ABCAD /* Polyline.h in Headers */,
+				C486A4EBC8576374B46FFD18D7CF15A7 /* MapboxDirections.h in Headers */,
+				E161242C5C59E83F527386A36F6209FC /* MapboxDirections.swift-umbrella.h in Headers */,
+				61AA45B719B741ABA10B2B4E48311388 /* MBLaneIndication.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		938C0C1ADFFF1F25B5A349683469233F /* Headers */ = {
+		A394F1DBBD97B6B74988C6001381F2A2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				707F8109814BFBF751EA120219898703 /* MapboxDirections.h in Headers */,
-				F5BE18B44AF66A8496E01B6C554D0603 /* MapboxDirections.swift-umbrella.h in Headers */,
+				5B0C120B808612B88145511E89961E9E /* Pods-whichever-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1C080055654F530AA845FF3429077B74 /* Polyline */ = {
+		54DD374144A221B7ED9EC9835EB5CFF9 /* Polyline */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F178792297CEA9FDA8D268A4846DF52 /* Build configuration list for PBXNativeTarget "Polyline" */;
+			buildConfigurationList = 3B937E868FBE88B84A8487DB0F795FC3 /* Build configuration list for PBXNativeTarget "Polyline" */;
 			buildPhases = (
-				EBB05E083C23EAB6AE970AC59B95A443 /* Sources */,
-				F070F56EC476792BCCDFCF04B3D6D5B3 /* Frameworks */,
-				72434ACA1326E2FAAAFBDEDDB3C57AE8 /* Headers */,
+				CCCF2DB33FBDA3B9495071FBFD6DB945 /* Sources */,
+				0BAF33F7BAB08FD4CC3AE412DFCB82B9 /* Frameworks */,
+				0D7D313FFE19C50A17479FBF8091C94F /* Headers */,
 			);
 			buildRules = (
 			);
@@ -413,13 +429,31 @@
 			productReference = A0F6D61D8C414457BDA56872192ED22B /* Polyline.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2C2B1953A91633859BF7AD238FF567A0 /* HanekeSwift */ = {
+		AAD616609C789739A241CC784B233D5D /* MapboxDirections.swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 72681BE87943D4976033F6522AE72050 /* Build configuration list for PBXNativeTarget "HanekeSwift" */;
+			buildConfigurationList = 01AD45C552CF1BFAA98A1D8A4F264954 /* Build configuration list for PBXNativeTarget "MapboxDirections.swift" */;
 			buildPhases = (
-				CF172C07C6DA054AC5D84164A26DAE24 /* Sources */,
-				8F0E55176A5AF13111D389E09381931E /* Frameworks */,
-				0C64655B97B501711541511851F1C8EB /* Headers */,
+				9BF05E6DDE97A49270423F8E368D62E6 /* Sources */,
+				0EF933B2645DCED00964616A121E3943 /* Frameworks */,
+				6B435AADA51EE4718B1D04444931DE16 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA202C7D22F164ED550B16CCE9413EB6 /* PBXTargetDependency */,
+			);
+			name = MapboxDirections.swift;
+			productName = MapboxDirections.swift;
+			productReference = A39BD1D1026BEE2F87FA7343A1E5ED5B /* MapboxDirections.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AE4759774042D8E013517E82C6F7A058 /* HanekeSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DD468FB375E9C1971E9F0CFE51A4135 /* Build configuration list for PBXNativeTarget "HanekeSwift" */;
+			buildPhases = (
+				3F39FB05072ED8C17BABEB9BC822959C /* Sources */,
+				A7AE8F3FCB72C7CD63ADDAF4C3227F08 /* Frameworks */,
+				1230F5D0018AF9B0BFF25558571D1DB3 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -430,38 +464,20 @@
 			productReference = 934365AAE324626E9595FF451C890CC8 /* Haneke.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7C93BB2C850F2E4BB09BF2BBE1A027FE /* MapboxDirections.swift */ = {
+		B45D5562CD0E56A60B88858C2DCC6527 /* Pods-whichever */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1675E524B5C4941862055A4EDC30F103 /* Build configuration list for PBXNativeTarget "MapboxDirections.swift" */;
+			buildConfigurationList = B8AB7B0C8B81517DE0409488DB3804E3 /* Build configuration list for PBXNativeTarget "Pods-whichever" */;
 			buildPhases = (
-				6C6FDC39FDC24983975DA9B150874551 /* Sources */,
-				83D81967333598F33C136570C17C2E9C /* Frameworks */,
-				938C0C1ADFFF1F25B5A349683469233F /* Headers */,
+				9C85F2CD74B367D41696B06959742B18 /* Sources */,
+				99BBD9C3F70F9149075034B6937C9002 /* Frameworks */,
+				A394F1DBBD97B6B74988C6001381F2A2 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				34F5C1EBC6BF05DD932C74861F0F7F11 /* PBXTargetDependency */,
-			);
-			name = MapboxDirections.swift;
-			productName = MapboxDirections.swift;
-			productReference = A39BD1D1026BEE2F87FA7343A1E5ED5B /* MapboxDirections.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		9FA1CF1E69F4ACEF475C44BADE4264DC /* Pods-whichever */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 63EB248B18279AE0F8EB5289D0643DD1 /* Build configuration list for PBXNativeTarget "Pods-whichever" */;
-			buildPhases = (
-				A07B4D552891ED6A473EC70E8092ADA3 /* Sources */,
-				888F2E5EDAF461CEA7FB1B43FC600AA2 /* Frameworks */,
-				0E5A572EEF4E97D553B8EA164999586E /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				09270B7308B465AFDFB3A76A64BE66EE /* PBXTargetDependency */,
-				43C9260A033FFAE8474CD36969A712E9 /* PBXTargetDependency */,
-				3A114019A761A2119A3444D9E8FFED16 /* PBXTargetDependency */,
+				FDE5BAC0DFD3568DD7FB081B5651A005 /* PBXTargetDependency */,
+				0EF961B53D145D87C9FAC565BA59D7CA /* PBXTargetDependency */,
+				A683E0C64423E1B22F79A1CB3FC534F9 /* PBXTargetDependency */,
 			);
 			name = "Pods-whichever";
 			productName = "Pods-whichever";
@@ -474,8 +490,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0820;
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -489,111 +505,228 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2C2B1953A91633859BF7AD238FF567A0 /* HanekeSwift */,
-				7C93BB2C850F2E4BB09BF2BBE1A027FE /* MapboxDirections.swift */,
-				9FA1CF1E69F4ACEF475C44BADE4264DC /* Pods-whichever */,
-				1C080055654F530AA845FF3429077B74 /* Polyline */,
+				AE4759774042D8E013517E82C6F7A058 /* HanekeSwift */,
+				AAD616609C789739A241CC784B233D5D /* MapboxDirections.swift */,
+				B45D5562CD0E56A60B88858C2DCC6527 /* Pods-whichever */,
+				54DD374144A221B7ED9EC9835EB5CFF9 /* Polyline */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6C6FDC39FDC24983975DA9B150874551 /* Sources */ = {
+		3F39FB05072ED8C17BABEB9BC822959C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0334CE4DA47426AB21D29BD6E8DF368E /* MapboxDirections.swift-dummy.m in Sources */,
-				95A81D3A9F8EEC76F4D925702E270FF5 /* MBDirections.swift in Sources */,
-				5AA2A0D128578189A44E78DADCB5624A /* MBRoute.swift in Sources */,
-				A6547BE5E4CE0156705A016AE48B14CD /* MBRouteLeg.swift in Sources */,
-				B0B11F4C8BEDCB6E25BAD6A0CA65D441 /* MBRouteOptions.swift in Sources */,
-				AFE4A2DB9D78E2CE7818539286BCF291 /* MBRouteStep.swift in Sources */,
-				EBCB36BF1A777B379130C00A2AA55643 /* MBWaypoint.swift in Sources */,
+				D734F5980CF4609635307AEE7ECB65B2 /* Cache.swift in Sources */,
+				9D751AE797836951F9FD0A4E9E6AE344 /* CGSize+Swift.swift in Sources */,
+				6F41805C2984D3172CEBDCB232A9E205 /* CryptoSwiftMD5.swift in Sources */,
+				516B284EC38BCC14EBF5A275790CFA9E /* Data.swift in Sources */,
+				44ACFD0543993523C7B2875814A25A65 /* DiskCache.swift in Sources */,
+				233D0C74026D4F77CB562E90B2714777 /* DiskFetcher.swift in Sources */,
+				0DA289E3CFC0496E8A393A78831458C6 /* Fetch.swift in Sources */,
+				424F2EE8F3FF0206A8C0455939698D41 /* Fetcher.swift in Sources */,
+				F211DBF02AD9CCDECA9BD1C3F58CD42E /* Format.swift in Sources */,
+				7E867974234ECCA3F0419879A37EF9A1 /* Haneke.swift in Sources */,
+				34BA8F11703FC6F1FC94812A2B451A2D /* HanekeSwift-dummy.m in Sources */,
+				734D2D7728F4FDB196AFBDA6FE131376 /* Log.swift in Sources */,
+				45D941F68F765620760E8EC56F4C3904 /* NetworkFetcher.swift in Sources */,
+				C9FDF6F209E90829A8E96B03077116BB /* NSFileManager+Haneke.swift in Sources */,
+				5946A4834D77660F3D8188ED70FDC603 /* NSHTTPURLResponse+Haneke.swift in Sources */,
+				2D93F149491F25BCC11EBF259DE1791D /* NSURLResponse+Haneke.swift in Sources */,
+				25F558B3167CC7FAFCCC902B83ED0599 /* String+Haneke.swift in Sources */,
+				A257C7E3394A9813188DC886B978193F /* UIButton+Haneke.swift in Sources */,
+				048BE8B1399E22885B758F58B5103AAF /* UIImage+Haneke.swift in Sources */,
+				368FBAAE5E624FDDB6F39D1ACB1DA144 /* UIImageView+Haneke.swift in Sources */,
+				9F0ED20EDA02495C3CE53351168BDA34 /* UIView+Haneke.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A07B4D552891ED6A473EC70E8092ADA3 /* Sources */ = {
+		9BF05E6DDE97A49270423F8E368D62E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74ECEBB2473D14E389570892706A0B5B /* Pods-whichever-dummy.m in Sources */,
+				DA87DA8C067E1710EB276D4C3F9B01F6 /* MapboxDirections.swift-dummy.m in Sources */,
+				D82587FBC269E03A0500BB2A892A3005 /* MBDirections.swift in Sources */,
+				A9E3810DF1CEC5C6B901A9C8243CADF8 /* MBIntersection.swift in Sources */,
+				E947E19E2693CB7255A31BA1DF4E596D /* MBLane.swift in Sources */,
+				894DFA84EB2CB3E7D0E28F64515AD8D5 /* MBLaneIndication.swift in Sources */,
+				A5A078DB7B33D1B52D39C9A6B30D14E4 /* MBRoute.swift in Sources */,
+				F012B6D15421A59DBBE988C7D020CDB9 /* MBRouteLeg.swift in Sources */,
+				E7597688B440E846D88E71305C750123 /* MBRouteOptions.swift in Sources */,
+				0C36199088B40772B074108FB4B19CB1 /* MBRouteStep.swift in Sources */,
+				1875235E9FE81834EBA825075FE3AC7D /* MBWaypoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CF172C07C6DA054AC5D84164A26DAE24 /* Sources */ = {
+		9C85F2CD74B367D41696B06959742B18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9831DDC5256EF014D93FF2DBE055E7B6 /* Cache.swift in Sources */,
-				9F4D113C6A4469F0DFAC637F1CA2C087 /* CGSize+Swift.swift in Sources */,
-				9E629066D218DC1DC616E339DB68E49C /* CryptoSwiftMD5.swift in Sources */,
-				3D90F67A3A10F71FD01DEDA59496C1D7 /* Data.swift in Sources */,
-				AEB48C925DC8D4B812C4ABF9F15C822E /* DiskCache.swift in Sources */,
-				49A5E2B820A83801CEE267AA6E1D923F /* DiskFetcher.swift in Sources */,
-				B1CCF02E757EE856275CE85BF171ED90 /* Fetch.swift in Sources */,
-				8C357B44EA2BC147AA0219CD8CC03B5F /* Fetcher.swift in Sources */,
-				0D361BC02EA3B8C476545E29A293CCB8 /* Format.swift in Sources */,
-				BD038EFFD2D1B49B136B42B5E07D59C5 /* Haneke.swift in Sources */,
-				F03916F3658FFB4643AD5FC815A4F5A7 /* HanekeSwift-dummy.m in Sources */,
-				9911E1A886CD44872C07FAA6A1521A85 /* Log.swift in Sources */,
-				3EA2C091B8672D75066EEEEFE63B5A86 /* NetworkFetcher.swift in Sources */,
-				92A2D4839D45ABA48D77923C035C8943 /* NSFileManager+Haneke.swift in Sources */,
-				DF6DBB5FA4E663A5AE7F272CA1CBA3BB /* NSHTTPURLResponse+Haneke.swift in Sources */,
-				8A85C4CDF0FE775E0BD0C44B0C3E6159 /* NSURLResponse+Haneke.swift in Sources */,
-				55F3BC1465BB2EB6F02ADC5A2D1F9F83 /* String+Haneke.swift in Sources */,
-				1D27B06296C346D4F23F5ED14B0A5D1A /* UIButton+Haneke.swift in Sources */,
-				A8CF635DBE430F95FB17D371B918B3FB /* UIImage+Haneke.swift in Sources */,
-				24E7FCE3DF42DC6D616DC39F8AC69566 /* UIImageView+Haneke.swift in Sources */,
-				9D5F6868132325D38051C5A07F128C5C /* UIView+Haneke.swift in Sources */,
+				9D012AFE709C245C5A4CFDE3BBF04A54 /* Pods-whichever-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EBB05E083C23EAB6AE970AC59B95A443 /* Sources */ = {
+		CCCF2DB33FBDA3B9495071FBFD6DB945 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF2C437AC8B85AC648693C3AFCDA38BB /* Polyline-dummy.m in Sources */,
-				67AC3489311600D930CC2C92ECD47848 /* Polyline.swift in Sources */,
+				EB67BA9884DA91B582DE0933588DB02E /* Polyline-dummy.m in Sources */,
+				58D2B54A156CCEF75F31F9FF0DAF6EA2 /* Polyline.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		09270B7308B465AFDFB3A76A64BE66EE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = HanekeSwift;
-			target = 2C2B1953A91633859BF7AD238FF567A0 /* HanekeSwift */;
-			targetProxy = A4745E540E1F95541906B5DA79266759 /* PBXContainerItemProxy */;
-		};
-		34F5C1EBC6BF05DD932C74861F0F7F11 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Polyline;
-			target = 1C080055654F530AA845FF3429077B74 /* Polyline */;
-			targetProxy = E04CAFBAAFB719EDA6E553D733EED565 /* PBXContainerItemProxy */;
-		};
-		3A114019A761A2119A3444D9E8FFED16 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Polyline;
-			target = 1C080055654F530AA845FF3429077B74 /* Polyline */;
-			targetProxy = 596766CC9F3ABDEDC13A8A272F3DEDC4 /* PBXContainerItemProxy */;
-		};
-		43C9260A033FFAE8474CD36969A712E9 /* PBXTargetDependency */ = {
+		0EF961B53D145D87C9FAC565BA59D7CA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MapboxDirections.swift;
-			target = 7C93BB2C850F2E4BB09BF2BBE1A027FE /* MapboxDirections.swift */;
-			targetProxy = 0B01627893541B5E2E83333127C60C2A /* PBXContainerItemProxy */;
+			target = AAD616609C789739A241CC784B233D5D /* MapboxDirections.swift */;
+			targetProxy = 8340B07CC4BCCC2EA7D5F5BB63C805CA /* PBXContainerItemProxy */;
+		};
+		A683E0C64423E1B22F79A1CB3FC534F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Polyline;
+			target = 54DD374144A221B7ED9EC9835EB5CFF9 /* Polyline */;
+			targetProxy = 76BD84A5227FE783C559103541A43398 /* PBXContainerItemProxy */;
+		};
+		CA202C7D22F164ED550B16CCE9413EB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Polyline;
+			target = 54DD374144A221B7ED9EC9835EB5CFF9 /* Polyline */;
+			targetProxy = D31AE4EC10DF86DF676D8778843A268C /* PBXContainerItemProxy */;
+		};
+		FDE5BAC0DFD3568DD7FB081B5651A005 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HanekeSwift;
+			target = AE4759774042D8E013517E82C6F7A058 /* HanekeSwift */;
+			targetProxy = 35D43592D148CECA201263E8FC8041A9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		01B424B15C468045E73673C97D8CD8DB /* Release */ = {
+		002B55424B53AF2D37E708A61EF7400B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07CC528A8FE4E6CA84DBE2B96C769B1E /* MapboxDirections.swift.xcconfig */;
+			baseConfigurationReference = CA573F4FA35B98C337B33C24C06C86F3 /* Polyline.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Polyline/Polyline-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Polyline/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Polyline/Polyline.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Polyline;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		071EE32FA891F9F9A4A9056635217D7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30FEE7BCF505C9F24F7D86C4DED14A4E /* Pods-whichever.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-whichever/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-whichever/Pods-whichever.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_whichever;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		395CEE2EB48FFDF34B5998B22428659B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EF9F4AF4A62935EF4E07BB65EEE5B77 /* Pods-whichever.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-whichever/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-whichever/Pods-whichever.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_whichever;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		497932341351B66B079AB9CDCC02FFC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E634121B5FA635966E05E8B005CACB6 /* MapboxDirections.swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -606,22 +739,25 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MapboxDirections.swift/MapboxDirections.swift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = MapboxDirections;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 2.3;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		034014829C1E4434983CF3A690C12017 /* Debug */ = {
+		4E487F173E6C9664F4E9E26B9635D23C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -629,6 +765,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -637,12 +774,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
@@ -656,56 +792,59 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_VERSION = 2.3;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		182E296ED920FB390D82349B18F8EE51 /* Release */ = {
+		815A1497660DB0BDB8E6D16826EE78CE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 30FEE7BCF505C9F24F7D86C4DED14A4E /* Pods-whichever.release.xcconfig */;
+			baseConfigurationReference = 655B2779DE14B87B7BB16C859F6935EB /* HanekeSwift.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-whichever/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/HanekeSwift/HanekeSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HanekeSwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-whichever/Pods-whichever.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_whichever;
+				MODULEMAP_FILE = "Target Support Files/HanekeSwift/HanekeSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Haneke;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 2.3;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		44AA32FF0C7AEC4CB85C1EBF8CF3154B /* Release */ = {
+		96C736D902A9FEB94CE7B8A5A2E13A8E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9BBAE331347BAF9934FBA25B1CDF593 /* Polyline.xcconfig */;
+			baseConfigurationReference = CA573F4FA35B98C337B33C24C06C86F3 /* Polyline.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -718,165 +857,29 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Polyline/Polyline.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = Polyline;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 2.3;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6922CC7BB3B77C03858AA4622735A14F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8530C454B85B52DD129DA892AC59330B /* HanekeSwift.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/HanekeSwift/HanekeSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HanekeSwift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HanekeSwift/HanekeSwift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Haneke;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		8D635B8C9D000AB8474C7526DA86E999 /* Debug */ = {
+		998F34AF81C0769FC719C0869159B95C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EF9F4AF4A62935EF4E07BB65EEE5B77 /* Pods-whichever.debug.xcconfig */;
+			baseConfigurationReference = 9E634121B5FA635966E05E8B005CACB6 /* MapboxDirections.swift.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-whichever/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-whichever/Pods-whichever.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_whichever;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 2.3;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9A2D2AA017D43362D4BF9DDEC0524B5E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8530C454B85B52DD129DA892AC59330B /* HanekeSwift.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/HanekeSwift/HanekeSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HanekeSwift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HanekeSwift/HanekeSwift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Haneke;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 2.3;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C7E474A03CAE21F1CB6046E7344C59BD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 2.3;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		F10D7CA47B9C2EAE8A099F8D3240031D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07CC528A8FE4E6CA84DBE2B96C769B1E /* MapboxDirections.swift.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -889,66 +892,104 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MapboxDirections.swift/MapboxDirections.swift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = MapboxDirections;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 2.3;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		F723C6B34A00ADFB466E920444ECB9F9 /* Debug */ = {
+		AB577F70A7FF4AACDBBB3500F5BA218B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9BBAE331347BAF9934FBA25B1CDF593 /* Polyline.xcconfig */;
+			baseConfigurationReference = 655B2779DE14B87B7BB16C859F6935EB /* HanekeSwift.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Polyline/Polyline-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Polyline/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/HanekeSwift/HanekeSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HanekeSwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Polyline/Polyline.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Polyline;
+				MODULEMAP_FILE = "Target Support Files/HanekeSwift/HanekeSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Haneke;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 2.3;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
+		};
+		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1675E524B5C4941862055A4EDC30F103 /* Build configuration list for PBXNativeTarget "MapboxDirections.swift" */ = {
+		01AD45C552CF1BFAA98A1D8A4F264954 /* Build configuration list for PBXNativeTarget "MapboxDirections.swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F10D7CA47B9C2EAE8A099F8D3240031D /* Debug */,
-				01B424B15C468045E73673C97D8CD8DB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1F178792297CEA9FDA8D268A4846DF52 /* Build configuration list for PBXNativeTarget "Polyline" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F723C6B34A00ADFB466E920444ECB9F9 /* Debug */,
-				44AA32FF0C7AEC4CB85C1EBF8CF3154B /* Release */,
+				497932341351B66B079AB9CDCC02FFC3 /* Debug */,
+				998F34AF81C0769FC719C0869159B95C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -956,26 +997,35 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				034014829C1E4434983CF3A690C12017 /* Debug */,
-				C7E474A03CAE21F1CB6046E7344C59BD /* Release */,
+				4E487F173E6C9664F4E9E26B9635D23C /* Debug */,
+				BDD0139D6EB93FA375F887ABD62DAB2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63EB248B18279AE0F8EB5289D0643DD1 /* Build configuration list for PBXNativeTarget "Pods-whichever" */ = {
+		3B937E868FBE88B84A8487DB0F795FC3 /* Build configuration list for PBXNativeTarget "Polyline" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8D635B8C9D000AB8474C7526DA86E999 /* Debug */,
-				182E296ED920FB390D82349B18F8EE51 /* Release */,
+				96C736D902A9FEB94CE7B8A5A2E13A8E /* Debug */,
+				002B55424B53AF2D37E708A61EF7400B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		72681BE87943D4976033F6522AE72050 /* Build configuration list for PBXNativeTarget "HanekeSwift" */ = {
+		6DD468FB375E9C1971E9F0CFE51A4135 /* Build configuration list for PBXNativeTarget "HanekeSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6922CC7BB3B77C03858AA4622735A14F /* Debug */,
-				9A2D2AA017D43362D4BF9DDEC0524B5E /* Release */,
+				815A1497660DB0BDB8E6D16826EE78CE /* Debug */,
+				AB577F70A7FF4AACDBBB3500F5BA218B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8AB7B0C8B81517DE0409488DB3804E3 /* Build configuration list for PBXNativeTarget "Pods-whichever" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				395CEE2EB48FFDF34B5998B22428659B /* Debug */,
+				071EE32FA891F9F9A4A9056635217D7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

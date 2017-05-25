@@ -70,6 +70,7 @@ class MenuViewController: UITableViewController, MFMailComposeViewControllerDele
 
         func buttonAction(_ sender: UIButton!) {
         dismiss(animated: true, completion: nil)
+            
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

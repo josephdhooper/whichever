@@ -40,8 +40,9 @@ class DistanceViewController: UIViewController, MGLMapViewDelegate, CLLocationMa
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //showNetworkingConnection()
+        self.mapView.userTrackingMode = .followWithCourse
         
+        //showNetworkingConnection()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.startUpdatingLocation()

@@ -1,28 +1,34 @@
 PODS:
   - HanekeSwift (0.10.1)
   - MapboxDirections.swift (0.6.0):
-    - Polyline (~> 3.2)
-  - Polyline (3.2.1)
+    - Polyline (~> 4.0.0)
+  - Polyline (4.0.0)
 
 DEPENDENCIES:
-  - HanekeSwift
-  - MapboxDirections.swift (from `https://github.com/mapbox/MapboxDirections.swift.git`, tag `v0.6.0`)
+  - HanekeSwift (from `https://github.com/Haneke/HanekeSwift.git`, branch `feature/swift-3`)
+  - MapboxDirections.swift (from `https://github.com/mapbox/MapboxDirections.swift.git`, branch `swift3`)
 
 EXTERNAL SOURCES:
+  HanekeSwift:
+    :branch: feature/swift-3
+    :git: https://github.com/Haneke/HanekeSwift.git
   MapboxDirections.swift:
+    :branch: swift3
     :git: https://github.com/mapbox/MapboxDirections.swift.git
-    :tag: v0.6.0
 
 CHECKOUT OPTIONS:
+  HanekeSwift:
+    :commit: 1157a124ec699f4ad926cb054f1d0bfce88ae7a9
+    :git: https://github.com/Haneke/HanekeSwift.git
   MapboxDirections.swift:
+    :commit: 581f246ae4f821a62af6bbe8c4ea1aac67b0cf9b
     :git: https://github.com/mapbox/MapboxDirections.swift.git
-    :tag: v0.6.0
 
 SPEC CHECKSUMS:
-  HanekeSwift: 08e47d3d0f2899ec58e5d257beba0de619aca9e8
-  MapboxDirections.swift: 144cefb4386d419f916ce27928834c28bbaafb4f
-  Polyline: 4579e57a62a5e876944c41884194e24ab7021d89
+  HanekeSwift: 4113367892828e7700d24a384027de6ebc79aad1
+  MapboxDirections.swift: 4acd753d0079bae4f2fae2b2cbda98922909de09
+  Polyline: c6de7430bf6ff0bfff1f087343597b83b38fdb69
 
-PODFILE CHECKSUM: 9a3c3fb4adb6087fec19782755396a284b675bfd
+PODFILE CHECKSUM: 433c69086d65cd1d3febbf06062d32f1606839df
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.2.1

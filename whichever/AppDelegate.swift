@@ -27,6 +27,7 @@
         UIApplication.shared.statusBarStyle = .lightContent
         UINavigationBar.appearance().titleTextAttributes = [NSFontAttributeName: UIFont.systemFont(ofSize: 16, weight: UIFontWeightSemibold),NSForegroundColorAttributeName : UIColor.white]
         
+        
         return true
     }
     
@@ -73,6 +74,12 @@
         
         func applicationWillTerminate(_ application: UIApplication) {
             // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        }
+        
+        func applicationDidReceiveMemoryWarning(application: UIApplication) {
+            URLCache.shared.removeAllCachedResponses()
+            URLCache.shared.diskCapacity = 0
+            URLCache.shared.memoryCapacity = 0
         }
     }
  }
