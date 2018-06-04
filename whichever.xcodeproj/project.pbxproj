@@ -19,8 +19,6 @@
 		A424CDF31D99AFCB00D8BB27 /* Buildings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424CDF21D99AFCB00D8BB27 /* Buildings.swift */; };
 		A424CE581D9EC5F900D8BB27 /* DistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424CE571D9EC5F900D8BB27 /* DistanceViewController.swift */; };
 		A424CE821D9ED37300D8BB27 /* DistanceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424CE811D9ED37300D8BB27 /* DistanceAnnotation.swift */; };
-		A46052B41E13430700305D54 /* BuildingTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46052B31E13430700305D54 /* BuildingTwoViewController.swift */; };
-		A46052B61E1352F700305D54 /* BuildingTwoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46052B51E1352F700305D54 /* BuildingTwoCell.swift */; };
 		A46A89EF1D4C7F2000C772FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89EE1D4C7F2000C772FF /* AppDelegate.swift */; };
 		A46A89FD1D4C7F6300C772FF /* Bathrooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89F21D4C7F6300C772FF /* Bathrooms.swift */; };
 		A46A89FE1D4C7F6300C772FF /* BuildingsAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46A89F31D4C7F6300C772FF /* BuildingsAnnotation.swift */; };
@@ -44,6 +42,8 @@
 		A4D60DA21DBEED8000CD482A /* DirectionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D60DA11DBEED8000CD482A /* DirectionsTableViewController.swift */; };
 		A4D60DA41DBEEE7400CD482A /* DirectionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D60DA31DBEEE7400CD482A /* DirectionsCell.swift */; };
 		A4F108BB1DA1D1290090DA84 /* BuildingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F108BA1DA1D1290090DA84 /* BuildingViewController.swift */; };
+		BA0E2E2A20C5C81400CA3EEB /* BuildingTwoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0E2E2820C5C81300CA3EEB /* BuildingTwoCell.swift */; };
+		BA0E2E2B20C5C81400CA3EEB /* BuildingTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0E2E2920C5C81300CA3EEB /* BuildingTwoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -76,8 +76,6 @@
 		A424CDF21D99AFCB00D8BB27 /* Buildings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buildings.swift; sourceTree = "<group>"; };
 		A424CE571D9EC5F900D8BB27 /* DistanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceViewController.swift; sourceTree = "<group>"; };
 		A424CE811D9ED37300D8BB27 /* DistanceAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceAnnotation.swift; sourceTree = "<group>"; };
-		A46052B31E13430700305D54 /* BuildingTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildingTwoViewController.swift; path = "Safe Bathrooms/BuildingTwoViewController.swift"; sourceTree = "<group>"; };
-		A46052B51E1352F700305D54 /* BuildingTwoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BuildingTwoCell.swift; path = "Safe Bathrooms/BuildingTwoCell.swift"; sourceTree = "<group>"; };
 		A46A89EE1D4C7F2000C772FF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A46A89F21D4C7F6300C772FF /* Bathrooms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bathrooms.swift; sourceTree = "<group>"; };
 		A46A89F31D4C7F6300C772FF /* BuildingsAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingsAnnotation.swift; sourceTree = "<group>"; };
@@ -102,6 +100,8 @@
 		A4D60DA11DBEED8000CD482A /* DirectionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsTableViewController.swift; sourceTree = "<group>"; };
 		A4D60DA31DBEEE7400CD482A /* DirectionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsCell.swift; sourceTree = "<group>"; };
 		A4F108BA1DA1D1290090DA84 /* BuildingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingViewController.swift; sourceTree = "<group>"; };
+		BA0E2E2820C5C81300CA3EEB /* BuildingTwoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingTwoCell.swift; sourceTree = "<group>"; };
+		BA0E2E2920C5C81300CA3EEB /* BuildingTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingTwoViewController.swift; sourceTree = "<group>"; };
 		BBC5AE2E1F7994DDFCD57FFE /* Pods-whichever.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whichever.debug.xcconfig"; path = "Pods/Target Support Files/Pods-whichever/Pods-whichever.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,7 +150,7 @@
 				A4D60DA31DBEEE7400CD482A /* DirectionsCell.swift */,
 				A424CE811D9ED37300D8BB27 /* DistanceAnnotation.swift */,
 				A46A89F31D4C7F6300C772FF /* BuildingsAnnotation.swift */,
-				A46052B51E1352F700305D54 /* BuildingTwoCell.swift */,
+				BA0E2E2820C5C81300CA3EEB /* BuildingTwoCell.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -158,6 +158,7 @@
 		A48954921DA439AA009E0E4F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BA0E2E2920C5C81300CA3EEB /* BuildingTwoViewController.swift */,
 				A40A8C2F1E0CCB6600F2028E /* DetailsTableViewController.swift */,
 				A4D60DA11DBEED8000CD482A /* DirectionsTableViewController.swift */,
 				A424CE571D9EC5F900D8BB27 /* DistanceViewController.swift */,
@@ -165,7 +166,6 @@
 				A46A89FC1D4C7F6300C772FF /* SearchViewController.swift */,
 				A4F108BA1DA1D1290090DA84 /* BuildingViewController.swift */,
 				A4BBED2C1E08C1D3005899EB /* MenuViewController.swift */,
-				A46052B31E13430700305D54 /* BuildingTwoViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -489,15 +489,15 @@
 				A4164AAE1DECE97B009F69EF /* MenuManager.swift in Sources */,
 				A4F108BB1DA1D1290090DA84 /* BuildingViewController.swift in Sources */,
 				A46A8A061D4C7F6300C772FF /* SearchCell.swift in Sources */,
-				A46052B41E13430700305D54 /* BuildingTwoViewController.swift in Sources */,
 				A424CDEE1D94797000D8BB27 /* BuildingCell.swift in Sources */,
-				A46052B61E1352F700305D54 /* BuildingTwoCell.swift in Sources */,
 				A4BBED2D1E08C1D3005899EB /* MenuViewController.swift in Sources */,
 				A4190A141E1A04F60095C445 /* ReachabilityManager.swift in Sources */,
 				A4B8417A1DECD7EC0085B971 /* SegueFromRight.swift in Sources */,
 				A46A89FD1D4C7F6300C772FF /* Bathrooms.swift in Sources */,
 				A4D60DA41DBEEE7400CD482A /* DirectionsCell.swift in Sources */,
 				A4CF09551E2BE9AE00EEDAAC /* Reachability.swift in Sources */,
+				BA0E2E2B20C5C81400CA3EEB /* BuildingTwoViewController.swift in Sources */,
+				BA0E2E2A20C5C81400CA3EEB /* BuildingTwoCell.swift in Sources */,
 				A46A8A051D4C7F6300C772FF /* Networking.swift in Sources */,
 				A46A89EF1D4C7F2000C772FF /* AppDelegate.swift in Sources */,
 				A46A8A001D4C7F6300C772FF /* CustomPointAnnotation.swift in Sources */,
