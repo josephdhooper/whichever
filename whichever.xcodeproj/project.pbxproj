@@ -14,7 +14,6 @@
 		A419DFF01E0893C1004F8818 /* gender.png in Resources */ = {isa = PBXBuildFile; fileRef = A419DFED1E0893C1004F8818 /* gender.png */; };
 		A419DFF11E0893C1004F8818 /* gender@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A419DFEE1E0893C1004F8818 /* gender@2x.png */; };
 		A419DFF21E0893C1004F8818 /* gender@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A419DFEF1E0893C1004F8818 /* gender@3x.png */; };
-		A41CA9541DE627D600E122A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46A8A361D4C8B0600C772FF /* LaunchScreen.storyboard */; };
 		A424CDEE1D94797000D8BB27 /* BuildingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424CDED1D94797000D8BB27 /* BuildingCell.swift */; };
 		A424CDF31D99AFCB00D8BB27 /* Buildings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424CDF21D99AFCB00D8BB27 /* Buildings.swift */; };
 		A424CE581D9EC5F900D8BB27 /* DistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424CE571D9EC5F900D8BB27 /* DistanceViewController.swift */; };
@@ -34,16 +33,16 @@
 		A48F68731E25BDB600AF588E /* noPicture.png in Resources */ = {isa = PBXBuildFile; fileRef = A48F68721E25BDB600AF588E /* noPicture.png */; };
 		A4B8417A1DECD7EC0085B971 /* SegueFromRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B841791DECD7EC0085B971 /* SegueFromRight.swift */; };
 		A4BBED2D1E08C1D3005899EB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BBED2C1E08C1D3005899EB /* MenuViewController.swift */; };
-		A4BFEC781ED68DD800BCAF42 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4BFEC761ED68DD800BCAF42 /* Realm.framework */; };
-		A4BFEC791ED68DD800BCAF42 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4BFEC761ED68DD800BCAF42 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A4BFEC7A1ED68DD800BCAF42 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4BFEC771ED68DD800BCAF42 /* RealmSwift.framework */; };
-		A4BFEC7B1ED68DD800BCAF42 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A4BFEC771ED68DD800BCAF42 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A4CF09551E2BE9AE00EEDAAC /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CF09541E2BE9AE00EEDAAC /* Reachability.swift */; };
 		A4D60DA21DBEED8000CD482A /* DirectionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D60DA11DBEED8000CD482A /* DirectionsTableViewController.swift */; };
 		A4D60DA41DBEEE7400CD482A /* DirectionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D60DA31DBEEE7400CD482A /* DirectionsCell.swift */; };
 		A4F108BB1DA1D1290090DA84 /* BuildingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F108BA1DA1D1290090DA84 /* BuildingViewController.swift */; };
 		BA0E2E2A20C5C81400CA3EEB /* BuildingTwoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0E2E2820C5C81300CA3EEB /* BuildingTwoCell.swift */; };
 		BA0E2E2B20C5C81400CA3EEB /* BuildingTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0E2E2920C5C81300CA3EEB /* BuildingTwoViewController.swift */; };
+		BA0E2E2F20C5C9DB00CA3EEB /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA0E2E2D20C5C9CA00CA3EEB /* RealmSwift.framework */; };
+		BA0E2E3020C5C9DB00CA3EEB /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BA0E2E2D20C5C9CA00CA3EEB /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BA0E2E3120C5C9DB00CA3EEB /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA0E2E2E20C5C9DA00CA3EEB /* Realm.framework */; };
+		BA0E2E3220C5C9DB00CA3EEB /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BA0E2E2E20C5C9DA00CA3EEB /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,9 +52,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A4BFEC791ED68DD800BCAF42 /* Realm.framework in Embed Frameworks */,
+				BA0E2E3220C5C9DB00CA3EEB /* Realm.framework in Embed Frameworks */,
+				BA0E2E3020C5C9DB00CA3EEB /* RealmSwift.framework in Embed Frameworks */,
 				A489548C1DA1EFE3009E0E4F /* Mapbox.framework in Embed Frameworks */,
-				A4BFEC7B1ED68DD800BCAF42 /* RealmSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,8 +92,6 @@
 		A4B841791DECD7EC0085B971 /* SegueFromRight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueFromRight.swift; sourceTree = "<group>"; };
 		A4BBED2C1E08C1D3005899EB /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		A4BCF0511CF3E5C200675644 /* whichever.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whichever.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4BFEC761ED68DD800BCAF42 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
-		A4BFEC771ED68DD800BCAF42 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		A4CF09541E2BE9AE00EEDAAC /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		A4D4831B1D4CB11500D5E1F2 /* whichever.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = whichever.xcodeproj; sourceTree = "<group>"; };
 		A4D60DA11DBEED8000CD482A /* DirectionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionsTableViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +99,8 @@
 		A4F108BA1DA1D1290090DA84 /* BuildingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingViewController.swift; sourceTree = "<group>"; };
 		BA0E2E2820C5C81300CA3EEB /* BuildingTwoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingTwoCell.swift; sourceTree = "<group>"; };
 		BA0E2E2920C5C81300CA3EEB /* BuildingTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingTwoViewController.swift; sourceTree = "<group>"; };
+		BA0E2E2D20C5C9CA00CA3EEB /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		BA0E2E2E20C5C9DA00CA3EEB /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		BBC5AE2E1F7994DDFCD57FFE /* Pods-whichever.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whichever.debug.xcconfig"; path = "Pods/Target Support Files/Pods-whichever/Pods-whichever.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,10 +109,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4BFEC781ED68DD800BCAF42 /* Realm.framework in Frameworks */,
+				BA0E2E3120C5C9DB00CA3EEB /* Realm.framework in Frameworks */,
 				8BB283DBF332AEABA5CFA267 /* Pods_whichever.framework in Frameworks */,
-				A4BFEC7A1ED68DD800BCAF42 /* RealmSwift.framework in Frameworks */,
 				A489548B1DA1EFE3009E0E4F /* Mapbox.framework in Frameworks */,
+				BA0E2E2F20C5C9DB00CA3EEB /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,8 +191,8 @@
 		A4BCF0481CF3E5C200675644 = {
 			isa = PBXGroup;
 			children = (
-				A4BFEC761ED68DD800BCAF42 /* Realm.framework */,
-				A4BFEC771ED68DD800BCAF42 /* RealmSwift.framework */,
+				BA0E2E2E20C5C9DA00CA3EEB /* Realm.framework */,
+				BA0E2E2D20C5C9CA00CA3EEB /* RealmSwift.framework */,
 				A405318B1E0CE87D00F8E0B8 /* whichever.entitlements */,
 				A4D4831B1D4CB11500D5E1F2 /* whichever.xcodeproj */,
 				A489548A1DA1EFE3009E0E4F /* Mapbox.framework */,
@@ -282,7 +281,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = josephdhooper;
 				TargetAttributes = {
 					A4BCF0501CF3E5C200675644 = {
@@ -333,7 +332,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A41CA9541DE627D600E122A7 /* LaunchScreen.storyboard in Resources */,
 				A419DFF01E0893C1004F8818 /* gender.png in Resources */,
 				A419DFF11E0893C1004F8818 /* gender@2x.png in Resources */,
 				A48F68731E25BDB600AF588E /* noPicture.png in Resources */,
@@ -531,14 +529,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -580,14 +584,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

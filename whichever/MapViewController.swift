@@ -54,7 +54,7 @@ class MapViewController: UIViewController, MGLMapViewDelegate, CLLocationManager
         
         //Realm Notifications
         let results = try! Realm().objects(Bathrooms.self)
-        notificationToken = results.addNotificationBlock {[weak self] (changes: RealmCollectionChange <Results<Bathrooms>>) in
+        notificationToken = results.observe {[weak self] (changes: RealmCollectionChange <Results<Bathrooms>>) in
             self!.populateMap()
         }
     }
