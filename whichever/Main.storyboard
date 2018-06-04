@@ -441,12 +441,13 @@
                                 <constraint firstAttribute="bottom" secondItem="NMT-Ra-Eaz" secondAttribute="bottom" id="zBw-eM-NMQ"/>
                             </constraints>
                         </view>
-                        <view key="tableFooterView" contentMode="scaleToFill" misplaced="YES" id="E5D-Ia-fEH">
+                        <view key="tableFooterView" contentMode="scaleToFill" id="E5D-Ia-fEH">
                             <rect key="frame" x="0.0" y="503" width="375" height="66"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zoa-sv-nqa">
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zoa-sv-nqa">
                                     <rect key="frame" x="92" y="30" width="191" height="28"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
                                     <state key="normal" title="show route">
                                         <color key="titleColor" red="0.1333333333" green="0.65490196079999996" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -457,12 +458,6 @@
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstItem="Zoa-sv-nqa" firstAttribute="leading" secondItem="E5D-Ia-fEH" secondAttribute="leading" constant="92" id="3gN-T9-Hax"/>
-                                <constraint firstAttribute="bottom" secondItem="Zoa-sv-nqa" secondAttribute="bottom" constant="8" id="dHW-N4-U1p"/>
-                                <constraint firstAttribute="trailing" secondItem="Zoa-sv-nqa" secondAttribute="trailing" constant="92" id="fOH-eV-Wj3"/>
-                                <constraint firstItem="Zoa-sv-nqa" firstAttribute="top" secondItem="E5D-Ia-fEH" secondAttribute="top" constant="30" id="iIe-Ic-EVc"/>
-                            </constraints>
                         </view>
                         <sections>
                             <tableViewSection id="r6F-Lb-65S">
@@ -596,46 +591,21 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bathroom details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emd-Vz-okD">
-                                                    <rect key="frame" x="24" y="11" width="335" height="20"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="20" id="QH5-oL-6y3"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="bathroom details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emd-Vz-okD">
+                                                    <rect key="frame" x="16" y="8" width="351" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.1333333333" green="0.65490196079999996" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2o-20-9Du">
-                                                    <rect key="frame" x="24" y="33" width="222" height="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2o-20-9Du">
+                                                    <rect key="frame" x="16" y="30" width="359" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzz-bH-fC1">
-                                                    <rect key="frame" x="263" y="31" width="92" height="15.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="92" id="XDF-eE-dEs"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
-                                                    <state key="normal" title="Suggestions">
-                                                        <color key="titleColor" red="0.1333333333" green="0.65490196079999996" blue="0.94117647059999998" alpha="0.96858836209999999" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="addSuggestions:" destination="kl4-9M-25W" eventType="touchUpInside" id="7lV-Cz-yxw"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="dzz-bH-fC1" firstAttribute="leading" secondItem="M2o-20-9Du" secondAttribute="trailing" constant="17" id="4YJ-aO-qdN"/>
-                                                <constraint firstItem="emd-Vz-okD" firstAttribute="leading" secondItem="M2o-20-9Du" secondAttribute="leading" id="7rP-Mo-xHg"/>
-                                                <constraint firstItem="dzz-bH-fC1" firstAttribute="bottom" secondItem="7sV-zQ-Nrd" secondAttribute="bottomMargin" constant="-2.5" id="EcL-4t-Lx5"/>
-                                                <constraint firstItem="dzz-bH-fC1" firstAttribute="top" secondItem="M2o-20-9Du" secondAttribute="top" constant="-2" id="TOr-ae-8OL"/>
-                                                <constraint firstItem="dzz-bH-fC1" firstAttribute="top" secondItem="emd-Vz-okD" secondAttribute="bottom" id="YXo-gM-2zZ"/>
-                                                <constraint firstItem="M2o-20-9Du" firstAttribute="leading" secondItem="7sV-zQ-Nrd" secondAttribute="leadingMargin" constant="8" id="chM-Pz-NyX"/>
-                                                <constraint firstItem="emd-Vz-okD" firstAttribute="trailing" secondItem="7sV-zQ-Nrd" secondAttribute="trailingMargin" id="eff-j6-d67"/>
-                                                <constraint firstItem="emd-Vz-okD" firstAttribute="top" secondItem="7sV-zQ-Nrd" secondAttribute="topMargin" id="m3z-QG-g5i"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="dzz-bH-fC1" secondAttribute="trailing" constant="4" id="qn9-41-OMY"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -671,7 +641,6 @@
                         <outlet property="room" destination="z7P-oT-nEU" id="z45-Yc-tsB"/>
                         <outlet property="roomDetails" destination="M2o-20-9Du" id="d34-qC-09t"/>
                         <outlet property="signageInfo" destination="iId-Qv-Vab" id="m2O-Ap-2O4"/>
-                        <outlet property="suggestions" destination="dzz-bH-fC1" id="CbM-fR-iQn"/>
                         <segue destination="RyC-PR-TdR" kind="show" identifier="showDirections" id="YKa-NN-z3u"/>
                     </connections>
                 </tableViewController>

@@ -82,14 +82,14 @@ class DetailsTableViewController: UITableViewController, MFMailComposeViewContro
         self.present(newView, animated: true, completion: nil)
     }
     
-    @IBAction func addSuggestions(_ sender: AnyObject) {
-        let mailComposeViewController = configuredMailComposeViewController()
-        if MFMailComposeViewController.canSendMail() {
-            self.present(mailComposeViewController, animated: true, completion: nil)
-        } else {
-            self.showSendMailErrorAlert()
-        }
-    }
+//    @IBAction func addSuggestions(_ sender: AnyObject) {
+//        let mailComposeViewController = configuredMailComposeViewController()
+//        if MFMailComposeViewController.canSendMail() {
+//            self.present(mailComposeViewController, animated: true, completion: nil)
+//        } else {
+//            self.showSendMailErrorAlert()
+//        }
+//    }
     
     func configuredMailComposeViewController() -> MFMailComposeViewController {
         let mailComposerVC = MFMailComposeViewController()
