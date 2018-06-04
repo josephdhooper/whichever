@@ -378,7 +378,7 @@
                         <barButtonItem key="rightBarButtonItem" image="menu" id="yYt-DD-0hM">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <action selector="menuButton:" destination="CP2-MV-CAk" id="tbv-Xi-LOT"/>
+                                <action selector="menuButtonWithSender:" destination="CP2-MV-CAk" id="wfg-1Y-NKo"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -635,7 +635,7 @@
                         <outlet property="availabilityIcon" destination="Gn1-4x-0lZ" id="b6T-0O-fuO"/>
                         <outlet property="buttonObj" destination="Zoa-sv-nqa" id="si1-Rd-qbz"/>
                         <outlet property="floorNumber" destination="25d-NL-Fa7" id="W6m-e4-oc7"/>
-                        <outlet property="imageView" destination="NOO-sH-wA3" id="mX0-Ah-xja"/>
+                        <outlet property="imageView" destination="NOO-sH-wA3" id="KY3-hs-WNA"/>
                         <outlet property="menuButton" destination="Tjk-TX-SlI" id="2iA-3E-Qee"/>
                         <outlet property="name" destination="lkx-1U-Sng" id="Vit-x5-GPu"/>
                         <outlet property="room" destination="z7P-oT-nEU" id="z45-Yc-tsB"/>
@@ -779,9 +779,9 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3hq-Kc-0kB">
-                                            <rect key="frame" x="23" y="22" width="35" height="30"/>
+                                            <rect key="frame" x="16" y="9" width="50" height="50"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="35" id="9v4-M2-uat"/>
+                                                <constraint firstAttribute="width" constant="50" id="9v4-M2-uat"/>
                                             </constraints>
                                         </imageView>
                                     </subviews>
@@ -789,11 +789,11 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="A7k-Tc-E2f" secondAttribute="trailing" id="Can-yI-i1G"/>
                                         <constraint firstItem="VAl-rH-0I4" firstAttribute="top" secondItem="A7k-Tc-E2f" secondAttribute="bottom" constant="-7.5" id="DzO-6T-hRU"/>
                                         <constraint firstItem="A7k-Tc-E2f" firstAttribute="leading" secondItem="VAl-rH-0I4" secondAttribute="leading" id="FCH-9Z-2b7"/>
-                                        <constraint firstItem="3hq-Kc-0kB" firstAttribute="top" secondItem="A7k-Tc-E2f" secondAttribute="top" constant="11" id="ORo-5G-xpB"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="3hq-Kc-0kB" secondAttribute="bottom" constant="10" id="OuE-fc-f8x"/>
-                                        <constraint firstItem="VAl-rH-0I4" firstAttribute="leading" secondItem="3hq-Kc-0kB" secondAttribute="trailing" constant="16" id="W1A-8E-acx"/>
+                                        <constraint firstItem="3hq-Kc-0kB" firstAttribute="top" secondItem="A7k-Tc-E2f" secondAttribute="top" constant="-2" id="ORo-5G-xpB"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="3hq-Kc-0kB" secondAttribute="bottom" constant="3" id="OuE-fc-f8x"/>
+                                        <constraint firstItem="VAl-rH-0I4" firstAttribute="leading" secondItem="3hq-Kc-0kB" secondAttribute="trailing" constant="8" id="W1A-8E-acx"/>
                                         <constraint firstItem="A7k-Tc-E2f" firstAttribute="top" secondItem="S8Q-Ln-FF1" secondAttribute="topMargin" id="YMj-eq-vDW"/>
-                                        <constraint firstItem="3hq-Kc-0kB" firstAttribute="leading" secondItem="S8Q-Ln-FF1" secondAttribute="leadingMargin" constant="7" id="hfH-Xt-9d2"/>
+                                        <constraint firstItem="3hq-Kc-0kB" firstAttribute="leading" secondItem="S8Q-Ln-FF1" secondAttribute="leadingMargin" id="hfH-Xt-9d2"/>
                                         <constraint firstItem="A7k-Tc-E2f" firstAttribute="trailing" secondItem="VAl-rH-0I4" secondAttribute="trailing" id="uNm-l5-JV8"/>
                                         <constraint firstItem="VAl-rH-0I4" firstAttribute="bottom" secondItem="S8Q-Ln-FF1" secondAttribute="bottomMargin" constant="-3" id="zgA-pi-TJv"/>
                                     </constraints>

@@ -20,10 +20,10 @@ class BuildingTwoViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        if let buildingNameObj = buildingName{
-//            bathrooms = try! Realm().objects(Bathrooms()).filter("buildingName == '\(buildingNameObj)'").sorted(byKeyPath: "buildingName", ascending: true)
-//            image = try! Realm().objects(Bathrooms()).sorted(byKeyPath: "image", ascending: true)
-//        }
+        if let buildingNameObj = buildingName{
+            bathrooms = try! Realm().objects(Bathrooms.self).filter("buildingName == '\(buildingNameObj)'").sorted(byKeyPath: "buildingName", ascending: true)
+            image = try! Realm().objects(Bathrooms.self).sorted(byKeyPath: "image", ascending: true)
+        }
     }
     
     @IBAction func unwindToSearchAndBuildingVC(segue:UIStoryboardSegue) {

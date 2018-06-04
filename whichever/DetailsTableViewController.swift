@@ -16,13 +16,11 @@ private let headerHeight: CGFloat = 200
 
 class DetailsTableViewController: UITableViewController, MFMailComposeViewControllerDelegate {
     
-    var imageView: UIImageView!
     var headerView: UIView!
     var newHeaderLayer: CAShapeLayer!
     var bathrooms = try! Realm().objects(Bathrooms.self)
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
-    @IBOutlet weak var suggestions: UIButton!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var room: UILabel!
@@ -32,6 +30,7 @@ class DetailsTableViewController: UITableViewController, MFMailComposeViewContro
     @IBOutlet weak var availabilityIcon: UIImageView!
     @IBOutlet var buttonObj: UIButton!
     
+    @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -81,15 +80,6 @@ class DetailsTableViewController: UITableViewController, MFMailComposeViewContro
         newView.modalPresentationStyle = UIModalPresentationStyle.overFullScreen
         self.present(newView, animated: true, completion: nil)
     }
-    
-//    @IBAction func addSuggestions(_ sender: AnyObject) {
-//        let mailComposeViewController = configuredMailComposeViewController()
-//        if MFMailComposeViewController.canSendMail() {
-//            self.present(mailComposeViewController, animated: true, completion: nil)
-//        } else {
-//            self.showSendMailErrorAlert()
-//        }
-//    }
     
     func configuredMailComposeViewController() -> MFMailComposeViewController {
         let mailComposerVC = MFMailComposeViewController()
@@ -221,18 +211,14 @@ class DetailsTableViewController: UITableViewController, MFMailComposeViewContro
             }
         }
     }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDirections" {
             let controller = segue.destination as! DistanceViewController
             controller.latitude = detailBathroom?.latitude
             controller.longitude = detailBathroom?.longitude
             controller.buildingName = detailBathroom?.buildingName
-            
-
         }
     }
-    
     @IBAction func unwindToBathroomVC(_ segue:UIStoryboardSegue) {
         
     }
